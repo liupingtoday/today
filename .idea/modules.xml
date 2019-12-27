@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/today-service/today-service.iml" filepath="$PROJECT_DIR$/today-service/today-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/today-service/modules/cms/today-service-cms.iml" filepath="$PROJECT_DIR$/today-service/modules/cms/today-service-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/today-service/common/today-service-common.iml" filepath="$PROJECT_DIR$/today-service/common/today-service-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/today-service/modules/core/today-service-core.iml" filepath="$PROJECT_DIR$/today-service/modules/core/today-service-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/today-service/framework/today-service-framework.iml" filepath="$PROJECT_DIR$/today-service/framework/today-service-framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/parent/today-service-parent.iml" filepath="$PROJECT_DIR$/today-service/parent/today-service-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/root/today-service-root.iml" filepath="$PROJECT_DIR$/today-service/root/today-service-root.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/web/today-service-web.iml" filepath="$PROJECT_DIR$/today-service/web/today-service-web.iml" />
