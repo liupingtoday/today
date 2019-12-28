@@ -2,191 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fd8ede-9f21-4da5-b86b-2b44196f1cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_58.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_belerweb_pinyin4j_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_72.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_bladejava_blade_patchca_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_0_pr1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_0_pr1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_0_pr1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_xml_2_10_0_pr1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_10_0_pr1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_woodstox_woodstox_core_5_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jai_imageio_jai_imageio_core_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_03.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_common_common_image_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_common_common_io_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_common_common_lang_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_core_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_jpeg_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twelvemonkeys_imageio_imageio_metadata_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_ruedigermoeller_fst_2_57.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__eu_bitwalker_UserAgentUtils_1_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_coobird_thumbnailator_0_4_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_jmimemagic_jmimemagic_0_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_email_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_scratchpad_3_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180130.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/callback/MethodCallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/codec/AesUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/codec/DesUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/codec/DigestUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/codec/EncodeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/codec/Md5Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/codec/Sha1Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/collect/ListUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/collect/MapUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/collect/SetUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/exec/CommandUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/idgen/IdGenerate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/idgen/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/image/CaptchaUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/image/ImageGeo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/image/ImageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/image/ZxingUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/io/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/io/IOUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/io/PropertiesUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/io/PropertyLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/io/ResourceUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/lang/ByteUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/lang/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/lang/ExceptionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/lang/NumberUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/lang/ObjectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/lang/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/lang/TimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/lang/WorkDayUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/mapper/JaxbMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/mapper/JsonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/mapper/XmlMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/media/VideoUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/msg/EmailUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/msg/SmsUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/network/IpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/network/MacUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/reflect/ClassUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/reflect/ReflectUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/text/DiffMatchPatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/text/DiffMatchPatchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/text/PinyinUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/PathFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/define/ActionMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/define/ActionState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/define/AppInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/define/BaseState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/define/FileType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/define/MIMEType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/define/MultiState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/define/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/hunter/FileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/hunter/ImageHunter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/upload/Base64Uploader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/upload/BinaryUploader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/upload/StorageManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/ueditor/upload/Uploader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/IdcardUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/ThreadUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/excel/ExcelException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/excel/ExcelReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/excel/ExcelWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/excel/annotation/ExcelField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/excel/annotation/ExcelFields.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/excel/fieldtype/MoneyType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/word/BookMark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/word/BookMarks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/word/WordExport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/utils/word/Word模版.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/web/CookieUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/web/http/HttpClientUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/web/http/HttpHeaders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/web/http/ServletUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/src/main/java/cn/js/today/common/web/http/UserAgentUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/common/today-service-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/framework/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/framework/today-service-framework.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/ArticleDataRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/ArticleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/ContentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/SiteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/config/CMSConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/domain/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/domain/ArticleData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/domain/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/domain/Content.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/domain/Extend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/domain/Site.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/web/BankAccountResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/src/main/java/cn/js/today/modules/cms/web/front/ArticleAccountResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/cms/today-service-cms.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/modules/core/today-service-core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/root/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/root/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/META-INF/today-service-web.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/backup/image/Image.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/backup/image/Image_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/WebApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/config/CMSConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/config/DefaultProfileUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/config/WebConfigurer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/domain/ArticleData_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/domain/Article_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/domain/Category_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/domain/Content.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/domain/Content_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/domain/Site_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/domain/image/Image_.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/repository/ContentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/web/BankAccountResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/web/front/ArticleAccountResource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-sources/annotations/backup/image/Image_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-sources/annotations/cn/js/today/domain/ArticleData_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-sources/annotations/cn/js/today/domain/Article_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-sources/annotations/cn/js/today/domain/Category_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-sources/annotations/cn/js/today/domain/Content_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-sources/annotations/cn/js/today/domain/Site_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-test-sources/test-annotations/backup/ArticleData_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-test-sources/test-annotations/backup/Category_.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-test-sources/test-annotations/backup/Site_.java" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,6 +33,11 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
@@ -224,13 +47,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/today-service/framework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/today-admin" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -253,18 +76,6 @@
       <recent name="C:\data\code\today\today-service\web\src\main\resources" />
       <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.WebApplication">
     <configuration default="true" type="Applet">
@@ -369,6 +180,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
     <option name="myConnectionType" value="NONE" />
@@ -389,7 +212,11 @@
       <workItem from="1577195819244" duration="1779000" />
       <workItem from="1577286714005" duration="5165000" />
       <workItem from="1577293662574" duration="5766000" />
-      <workItem from="1577324767960" duration="21218000" />
+      <workItem from="1577324767960" duration="22182000" />
+      <workItem from="1577499635455" duration="1271000" />
+      <workItem from="1577501554092" duration="109000" />
+      <workItem from="1577501793454" duration="175000" />
+      <workItem from="1577502010288" duration="1222000" />
     </task>
     <task id="LOCAL-00001" summary="成功自动生成表">
       <created>1577299430732</created>
@@ -405,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577325727556</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加框架相关model">
+      <created>1577464156166</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577464156166</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,6 +261,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="成功自动生成表" />
     <MESSAGE value="添加相关model" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加相关model" />
+    <MESSAGE value="添加框架相关model" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加框架相关model" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3043" y="115" key="FileChooserDialogImpl" timestamp="1577502637140">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3043" y="115" key="FileChooserDialogImpl/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1577502637140" />
+    <state x="2903" y="126" key="NewModule_or_Project.wizard" timestamp="1577502643267">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2903" y="126" key="NewModule_or_Project.wizard/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1577502643267" />
+    <state x="2743" y="0" key="SettingsEditor" timestamp="1577502644443">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="122" y="0" key="SettingsEditor/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1577501978065" />
+    <state x="2743" y="0" key="SettingsEditor/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1577502644443" />
   </component>
 </project>

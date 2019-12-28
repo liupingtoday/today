@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/today-admin/today-admin.iml" filepath="$PROJECT_DIR$/today-admin/today-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/today-service.iml" filepath="$PROJECT_DIR$/today-service/today-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/modules/cms/today-service-cms.iml" filepath="$PROJECT_DIR$/today-service/modules/cms/today-service-cms.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/common/today-service-common.iml" filepath="$PROJECT_DIR$/today-service/common/today-service-common.iml" />
