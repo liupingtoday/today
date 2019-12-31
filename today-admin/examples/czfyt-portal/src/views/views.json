@@ -1,0 +1,56 @@
+[
+    {
+        "url": "index"
+    },
+    {
+        "url": "newsList"
+    },
+    {
+        "url": "news"
+    },
+    {
+        "url": "about"
+    },
+    {
+        "url": "contactUs"
+    },
+    {
+        "url": "productsList"
+    },
+    {
+        "url": "charts",
+        "echarts": true
+    },
+    {
+        "url": "productRuleList"
+    },
+    {
+        "url": "productRule"
+    },
+    {
+        "url": "product"
+    },
+    {
+        "url": "album"
+    },
+    {
+        "url": "recruit"
+    },
+    {
+        "url": "support"
+    },
+    {
+        "url": "download"
+    },
+    {
+        "url": "downloadList"
+    },
+    {
+        "url": "albumList"
+    },
+    {
+        "url": "test"
+    }
+]
+
+

@@ -1,0 +1,59 @@
+{
+  "name": "today-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --config webpack.config.js --progress --colors --devtool cheap-module-eval-source-map --hot --inline",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanxiaojun617/webpack4-bootstrap4-demo.git"
+  },
+  "keywords": [],
+  "author": "liuping",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanxiaojun617/webpack4-bootstrap4-demo/issues"
+  },
+  "homepage": "https://github.com/yanxiaojun617/webpack4-bootstrap4-demo#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "bootstrap": "^4.4.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.19.1",
+    "expose-loader": "^0.7.5",
+    "html-webpack-plugin": "^3.2.0",
+    "html-withimg-loader": "^0.1.16",
+    "image-webpack-loader": "^6.0.0",
+    "jquery": "^3.4.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "popper.js": "^1.16.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "sweetalert2": "^9.5.4",
+    "swiper": "^5.2.1",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2",
+    "webpack-plugin-hash-output": "^3.2.1"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

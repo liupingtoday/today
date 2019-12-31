@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    #include("../../assets/html/head.html")
+</head>
+<body>
+
+<!-- Swiper -->
+<div id="index-swiper" class="swiper-container index-swiper">
+    <div class="swiper-wrapper">
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="index inner ptp">
+    <div class="mlf lf br-bg">
+        <div class="src-ico"></div>
+        <div class="pd-w">
+            <div class="pronav-srh lf p-d">
+                <h3 class="srhtit">产品搜索<span>Product Search</span></h3>
+                <div class="metsearch" data-valuez='请输入关键词'>
+                    <ul>
+                        <form method='get' name='product_myformsearch' action='/search.asp' >
+                            <li>
+                                <span class='parasearch_title'>内容</span>
+                                <span class='parasearch_input'>
+                                    <input type='text' name='keys'/>
+                                </span>
+                            </li>
+                            <li>
+                                <span class='parasearch_search'>
+                                    <input type='submit'  value='搜索' class='searchgo'/>
+                                </span>
+                            </li>
+                        </form>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <h3 id="index-product-list" class="ct-ti pd-tp"></h3>
+                <div id="index-product-list-item" class="category">
+                </div>
+                <h3 id="index-about-us" class="ct-ti pd-tp">关于我们</h3>
+                <div class="category">
+                    <ul class="list-none navnow">
+                        <li id=''><a href='/about.html?id=A1015'  title='关于福伊特' class='nav'><span>关于福伊特</span></a></li>
+                        <li ><a href='/contactUs.html?id=A1008'  title='联系我们' class='nav'><span>联系我们</span></a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="pd-tp"></div>
+            </div>
+            <div id="index-news" class="news ri p-d">
+                <h3 class="ti">新闻中心<a href="newsList.html" title="" class="more">更多>></a></h3>
+                <div class="txtlist">
+                    <ol class='list-none metlist'>
+                    </ol>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="mri ri">
+        <div class="newlist br-bg" id="hnews">
+            <h3 class="ti">资料下载<a href="[type:link]" title="[type:link]" class="more">更多>></a> </h3>
+            <div class="newtxtlst" id="hnewsitems">
+                <ol class='list-none metlist'>
+                    <li class='list top'><span class='time'>yy-m-d</span><a href='[content:link]' title='[content:title]' target='_self'>title</a></li>
+                </ol>
+            </div>
+            <div id="dians" class="textr"> <a href="javascript:;" num="0" class="dian">&nbsp;</a> <a href="javascript:;" num="2" class="dian">&nbsp;</a> <a href="javascript:;" num="4" class="dian">&nbsp;</a> </div>
+            <div class="clear"></div>
+        </div>
+        <div class="pro-list br-bg">
+                <!-- Swiper -->
+                <div class="swiper-container index-product-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../../assets/img/1.jpg" width="150px" height="120px">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../assets/img/2.jpg" width="150px" height="120px">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../assets/img/1.jpg" width="150px" height="120px">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../assets/img/2.jpg" width="150px" height="120px">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../assets/img/1.jpg" width="150px" height="120px">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../assets/img/2.jpg" width="150px" height="120px">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Pagination -->
+<!--                    <div class="swiper-button-next"></div>-->
+<!--                    <div class="swiper-button-prev"></div>-->
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="frlk inner" id="fr-lk">
+    <h3 class="lkti">友情链接&nbsp;:</h3>
+    <div class="lk-contx">
+        <div class="txtlk">
+            <ul class='list-none'>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="imglk">
+<!--            <ul class='list-none'>
+            </ul>-->
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+#include("../../assets/html/footer.html")
+</body>
+</html>
