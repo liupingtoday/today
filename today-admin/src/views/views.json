@@ -1,6 +1,9 @@
 [
     {
         "url": "login"
+    },
+    {
+        "url": "index"
     }
 ]
 
