@@ -17,7 +17,7 @@ dirJSON.forEach(page => {
     }
     plugins.push(
         new HtmlPlugin({
-            favicon: path.resolve(__dirname, `./src/assets/img/favicon.ico`),
+            favicon: path.resolve(__dirname, `./src/assets/images/favicon.ico`),
             filename: path.resolve(__dirname, `./dist/${page.url}.html`),
             template: path.resolve(__dirname, `./src/views/${page.url}/index.html`),
             chunks: chunks,
@@ -63,13 +63,47 @@ module.exports = {
                 test: /\.(html|htm)$/,
                 use: ['html-withimg-loader']
             },
+
             {
-                test: /\.(png|jpg|jpe?g|gif)$/,
-                use: ['url-loader?limit=4096&name=[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]&outputPath=img/', 'image-webpack-loader']
+                test: /\.(gif|png|jpe?g|svg|ico)$/i,
+                use: [
+                    'file-loader',
+                    {
+                        loader: 'image-webpack-loader',
+                        options: {
+                            bypassOnDebug: true, // webpack@1.x
+                            disable: true, // webpack@2.x and newer
+                            mozjpeg: {
+                                progressive: true,
+                                quality: 65
+                            },
+                            // optipng.enabled: false will disable optipng
+                            optipng: {
+                                enabled: false,
+                            },
+                            pngquant: {
+                                quality: [0.65, 0.90],
+                                speed: 4
+                            },
+                            gifsicle: {
+                                interlaced: false,
+                            },
+                            // the webp option will enable WEBP
+                            webp: {
+                                quality: 75
+                            }
+                        }
+                    },
+                ],
             },
+
+            // {
+            //     test: /\.(png|jpg|jpe?g|gif)$/,
+            //     use: ['url-loader?limit=4096&name=[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]&outputPath=images/', 'image-webpack-loader']
+            // },
             {
                 test: /\.(webp)$/,
-                use: ['file-loader?&name=[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]&outputPath=img/']
+                use: ['file-loader?&name=[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]&outputPath=images/']
             },
             {
                 test: /\.(svg|woff|woff2|ttf|eot)(\?.*$|$)/,

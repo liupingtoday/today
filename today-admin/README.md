@@ -6,7 +6,7 @@ cd webpack-001
 
 // 3.初始化配置，假设不要-y，会出现很多true和false的选项，-y的意思全默认true，然后直接初始化完成
 npm init -y
-// 此时，该目录下会多出一个 package.json 的文件，内容为以下：
+// 此时，该目录下会多出swal 一个 package.json 的文件，内容为以下：
 
 // 4. 安装 webpack-cli
 npm install webpack webpack-cli --save-dev
