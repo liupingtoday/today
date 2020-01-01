@@ -65,9 +65,18 @@ module.exports = {
             },
 
             {
-                test: /\.(gif|png|jpe?g|svg|ico)$/i,
+                test: /\.(gif|png|jpe?g|svg|bmp|ico)$/i,
                 use: [
                     // 'file-loader',
+                    {
+                        loader:'url-loader',
+                        options:{
+                            limit:4096,//小于limit限制(4kb)的图片将转为base64嵌入引用位置
+                            fallback:'file-loader',//大于limit限制的将转交给指定的loader处理
+                            outputPath:'images/', // options会直接传给fallback指定的loader
+                            name:'[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]',
+                        }
+                    },
                     {
                         loader: 'image-webpack-loader',
                         options: {
@@ -94,21 +103,19 @@ module.exports = {
                             }
                         }
                     },
-                    {
-                        loader:'url-loader',
-                        options:{
-                            limit:8129,//小于limit限制(8kb)的图片将转为base64嵌入引用位置
-                            fallback:'file-loader',//大于limit限制的将转交给指定的loader处理
-                            outputPath:'images/', // options会直接传给fallback指定的loader
-                            name:'[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]',
-                        }
-                    }
+
                 ],
             },
 
             // {
             //     test: /\.(png|jpg|jpe?g|gif)$/,
             //     use: ['url-loader?limit=4096&name=[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]&outputPath=images/', 'image-webpack-loader']
+            // },
+
+            //处理ejs模板中的loader,以.tpl后缀结尾的
+            // {
+            //     test: /\.tpl$/,
+            //     loader: 'ejs-loader'
             // },
             {
                 test: /\.(webp)$/,

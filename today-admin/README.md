@@ -32,6 +32,65 @@ url-loader 允许你有条件地将文件转换为内联的 base-64 URL (当文�
 在实际开发中，我们在大量的使用着ES6及之后的api去写代码，这样会提高我们写代码的速度，不过由于低版本浏览器的存在，不得不需要转换成兼容的代码，于是就有了常用的Babel了
 npm i babel-core babel-loader babel-preset-env babel-preset-stage-0 -D
 
+使用imagemin-webpack-plugin压缩没有被file-loader处理的图片
+安装
+npm install imagemin-webpack-plugin --save-dev
+配置
+import ImageminPlugin from 'imagemin-webpack-plugin'
+
+module.exports = {
+  plugins: [
+    // Copy the images folder and optimize all the images
+    new CopyWebpackPlugin([{
+      from: 'images/'
+    }]),
+    new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i })
+  ]
+}
+
+热更新和自动刷新的区别
+在配置devServer的时候，如果hot为true，就代表开启了热更新
+
+But这并没那么简单，因为热更新还需要配置一个webpack自带的插件并且还要在主要js文件里检查是否有module.hot
+
+下面就让我们直接看下代码是如何实现的
+
+// webpack.config.js
+let webpack = require('webpack');
+
+module.exports = {
+    plugins: [
+        // 热替换，热替换不是刷新
+        new webpack.HotModuleReplacementPlugin()
+    ],
+    devServer: {
+        contentBase: './dist',
+        hot: true,
+        port: 3000
+    }
+}
+
+// 此时还没完虽然配置了插件和开启了热更新，但实际上并不会生效
+
+// index.js
+let a = 'hello world';
+document.body.innerHTML = a;
+console.log('这是webpack打包的入口文件');
+
+// 还需要在主要的js文件里写入下面这段代码
+if (module.hot) {
+    // 实现热更新
+    module.hot.accept();
+}
+以上index.js中的内容，如果将变量a的值进行修改保存后，会在不刷新页面的情况下直接修改掉，这样就实现了热更新
+
+那么热更新从现在看来和自动刷新浏览器的区别也不是太大嘛！自动刷新也是可以接受的啊
+
+其实不然，热更新的好处可能在vue或者react中有更大的发挥，其中某一个组件被修改的时候就会针对这个组件进行热更新了，这里用到vue或react的同学去实际体验一下吧
+
+npm install --save-dev webpack-bundle-analyzer
+
+
 
 * 本项目集成了bootstrap4，jquery，easyui(可配置)等
 * 采用webpack4多页面(多入口)配置，实现常用webpack配置
