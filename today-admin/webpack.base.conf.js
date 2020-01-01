@@ -67,7 +67,7 @@ module.exports = {
             {
                 test: /\.(gif|png|jpe?g|svg|ico)$/i,
                 use: [
-                    'file-loader',
+                    // 'file-loader',
                     {
                         loader: 'image-webpack-loader',
                         options: {
@@ -94,6 +94,15 @@ module.exports = {
                             }
                         }
                     },
+                    {
+                        loader:'url-loader',
+                        options:{
+                            limit:8129,//小于limit限制(8kb)的图片将转为base64嵌入引用位置
+                            fallback:'file-loader',//大于limit限制的将转交给指定的loader处理
+                            outputPath:'images/', // options会直接传给fallback指定的loader
+                            name:'[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]',
+                        }
+                    }
                 ],
             },
 
@@ -150,7 +159,8 @@ module.exports = {
             },
             // {
             //     test: /\.js$/,
-            //     exclude: /node_modules/,
+            //     exclude: /node_modules/, // 排除掉node_modules，优化打包速度
+            //     include: /src/, // 只转化src目录下的js
             //     use: {
             //         loader: 'babel-loader',
             //         options: {

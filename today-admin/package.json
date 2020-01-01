@@ -24,6 +24,10 @@
   "homepage": "https://github.com/yanxiaojun617/webpack4-bootstrap4-demo#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
     "bootstrap": "^4.4.1",
     "clean-webpack-plugin": "^3.0.0",
     "cross-env": "^6.0.3",

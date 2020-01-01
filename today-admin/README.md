@@ -25,6 +25,14 @@ npm install --registry=https://registry.npm.taobao.org
 
 node-v12.14.0-x64
 
+file-loader 可以指定要复制和放置资源文件的位置，以及如何使用版本哈希命名以获得更好的缓存。此外，这意味着 你可以就近管理图片文件，可以使用相对路径而不用担心部署时 URL 的问题。使用正确的配置，webpack 将会在打包输出中自动重写文件路径为正确的 URL。
+
+url-loader 允许你有条件地将文件转换为内联的 base-64 URL (当文件小于给定的阈值)，这会减少小文件的 HTTP 请求数。如果文件大于该阈值，会自动的交给 file-loader 处理。
+
+在实际开发中，我们在大量的使用着ES6及之后的api去写代码，这样会提高我们写代码的速度，不过由于低版本浏览器的存在，不得不需要转换成兼容的代码，于是就有了常用的Babel了
+npm i babel-core babel-loader babel-preset-env babel-preset-stage-0 -D
+
+
 * 本项目集成了bootstrap4，jquery，easyui(可配置)等
 * 采用webpack4多页面(多入口)配置，实现常用webpack配置
 * [在线demo](https://www.yanxiaojun617.com/webpack4-bootstrap4-demo/)
