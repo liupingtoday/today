@@ -8,11 +8,26 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HashOutput = require('webpack-plugin-hash-output');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+
+
 
 if (process.env.NODE_ENV === 'prod') {
     module.exports = merge(baseWebpackConfig, {
         mode: 'production',
         optimization: {
+            minimizer: [
+                new TerserPlugin({
+                    test: /(\.jsx|\.js)$/,
+                    extractComments: true,
+                    cache: true,
+                    parallel: true,
+                    sourceMap: true, // Must be set to true if using source-maps in production
+                    terserOptions: {
+                        // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
+                    }
+                }),
+            ],
             minimize: true,
             splitChunks: {
                 chunks: 'async',
@@ -32,7 +47,8 @@ if (process.env.NODE_ENV === 'prod') {
                         priority: -1,
                         chunks: 'all',
                         name: 'vendors',
-                        // reuseExistingChunk: true
+                        // reuseExistingChunk: true,
+                        enforce:true
                     },
                     easyui: {
                         test: path.resolve(__dirname, './src/assets/libs/jquery-easyui'),
@@ -119,7 +135,11 @@ if (process.env.NODE_ENV === 'prod') {
             }),
             // new CleanWebpackPlugin(['dist']),
             // 压缩css
-            new OptimizeCssAssetsPlugin(),
+            new OptimizeCssAssetsPlugin({ // 压缩css
+                cssProcessorOptions: {
+                    safe: true
+                }
+            }),
             new HashOutput(),
             new webpack.BannerPlugin('CopyRight © 2015-2028 All Right Reserved Today Technology Co.,Ltd'),
             // 生成包依赖图

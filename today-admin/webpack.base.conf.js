@@ -23,8 +23,11 @@ dirJSON.forEach(page => {
             chunks: chunks,
             chunksSortMode: 'manual',
             minify: isProd ? {
+                removeAttributeQuotes:true,
+                removeComments: true,
                 collapseWhitespace: true,
-                removeComments: true
+                removeScriptTypeAttributes:true,
+                removeStyleLinkTypeAttributes:true
             } : false
         })
     );
@@ -35,6 +38,7 @@ if (isProd) {
         new MiniCssExtractPlugin({
             filename: 'css/' + (isProd ? '[name].[contenthash:8].min.css' : '[name].css'),
             chunkFilename: 'css/' + (isProd ? '[name].chunk.[contenthash:8].min.css' : '[name].chunk.css'),
+            ignoreOrder: false
         })
     );
 }
