@@ -2,6 +2,7 @@ const dirJSON = require('./src/views/views.json');
 const path = require('path');
 const HtmlWebpackPlugin  = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const isProd = (process.env.NODE_ENV === 'prod');
 
 let entry = {};
@@ -49,6 +50,12 @@ if (isProd) {
             chunkFilename: 'css/' + (isProd ? '[name].chunk.[contenthash:8].min.css' : '[name].chunk.css'),
             // ignoreOrder: false
         })
+    );
+    plugins.push(new CopyWebpackPlugin([
+        {
+            from: path.resolve(__dirname, './src/assets/public'), to: 'public'
+        }
+    ])
     );
 }
 
