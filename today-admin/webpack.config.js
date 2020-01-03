@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const path = require('path');
 const merge = require('webpack-merge');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-// const CleanWebpackPlugin = require('clean-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HashOutput = require('webpack-plugin-hash-output');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -28,7 +27,7 @@ if (process.env.NODE_ENV === 'prod') {
                     }
                 }),
             ],
-            minimize: true,
+            minimize: false,
             splitChunks: {
                 chunks: 'async',
                 minSize: 30000,
@@ -72,28 +71,21 @@ if (process.env.NODE_ENV === 'prod') {
             }
         },
         plugins: [
+            new HashOutput(),
             new CleanWebpackPlugin({
                 // Simulate the removal of files
-                //
                 // default: false
                 dry: true,
-
                 // Write Logs to Console
                 // (Always enabled when dry is true)
-                //
                 // default: false
                 verbose: true,
-
                 // Automatically remove all unused webpack assets on rebuild
-                //
                 // default: true
-                cleanStaleWebpackAssets: false,
-
+                cleanStaleWebpackAssets: true,
                 // Do not allow removal of current webpack assets
-                //
                 // default: true
                 protectWebpackAssets: false,
-
                 // **WARNING**
                 //
                 // Notes for the below options:
@@ -114,8 +106,8 @@ if (process.env.NODE_ENV === 'prod') {
                 // Use !negative patterns to exclude files
                 //
                 // default: ['**/*']
-                cleanOnceBeforeBuildPatterns: ['**/*', '!static-files*'],
-                cleanOnceBeforeBuildPatterns: [], // disables cleanOnceBeforeBuildPatterns
+                // cleanOnceBeforeBuildPatterns: ['**/*', '!static-files*'],
+                // cleanOnceBeforeBuildPatterns: [], // disables cleanOnceBeforeBuildPatterns
 
                 // Removes files after every build (including watch mode) that match this pattern.
                 // Used for files that are not created directly by Webpack.
@@ -123,7 +115,7 @@ if (process.env.NODE_ENV === 'prod') {
                 // Use !negative patterns to exclude files
                 //
                 // default: []
-                cleanAfterEveryBuildPatterns: ['static*.*', '!static1.js'],
+                // cleanAfterEveryBuildPatterns: ['static*.*', '!static1.js'],
                 // exclude:  ['test.html'], // 排除
 
                 // Allow clean patterns outside of process.cwd()
@@ -131,7 +123,7 @@ if (process.env.NODE_ENV === 'prod') {
                 // requires dry option to be explicitly set
                 //
                 // default: false
-                dangerouslyAllowCleanPatternsOutsideProject: true,
+                // dangerouslyAllowCleanPatternsOutsideProject: true,
             }),
             // new CleanWebpackPlugin(['dist']),
             // 压缩css
@@ -140,13 +132,38 @@ if (process.env.NODE_ENV === 'prod') {
                     safe: true
                 }
             }),
-            new HashOutput(),
+            // new webpack.NamedModulesPlugin(),
             new webpack.BannerPlugin('CopyRight © 2015-2028 All Right Reserved Today Technology Co.,Ltd'),
             // 生成包依赖图
             new BundleAnalyzerPlugin({ analyzerPort: 8787 }),
             // 打包进度
             new ProgressBarPlugin(),
-        ]
+        ],
+        // 抽离第三方库
+        // externals: [
+        //     {
+        //         // String
+        //         react: 'react',
+        //         // Object
+        //         lodash : {
+        //             commonjs: 'lodash',
+        //             amd: 'lodash',
+        //             root: '_' // indicates global variable
+        //         },
+        //         // Array
+        //         subtract: ['./math', 'subtract']
+        //     },
+        //     // Function
+        //     function(context, request, callback) {
+        //         if (/^yourregex$/.test(request)){
+        //             return callback(null, 'commonjs ' + request);
+        //         }
+        //         callback();
+        //     },
+        //     // Regex
+        //     /^(jquery|\$)$/i
+        // ],
+
     });
 } else if (process.env.NODE_ENV === 'dev') {
     module.exports = merge(baseWebpackConfig, {

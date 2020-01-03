@@ -90,7 +90,13 @@ if (module.hot) {
 
 npm install --save-dev webpack-bundle-analyzer
 
-
+> 1. nvm install latest  64/32/all --- 安装最新的版本,后面参数是电脑的位数
+> 2. nvm install 6.9.1  --- 后面参数是安装的版本号
+> 3. nvm use xxx  --- 切换node版本号
+> 4. nvm arch  --- 查看或者设置平台类型
+> 5. nvm install  --- 安装node
+> 6. nvm list --- 查看安装了哪几个版本的node
+> 7. nvm version  --- 查看nvm版本号
 
 * 本项目集成了bootstrap4，jquery，easyui(可配置)等
 * 采用webpack4多页面(多入口)配置，实现常用webpack配置

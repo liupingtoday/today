@@ -40,7 +40,7 @@ module.exports = {
     // @fixable 一个缩进必须用两个空格替代
     'space-before-function-paren': 0, // 在函数左括号的前面是否有空格
     // 关键字后面使用一致的空格
-    'keyword-spacing': 0,
+    // 'keyword-spacing': 0,
     // 三等号
     'eqeqeq': 0,
     // 强制在注释中 // 或 /* 使用一致的空格
