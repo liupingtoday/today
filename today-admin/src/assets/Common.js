@@ -3,6 +3,11 @@ import 'bootstrap';
 import 'bootstrap/scss/bootstrap.scss';
 // import 'font-awesome/scss/font-awesome.scss';
 // import './setting/sweetalert2';
+import './css/icons/icomoon/styles.min.css';
+import './css/bootstrap_limitless.css';
+import './css/colors.css';
+import './css/components.css';
+import './css/layout.css';
 
 import './css/app.scss';
 import './js/Constants';

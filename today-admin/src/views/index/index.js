@@ -1,7 +1,5 @@
 import '../../assets/Common';
-import '../../assets/css/bootstrap_limitless.css';
-import '../../assets/css/colors.css';
-import '../../assets/css/components.css';
-import '../../assets/css/layout.css';
+import '../../assets/js/app';
+import '../../assets/js/demo_pages/dashboard';
 import './index.scss';
 import './index.html';
