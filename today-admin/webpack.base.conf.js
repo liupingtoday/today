@@ -1,4 +1,4 @@
-const dirJSON = require('./src/views/views.json');
+const dirJSON = require('./src/pages/pages.json');
 const path = require('path');
 const HtmlWebpackPlugin  = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -8,7 +8,7 @@ const isProd = (process.env.NODE_ENV === 'prod');
 let entry = {};
 let plugins = [];
 dirJSON.forEach(page => {
-    entry[page.url] = path.resolve(__dirname, `./src/views/${page.url}/index.js`);
+    entry[page.url] = path.resolve(__dirname, `./src/pages/${page.url}/index.js`);
     let chunks = [page.url];
     if (isProd) {
         chunks.splice(0, 0, 'assets');
@@ -21,7 +21,7 @@ dirJSON.forEach(page => {
             title: '111111',
             favicon: path.resolve(__dirname, `./src/assets/images/favicon.ico`),
             filename: path.resolve(__dirname, `./dist/${page.url}.html`),
-            template: path.resolve(__dirname, `./src/views/${page.url}/index.html`),
+            template: path.resolve(__dirname, `./src/pages/${page.url}/index.html`),
             chunks: chunks,
             showErrors: true,
             // excludeChunks: ['devor.js'], //和的等等效
@@ -167,6 +167,16 @@ module.exports = {
             //     test: /\.tpl$/,
             //     loader: 'ejs-loader'
             // },
+
+            {
+                test: /\.art$/,
+                loader: "art-template-loader",
+                options: {
+                    // art-template options (if necessary)
+                    // @see https://github.com/aui/art-template
+                }
+            },
+
             {
                 test: /\.(webp)$/,
                 use: ['file-loader?&name=[name]' + (isProd ? '.[hash:8]' : '') + '.[ext]&outputPath=images/']
@@ -205,7 +215,7 @@ module.exports = {
             {
                 enforce: 'pre',
                 test: /\.js$/,
-                include: [path.resolve(__dirname, 'src/views'), path.resolve(__dirname, 'assets/js')], // 指定eslint检查的目录
+                include: [path.resolve(__dirname, 'src/pages'), path.resolve(__dirname, 'assets/js')], // 指定eslint检查的目录
                 loader: 'eslint-loader'
             },
             {

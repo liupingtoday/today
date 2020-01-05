@@ -38,6 +38,9 @@ npm install imagemin-webpack-plugin --save-dev
 配置
 import ImageminPlugin from 'imagemin-webpack-plugin'
 
+npm install art-template
+npm install art-template-loader --save-dev
+
 module.exports = {
   plugins: [
     // Copy the images folder and optimize all the images
@@ -97,7 +100,7 @@ npm install --save-dev webpack-bundle-analyzer
 > 5. nvm install  --- 安装node
 > 6. nvm list --- 查看安装了哪几个版本的node
 > 7. nvm version  --- 查看nvm版本号
-
+>
 * 本项目集成了bootstrap4，jquery，easyui(可配置)等
 * 采用webpack4多页面(多入口)配置，实现常用webpack配置
 * [在线demo](https://www.yanxiaojun617.com/webpack4-bootstrap4-demo/)

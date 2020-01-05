@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/today-service/parent/today-service-parent.iml" filepath="$PROJECT_DIR$/today-service/parent/today-service-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/root/today-service-root.iml" filepath="$PROJECT_DIR$/today-service/root/today-service-root.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/web/today-service-web.iml" filepath="$PROJECT_DIR$/today-service/web/today-service-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../webpack4-mpa-master/webpack4-mpa-master.iml" filepath="$PROJECT_DIR$/../webpack4-mpa-master/webpack4-mpa-master.iml" />
     </modules>
   </component>
 </project>
