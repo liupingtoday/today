@@ -19,6 +19,8 @@ npm install webpack webpack-cli --save-dev
 
 // 8.生成eslint配置文件:  npx eslint --init
 
+npm install --save metismenu
+
 常用命令汇总：
 npm install swiper --registry=https://registry.npm.taobao.org
 npm install --registry=https://registry.npm.taobao.org

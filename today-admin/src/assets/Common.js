@@ -3,6 +3,8 @@ import 'bootstrap';
 import 'bootstrap/scss/bootstrap.scss';
 // import 'font-awesome/scss/font-awesome.scss';
 // import './setting/sweetalert2';
+import 'metismenu/dist/metisMenu.min.css';
+import 'metismenu/dist/metisMenu.min';
 import './css/icons/icomoon/styles.min.css';
 import './css/bootstrap_limitless.css';
 import './css/colors.css';
