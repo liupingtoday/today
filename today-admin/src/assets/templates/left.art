@@ -1,0 +1,12 @@
+{{each model}}
+    <li class="nav-item nav-item-submenu">
+        <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts  {{$value.options[0].content}}</span></a>
+
+        <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Layout 2</a></li>
+            <li class="nav-item"><a href="" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+        </ul>
+    </li>
+
+{{/each}}

@@ -10,6 +10,7 @@ import './css/bootstrap_limitless.css';
 import './css/colors.css';
 import './css/components.css';
 import './css/layout.css';
+import screenfull from 'screenfull/dist/screenfull';
 
 import './css/app.scss';
 import './js/Constants';

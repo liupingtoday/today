@@ -2,6 +2,7 @@ const dirJSON = require('./src/pages/pages.json');
 const path = require('path');
 const HtmlWebpackPlugin  = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+//静态资源输出
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const isProd = (process.env.NODE_ENV === 'prod');
 
@@ -41,6 +42,7 @@ dirJSON.forEach(page => {
             // } : false
         })
     );
+
 });
 
 if (isProd) {
@@ -51,11 +53,12 @@ if (isProd) {
             // ignoreOrder: false
         })
     );
-    plugins.push(new CopyWebpackPlugin([
-        {
-            from: path.resolve(__dirname, './src/assets/public'), to: 'public'
-        }
-    ])
+
+    plugins.push(
+        //静态资源输出
+        new CopyWebpackPlugin([
+            { from: 'src/assets', to: 'assets' },
+        ]),
     );
 }
 

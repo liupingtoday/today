@@ -335,7 +335,30 @@ window.Utils = {
     var prePath=strFullPath.substring(0,pos);
     var postPath=strPath.substring(0,strPath.substr(1).indexOf('/')+1);
     return(prePath+postPath);
-}
+},
+
+    doAjax: function (url, data, okCallBack, beforeCallBack, completeCallBack) {
+        $.ajax({
+            type: 'GET',
+            url: url,
+            data: data,
+            dataType: 'json',
+            beforeSend: function () {
+                beforeCallBack && beforeCallBack()
+            },
+            success: function (res) {
+                if (res && okCallBack) {
+                    okCallBack(res);
+                }
+            },
+            error: function (error) {
+                console.log("ajax failed")
+            },
+            complete: function () {
+                completeCallBack && completeCallBack()
+            }
+        })
+    },
 
 };
 
