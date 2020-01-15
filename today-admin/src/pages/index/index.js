@@ -69,6 +69,16 @@ $('#fullScreen').click(function() {
 }).tooltip();
 /* eslint-disable */
 
+/* eslint-disable */
+// 鼠标移动到导航菜单上立即展开二级菜单的效果
+// $(".dropdown").mouseover(function(){
+//     $(this).addClass("show").find(".dropdown-menu").addClass("show");
+// });
+// $(".dropdown").mouseout(function(){
+//     $(this).removeClass("show").parent(".dropdown").removeClass("show");
+// });
+/* eslint-disable */
+
 $(function () {
     Index.init();
 });

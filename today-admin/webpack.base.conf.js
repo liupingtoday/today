@@ -215,6 +215,19 @@ module.exports = {
                     }
                 }, 'sass-loader']
             },
+
+            // require('postcss-cssnext')(),
+            // require('cssnano')(),
+            // require('postcss-pxtorem')({
+            //     rootValue: 100,
+            //     unitPrecision: 5,
+            //     propWhiteList: [],
+            //     replace: true,
+            //     mediaQuery: false,
+            //     minPixelValue: 12
+            // }),
+            // require('postcss-sprites')()
+
             {
                 enforce: 'pre',
                 test: /\.js$/,

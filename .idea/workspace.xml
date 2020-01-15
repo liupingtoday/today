@@ -2,28 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fd8ede-9f21-4da5-b86b-2b44196f1cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/today-admin/src/assets/json/answer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-admin/src/assets/json/bind.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-admin/src/assets/json/init.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-admin/src/assets/json/receive.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-admin/src/assets/templates/left.art" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-admin/src/pages/tools/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-admin/src/pages/tools/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-admin/src/pages/tools/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-admin/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-admin/src/assets/json/topNav.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/examples/Bootstrap 4/Template/layout_1/LTR/default/full/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/examples/Bootstrap 4/Template/layout_1/LTR/default/full/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/assets/Common.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/Common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/css/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/assets/html/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/html/head.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/assets/html/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/html/left.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/assets/html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/html/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/js/Utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/js/Utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/json/init.json" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/json/init.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/pages/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-admin/src/pages/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-admin/src/pages/tools/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/tools/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +61,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/today-admin/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/today-admin/src/assets/json" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -79,15 +72,15 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\data\code\today\today-admin\src\assets\css" />
-      <recent name="C:\data\code\today\today-admin\src\assets" />
-      <recent name="C:\data\code\today\today-admin\src" />
-      <recent name="C:\data\code\today\today-admin\examples" />
-      <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today\service" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="backup" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\data\code\today\today-admin\src\assets\json" />
+      <recent name="C:\data\code\today\today-admin\src\assets" />
+      <recent name="C:\data\code\today\today-admin\src\assets\templates" />
+      <recent name="C:\data\code\today\today-admin\src\pages" />
+      <recent name="C:\data\code\today\today-admin\src\assets\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.js.today.repository" />
@@ -95,12 +88,12 @@
       <recent name="cn.js.today.service" />
       <recent name="cn.js.today" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\data\code\today\today-admin\src\assets" />
-      <recent name="C:\data\code\today\today-admin\src\assets\templates" />
-      <recent name="C:\data\code\today\today-admin\src\pages" />
-      <recent name="C:\data\code\today\today-admin\src\assets\js" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\data\code\today\today-admin\src\assets\css" />
+      <recent name="C:\data\code\today\today-admin\src\assets" />
+      <recent name="C:\data\code\today\today-admin\src" />
+      <recent name="C:\data\code\today\today-admin\examples" />
+      <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today\service" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -291,7 +284,7 @@
       <workItem from="1577927558625" duration="3008000" />
       <workItem from="1577935335536" duration="72155000" />
       <workItem from="1578412811781" duration="46861000" />
-      <workItem from="1578927585155" duration="253000" />
+      <workItem from="1578927585155" duration="25442000" />
     </task>
     <task id="LOCAL-00001" summary="成功自动生成表">
       <created>1577299430732</created>
@@ -342,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578210929692</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修改sidebar为模板方式获取json格式">
+      <created>1578928003861</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578928003861</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,19 +371,24 @@
     <MESSAGE value="添加首页的雏形" />
     <MESSAGE value="删除readme的内容" />
     <MESSAGE value="修改目录结构有views改为pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改目录结构有views改为pages" />
+    <MESSAGE value="修改sidebar为模板方式获取json格式" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改sidebar为模板方式获取json格式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3590" y="510" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578667914722">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state x="3590" y="510" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578667914722" />
-    <state x="3406" y="295" key="CommitChangelistDialog2" timestamp="1578210928492">
+    <state x="3406" y="295" key="CommitChangelistDialog2" timestamp="1578927996160">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
-    <state x="3406" y="295" key="CommitChangelistDialog2/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210928492" />
+    <state x="3406" y="295" key="CommitChangelistDialog2/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578927996160" />
     <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@0.0.1280.680" timestamp="1577814702111" />
     <state x="5326" y="295" key="CommitChangelistDialog2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1577607355782" />
+    <state x="2755" y="260" width="1093" height="493" maximized="true" key="DiffContextDialog" timestamp="1578978981969">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2755" y="260" width="1093" height="493" maximized="true" key="DiffContextDialog/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578978981969" />
     <state x="3204" y="155" key="FileChooserDialogImpl" timestamp="1578413248970">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
@@ -512,10 +517,10 @@
     <state x="122" y="0" key="SettingsEditor/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1577501978065" />
     <state x="2743" y="0" key="SettingsEditor/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1577775709465" />
     <state x="2804" y="0" key="SettingsEditor/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578155437631" />
-    <state x="3434" y="319" key="Vcs.Push.Dialog.v2" timestamp="1578210931509">
+    <state x="3434" y="319" key="Vcs.Push.Dialog.v2" timestamp="1578928012212">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
-    <state x="3434" y="319" key="Vcs.Push.Dialog.v2/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210931509" />
+    <state x="3434" y="319" key="Vcs.Push.Dialog.v2/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578928012212" />
     <state x="437" y="155" key="Vcs.Push.Dialog.v2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@0.0.1280.680" timestamp="1577814705626" />
     <state x="5353" y="437" key="Vcs.Push.Dialog.v2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1577607364341" />
     <state x="3547" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1577722972750">
