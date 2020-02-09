@@ -138,6 +138,13 @@ if (process.env.NODE_ENV === 'prod') {
                 warnings: false,
                 errors: true
             },
+            // before(app) {
+            //     app.get('/test/get', function(req, res){
+            //
+            //         res.json({ get: 'response get' });
+            //
+            //     });
+            // },
             proxy: {
                 '/api': {
                     target: 'http://localhost:8081/services/portalInterface',
@@ -145,6 +152,28 @@ if (process.env.NODE_ENV === 'prod') {
                     // localAddress: 'localhost:8081',
                     toProxy: true,
                      // pathRewrite: {"^/api": ""} // 将/api重写为""空字符串
+                },
+                '/statistics': {
+                    target: 'http://jian.mam.miguvideo.com:48080/api/statistic',
+                    changeOrigin: true,
+                    // localAddress: 'localhost:8081',
+                    toProxy: true,
+                    // pathRewrite: {"^/api": ""} // 将/api重写为""空字符串
+                    bypass: function(req, res, proxyOptions) {
+                        // if (req.headers && req.headers.referer) {
+                        //     url = new URL(req.headers.referer);
+                        //     url.host = 'jian.mam.miguvideo.com';
+                        //     url.port = '48080';
+                        //     req.headers.referer = url.href;
+                        // }
+
+                        // if (req.headers.accept.indexOf('html') !== -1) {
+                        //     console.log('Skipping proxy for browser request.');
+                        //     return '/index.html';
+                        //
+                        //
+                        // }
+                    }
                 },
                 // '/js': {
                 //     target: 'http://localhost:1818',

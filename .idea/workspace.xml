@@ -2,21 +2,102 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fd8ede-9f21-4da5-b86b-2b44196f1cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/today-admin/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-admin/src/assets/json/topNav.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-admin/src/assets/json/FeHelper-20200207211426" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/modules/core/src/main/java/cn/js/today/modules/common/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/modules/core/src/main/java/cn/js/today/modules/common/CommonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/modules/core/src/main/java/cn/js/today/modules/common/DataEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/modules/core/src/main/java/cn/js/today/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/db/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/common/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/common/CommonResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/common/DataEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/config/MyWebMvcConfigurerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/repository/sys/ConfigRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/repository/sys/MenuRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/ConfigService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/dto/ConfigDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/mapper/ConfigMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/mapper/StatisticMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/sys/entity/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/sys/entity/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/BadRequestAlertException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/EmailAlreadyUsedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/EmailNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/ErrorConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/ExceptionTranslator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/FieldErrorVM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/InvalidPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/LoginAlreadyUsedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/errors/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/statistics/StatisticsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/sys/ConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/swiper/css/swiper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/swiper/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/swiper/js/swiper.esm.browser.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/swiper/js/swiper.esm.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/swiper/js/swiper.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/swiper/js/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/swiper/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/swiper/js/swiper.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/test/java/test/HttpRequestTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/today_service_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/today_service_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_4_6_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_1_6_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/assets/Common.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/Common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/css/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/assets/html/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/html/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/html/left.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/html/left.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/assets/html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/html/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/json/init.json" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/json/init.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/pages/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/js/Constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/js/Constants.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-admin/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/pages/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/pages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/pages/tools/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/tools/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-admin/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/common/target/today-service-common-0.0.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/common/target/today-service-common-0.0.1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/modules/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/modules/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/modules/core/today-service-core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/modules/core/today-service-core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/backup/image/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/config/WebConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/config/WebConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/front/ArticleAccountResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/backup/image/Image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/backup/image/Image_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/config/WebConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/config/WebConfigurer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/web/front/ArticleAccountResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/target/generated-sources/annotations/backup/image/Image_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/today-service-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/today-service-web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +107,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
+        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,44 +143,61 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/today-admin/src/assets/json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="backup" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\data\code\today\today-admin\src\assets\json" />
-      <recent name="C:\data\code\today\today-admin\src\assets" />
-      <recent name="C:\data\code\today\today-admin\src\assets\templates" />
-      <recent name="C:\data\code\today\today-admin\src\pages" />
-      <recent name="C:\data\code\today\today-admin\src\assets\js" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.js.today.repository" />
-      <recent name="cn.js.today.domain" />
-      <recent name="cn.js.today.service" />
-      <recent name="cn.js.today" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\data\code\today\today-service\web\src\main\resources\static" />
+      <recent name="C:\data\code\today\today-service\web\src\main\resources\static1" />
+      <recent name="C:\data\code\today\today-service\web\src\main\resources\templates" />
       <recent name="C:\data\code\today\today-admin\src\assets\css" />
       <recent name="C:\data\code\today\today-admin\src\assets" />
-      <recent name="C:\data\code\today\today-admin\src" />
-      <recent name="C:\data\code\today\today-admin\examples" />
-      <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today\service" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="cn.js.today.domain" />
+      <recent name="backup" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.js.today.service.mapper" />
+      <recent name="cn.js.today.service" />
+      <recent name="cn.js.today.service.dto" />
+      <recent name="cn.js.today.web.sys" />
+      <recent name="cn.js.today.repository.sys" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today\web" />
+      <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today\service\dto" />
+      <recent name="C:\data\code\today\today-admin\src\assets\json" />
+      <recent name="C:\data\code\today\today-service\web\src\main\resources\static\bootstrap" />
+      <recent name="C:\data\code\today\today-service\web\src\main\resources\static\swiper" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Application.DateUtils">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.js.today.utils.DateUtils" />
+      <module name="today-service-web" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.js.today.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,12 +208,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HttpRequestTest.getHttpsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="today-service-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.HttpRequestTest" />
+      <option name="METHOD_NAME" value="getHttpsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpRequestTest.getHttpswwTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="today-service-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.HttpRequestTest" />
+      <option name="METHOD_NAME" value="getHttpswwTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="today-service" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/today-service/web/target/web-0.0.1.war" />
+      <option name="WORKING_DIRECTORY" value="C:\data\code\today" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="root" />
@@ -179,16 +319,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="build (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../webpack4-mpa-master/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="build" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/../webpack4-mpa-master/package.json" />
       <command value="run" />
@@ -209,33 +339,22 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="local" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../webpack4-mpa-master/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="local" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/../webpack4-mpa-master/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="server" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="JAR Application.today-service" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.dev (1)" />
+      <item itemvalue="Spring Boot.WebApplication" />
+      <item itemvalue="JUnit.HttpRequestTest.getHttpsTest" />
+      <item itemvalue="JUnit.HttpRequestTest.getHttpswwTest" />
+      <item itemvalue="Application.DateUtils" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DateUtils" />
+        <item itemvalue="JUnit.HttpRequestTest.getHttpswwTest" />
+        <item itemvalue="JUnit.HttpRequestTest.getHttpsTest" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev (1)" />
-        <item itemvalue="npm.build (1)" />
-        <item itemvalue="npm.server" />
-        <item itemvalue="npm.local" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +375,7 @@
     <option name="myConnectionType" value="NONE" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\liuping\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -284,7 +403,10 @@
       <workItem from="1577927558625" duration="3008000" />
       <workItem from="1577935335536" duration="72155000" />
       <workItem from="1578412811781" duration="46861000" />
-      <workItem from="1578927585155" duration="25442000" />
+      <workItem from="1578927585155" duration="62500000" />
+      <workItem from="1579934119302" duration="2338000" />
+      <workItem from="1580293457892" duration="4405000" />
+      <workItem from="1580440714342" duration="89074000" />
     </task>
     <task id="LOCAL-00001" summary="成功自动生成表">
       <created>1577299430732</created>
@@ -342,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578928003861</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完善头部的导航栏">
+      <created>1579071455433</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1579071455433</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,16 +501,38 @@
     <MESSAGE value="删除readme的内容" />
     <MESSAGE value="修改目录结构有views改为pages" />
     <MESSAGE value="修改sidebar为模板方式获取json格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改sidebar为模板方式获取json格式" />
+    <MESSAGE value="完善头部的导航栏" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善头部的导航栏" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="3590" y="510" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578667914722">
+    <state x="3433" y="363" key="#Project_Structure" timestamp="1581250066784">
       <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3433" y="363" key="#Project_Structure/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581250066784" />
+    <state x="96" y="0" width="1086" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580951104319">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" width="1086" height="680" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1580951104319" />
+    <state x="515" y="248" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580974233898">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="3590" y="510" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578667914722" />
-    <state x="3406" y="295" key="CommitChangelistDialog2" timestamp="1578927996160">
+    <state x="515" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1580974233898" />
+    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1581258106889">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
+    <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1579160927165" />
+    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581258106889" />
+    <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1580798610949" />
+    <state x="3320" y="426" width="518" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581250164701">
+      <screen x="2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="3320" y="426" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581250164701" />
+    <state x="380" y="207" width="518" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1580911481023" />
+    <state x="3195" y="219" key="CommitChangelistDialog2" timestamp="1579071454049">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3195" y="219" key="CommitChangelistDialog2/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1579071454049" />
     <state x="3406" y="295" key="CommitChangelistDialog2/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578927996160" />
     <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@0.0.1280.680" timestamp="1577814702111" />
     <state x="5326" y="295" key="CommitChangelistDialog2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1577607355782" />
@@ -389,95 +540,96 @@
       <screen x="2560" y="0" width="1920" height="1040" />
     </state>
     <state x="2755" y="260" width="1093" height="493" maximized="true" key="DiffContextDialog/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578978981969" />
-    <state x="3204" y="155" key="FileChooserDialogImpl" timestamp="1578413248970">
-      <screen x="2560" y="0" width="2560" height="1400" />
+    <state x="322" y="75" key="FileChooserDialogImpl" timestamp="1580951092031">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="3043" y="115" key="FileChooserDialogImpl/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1577502637140" />
     <state x="3204" y="155" key="FileChooserDialogImpl/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578413248970" />
-    <state width="1238" height="19" key="GridCell.Tab.0.bottom" timestamp="1578402413978">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="322" y="75" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1580951092031" />
+    <state width="2517" height="547" key="GridCell.Tab.0.bottom" timestamp="1581270238018">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423456" />
     <state width="1878" height="370" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089899" />
-    <state width="2518" height="503" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210850119" />
-    <state width="1238" height="19" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578402413978" />
-    <state width="1238" height="19" key="GridCell.Tab.0.center" timestamp="1578402413978">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270238018" />
+    <state width="1238" height="228" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580990936514" />
+    <state width="2517" height="547" key="GridCell.Tab.0.center" timestamp="1581270238018">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423456" />
     <state width="1878" height="370" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089899" />
-    <state width="2518" height="503" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210850119" />
-    <state width="1238" height="19" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1578402413978" />
-    <state width="1238" height="19" key="GridCell.Tab.0.left" timestamp="1578402413978">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270238018" />
+    <state width="1238" height="228" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1580990936514" />
+    <state width="2517" height="547" key="GridCell.Tab.0.left" timestamp="1581270238018">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423456" />
     <state width="1878" height="370" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089898" />
-    <state width="2518" height="503" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210850119" />
-    <state width="1238" height="19" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1578402413978" />
-    <state width="1238" height="19" key="GridCell.Tab.0.right" timestamp="1578402413978">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270238018" />
+    <state width="1238" height="228" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1580990936513" />
+    <state width="2517" height="547" key="GridCell.Tab.0.right" timestamp="1581270238018">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423456" />
     <state width="1878" height="370" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089899" />
-    <state width="2518" height="503" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210850119" />
-    <state width="1238" height="19" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1578402413978" />
-    <state width="1238" height="19" key="GridCell.Tab.1.bottom" timestamp="1578402413979">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270238018" />
+    <state width="1238" height="228" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1580990936514" />
+    <state width="2517" height="547" key="GridCell.Tab.1.bottom" timestamp="1581270237695">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423312" />
     <state width="1878" height="370" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089793" />
-    <state width="2518" height="503" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210760080" />
-    <state width="1238" height="19" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578402413979" />
-    <state width="1238" height="19" key="GridCell.Tab.1.center" timestamp="1578402413979">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270237695" />
+    <state width="1238" height="228" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580990936237" />
+    <state width="2517" height="547" key="GridCell.Tab.1.center" timestamp="1581270237695">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423311" />
     <state width="1878" height="370" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089793" />
-    <state width="2518" height="503" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210760080" />
-    <state width="1238" height="19" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1578402413979" />
-    <state width="1238" height="19" key="GridCell.Tab.1.left" timestamp="1578402413978">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270237695" />
+    <state width="1238" height="228" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1580990936236" />
+    <state width="2517" height="547" key="GridCell.Tab.1.left" timestamp="1581270237695">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423311" />
     <state width="1878" height="370" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089793" />
-    <state width="2518" height="503" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210760080" />
-    <state width="1238" height="19" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1578402413978" />
-    <state width="1238" height="19" key="GridCell.Tab.1.right" timestamp="1578402413979">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270237695" />
+    <state width="1238" height="228" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1580990936236" />
+    <state width="2517" height="547" key="GridCell.Tab.1.right" timestamp="1581270237695">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423312" />
     <state width="1878" height="370" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089793" />
-    <state width="2518" height="503" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210760080" />
-    <state width="1238" height="19" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1578402413979" />
-    <state width="1238" height="19" key="GridCell.Tab.2.bottom" timestamp="1578402413979">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270237695" />
+    <state width="1238" height="228" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1580990936237" />
+    <state width="2517" height="547" key="GridCell.Tab.2.bottom" timestamp="1581270237696">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423312" />
     <state width="1878" height="370" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089794" />
-    <state width="2518" height="503" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210760080" />
-    <state width="1238" height="19" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1578402413979" />
-    <state width="1238" height="19" key="GridCell.Tab.2.center" timestamp="1578402413979">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270237696" />
+    <state width="1238" height="228" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1580990936237" />
+    <state width="2517" height="547" key="GridCell.Tab.2.center" timestamp="1581270237696">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423312" />
     <state width="1878" height="370" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089793" />
-    <state width="2518" height="503" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210760080" />
-    <state width="1238" height="19" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1578402413979" />
-    <state width="1238" height="19" key="GridCell.Tab.2.left" timestamp="1578402413979">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270237696" />
+    <state width="1238" height="228" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1580990936237" />
+    <state width="2517" height="547" key="GridCell.Tab.2.left" timestamp="1581270237696">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423312" />
     <state width="1878" height="370" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089793" />
-    <state width="2518" height="503" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210760080" />
-    <state width="1238" height="19" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1578402413979" />
-    <state width="1238" height="19" key="GridCell.Tab.2.right" timestamp="1578402413979">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="2517" height="547" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270237696" />
+    <state width="1238" height="228" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1580990936237" />
+    <state width="2517" height="547" key="GridCell.Tab.2.right" timestamp="1581270237696">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="1238" height="268" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1578043423312" />
     <state width="1878" height="370" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1578040089794" />
-    <state width="2518" height="503" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578210760080" />
-    <state width="1238" height="19" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1578402413979" />
+    <state width="2517" height="547" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581270237696" />
+    <state width="1238" height="228" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1580990936237" />
     <state width="1238" height="19" key="GridCell.Tab.3.bottom" timestamp="1578402413980">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -511,15 +663,21 @@
     </state>
     <state x="2903" y="126" key="NewModule_or_Project.wizard/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1577502643267" />
     <state x="3017" y="170" key="NewModule_or_Project.wizard/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578413254438" />
-    <state x="2804" y="0" key="SettingsEditor" timestamp="1578155437631">
-      <screen x="2560" y="0" width="2560" height="1400" />
+    <state x="122" y="0" key="SettingsEditor" timestamp="1581002356616">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="122" y="0" key="SettingsEditor/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1577501978065" />
     <state x="2743" y="0" key="SettingsEditor/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1577775709465" />
     <state x="2804" y="0" key="SettingsEditor/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578155437631" />
-    <state x="3434" y="319" key="Vcs.Push.Dialog.v2" timestamp="1578928012212">
+    <state x="122" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581002356615" />
+    <state x="3562" y="442" width="540" height="524" key="StructurePopup" timestamp="1581267889439">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
+    <state x="3562" y="442" width="540" height="524" key="StructurePopup/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581267889439" />
+    <state x="3216" y="237" key="Vcs.Push.Dialog.v2" timestamp="1579071457645">
+      <screen x="2560" y="0" width="1920" height="1040" />
+    </state>
+    <state x="3216" y="237" key="Vcs.Push.Dialog.v2/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1579071457645" />
     <state x="3434" y="319" key="Vcs.Push.Dialog.v2/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578928012212" />
     <state x="437" y="155" key="Vcs.Push.Dialog.v2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@0.0.1280.680" timestamp="1577814705626" />
     <state x="5353" y="437" key="Vcs.Push.Dialog.v2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1577607364341" />
@@ -531,15 +689,31 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="329" y="94" width="623" height="490" key="find.popup/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@0.0.1280.680" timestamp="1577847020992" />
+    <state x="6" y="0" key="new project wizard" timestamp="1580966583663">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="6" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1580966583663" />
     <state x="5418" y="331" key="run.anything.popup" timestamp="1577888797044">
       <screen x="4480" y="0" width="2560" height="1400" />
     </state>
     <state x="5418" y="331" key="run.anything.popup/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1577888797044" />
-    <state x="3167" y="4" width="1344" height="1396" key="search.everywhere.popup" timestamp="1578840288943">
+    <state x="3167" y="4" width="1344" height="1396" key="search.everywhere.popup" timestamp="1581258998962">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
-    <state x="303" y="2" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1577781223040" />
+    <state x="304" y="3" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1579152741496" />
     <state x="3015" y="3" width="1008" height="1037" key="search.everywhere.popup/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1577943618216" />
-    <state x="3167" y="4" width="1344" height="1396" key="search.everywhere.popup/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578840288943" />
+    <state x="3167" y="4" width="1344" height="1396" key="search.everywhere.popup/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581258998962" />
+    <state x="305" y="4" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1579934273444" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/today-service/web/src/test/java/test/HttpRequestTest.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

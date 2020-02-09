@@ -1,0 +1,210 @@
+{
+    "code": "0",
+    "success": true,
+    "msg": "成功",
+    "result": {
+        "2020-02-07": {
+            "uploadNum": 410,
+            "child": {
+                "2": {
+                    "productNum": 14,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 14,
+                    "productSuccessRate": 100,
+                    "distNum": 13,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 13,
+                    "distSuccessRate": 100
+                },
+                "4": {
+                    "productNum": 407,
+                    "producingNum": 1,
+                    "productFailNum": 1,
+                    "productSuccessNum": 405,
+                    "productSuccessRate": 99.5085995085995,
+                    "distNum": 405,
+                    "distributingNum": 0,
+                    "distFailNum": 2,
+                    "distSuccessNum": 403,
+                    "distSuccessRate": 99.50617283950618
+                }
+            }
+        },
+        "2020-02-06": {
+            "uploadNum": 454,
+            "child": {
+                "2": {
+                    "productNum": 27,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 27,
+                    "productSuccessRate": 100,
+                    "distNum": 27,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 27,
+                    "distSuccessRate": 100
+                },
+                "4": {
+                    "productNum": 421,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 421,
+                    "productSuccessRate": 100,
+                    "distNum": 420,
+                    "distributingNum": 0,
+                    "distFailNum": 2,
+                    "distSuccessNum": 418,
+                    "distSuccessRate": 99.52380952380952
+                }
+            }
+        },
+        "2020-02-05": {
+            "uploadNum": 479,
+            "child": {
+                "2": {
+                    "productNum": 19,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 19,
+                    "productSuccessRate": 100,
+                    "distNum": 19,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 19,
+                    "distSuccessRate": 100
+                },
+                "4": {
+                    "productNum": 450,
+                    "producingNum": 0,
+                    "productFailNum": 1,
+                    "productSuccessNum": 449,
+                    "productSuccessRate": 99.77777777777777,
+                    "distNum": 449,
+                    "distributingNum": 0,
+                    "distFailNum": 3,
+                    "distSuccessNum": 446,
+                    "distSuccessRate": 99.33184855233853
+                }
+            }
+        },
+        "2020-02-04": {
+            "uploadNum": 520,
+            "child": {
+                "2": {
+                    "productNum": 6,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 6,
+                    "productSuccessRate": 100,
+                    "distNum": 6,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 6,
+                    "distSuccessRate": 100
+                },
+                "4": {
+                    "productNum": 496,
+                    "producingNum": 0,
+                    "productFailNum": 5,
+                    "productSuccessNum": 491,
+                    "productSuccessRate": 98.99193548387096,
+                    "distNum": 491,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 491,
+                    "distSuccessRate": 100
+                }
+            }
+        },
+        "2020-02-03": {
+            "uploadNum": 587,
+            "child": {
+                "2": {
+                    "productNum": 0,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 0,
+                    "productSuccessRate": 0,
+                    "distNum": 0,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 0,
+                    "distSuccessRate": 0
+                },
+                "4": {
+                    "productNum": 631,
+                    "producingNum": 0,
+                    "productFailNum": 1,
+                    "productSuccessNum": 630,
+                    "productSuccessRate": 99.84152139461173,
+                    "distNum": 630,
+                    "distributingNum": 0,
+                    "distFailNum": 1,
+                    "distSuccessNum": 629,
+                    "distSuccessRate": 99.84126984126983
+                }
+            }
+        },
+        "2020-02-02": {
+            "uploadNum": 618,
+            "child": {
+                "2": {
+                    "productNum": 12,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 12,
+                    "productSuccessRate": 100,
+                    "distNum": 12,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 12,
+                    "distSuccessRate": 100
+                },
+                "4": {
+                    "productNum": 466,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 466,
+                    "productSuccessRate": 100,
+                    "distNum": 466,
+                    "distributingNum": 0,
+                    "distFailNum": 1,
+                    "distSuccessNum": 465,
+                    "distSuccessRate": 99.78540772532189
+                }
+            }
+        },
+        "2020-02-01": {
+            "uploadNum": 495,
+            "child": {
+                "2": {
+                    "productNum": 6,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 6,
+                    "productSuccessRate": 100,
+                    "distNum": 6,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 6,
+                    "distSuccessRate": 100
+                },
+                "4": {
+                    "productNum": 482,
+                    "producingNum": 0,
+                    "productFailNum": 0,
+                    "productSuccessNum": 482,
+                    "productSuccessRate": 100,
+                    "distNum": 482,
+                    "distributingNum": 0,
+                    "distFailNum": 0,
+                    "distSuccessNum": 482,
+                    "distSuccessRate": 100
+                }
+            }
+        }
+    }
+}
