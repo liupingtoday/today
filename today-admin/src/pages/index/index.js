@@ -5,6 +5,7 @@ import '../../assets/js/app';
 import '../../assets/js/demo_pages/dashboard';
 import leftNavArt from '../../assets/templates/left.art';
 // import Cookies from 'js-cookie';
+// import moment from 'moment';
 
 import './index.scss';
 import './index.html';
@@ -30,13 +31,15 @@ const Index = {
             $('#leftNav').html(html);
         });
 
-        Utils.doAjax(clipCloudUsageStatistic, '', function (res) {
-            let dataTemp = res.result;
-            // const questions = dataTemp.question;
-                console.log('----111---');
-                // console.log(clipCloudStatistic);
-                console.log('----222---');
-        });
+        console.log('----111---');
+        console.log(Utils.getDay(0));
+        console.log('----222---');
+
+        // Utils.doAjax(clipCloudUsageStatistic, '', function (res) {
+        //     let dataTemp = res.result;
+        //     // const questions = dataTemp.question;
+        //
+        // });
 
         // jQuery("#list2").jqGrid({
         //     url: clipCloudUsageStatistic,
@@ -75,29 +78,34 @@ const Index = {
         //     ]
         // });
 
-
+        let today = Utils.getDay(0);
         $("#list2").jqGrid({
+            url: '/' + SERVER_FLAG + '/api/statistics/clipcloud/usage',
+            datatype: "json",
+            // jsonReader: {
+            //     root: function(obj) { alert(JSON.stringify(obj[Utils.getDay(0)]));
+            //     // if(obj){
+            //     // }
+            //          return obj[Utils.getDay(0)];
+            //     },
+            //     repeatitems: false
+            // },
             colModel: [
-                { name: "日期", label: "日期", width: 53 },
-                { name: "invdate", label: "上传", width: 75, align: "center", sorttype: "date",
-                    formatter: "date", formatoptions: { newformat: "d-M-Y" } },
-                { name: "amount", label: "点播", width: 65, template: "number" },
-                { name: "tax", label: "现场直播", width: 80, template: "number" },
-
-                { name: "closed", label: "点播", width: 59, template: "booleanCheckbox", firstsortorder: "desc" },
-                { name: "ship_via", label: "现场直播", width: 87, align: "center", formatter: "select",
-                    formatoptions: { value: "FE:FedEx;TN:TNT;DH:DHL", defaultValue: "DH" } },
-                { name: "total", label: "备注", width: 51, template: "number" },
+                { name: "currentDate", label: "日期", width: 80 },
+                { name: "uploadNum", label: "上传", width: 75, align: "center"},
+                { name: "videoProduce", label: "点播", width: 65 },
+                { name: "liveProduce", label: "现场直播", width: 80 },
+                { name: "videoDist", label: "点播", width: 59},
+                { name: "liveDist", label: "现场直播", width: 87, align: "center"},
+                { name: "remarks", label: "备注", width: 100 },
             ],
-            data: [
-                { id: "10",  invdate: "2015-10-01", name: "test",   amount: "" },
-                { id: "20",  invdate: "2015-09-01", name: "test2",  amount: "300", tax: "20", closed: false, ship_via: "FE", total: "320" },
-                { id: "30",  invdate: "2015-09-01", name: "test3",  amount: "400", tax: "30", closed: false, ship_via: "FE", total: "430" },
-                { id: "40",  invdate: "2015-10-04", name: "test4",  amount: "200", tax: "10", closed: true,  ship_via: "TN", total: "210" },
-                { id: "50",  invdate: "2015-10-31", name: "test5",  amount: "300", tax: "20", closed: false, ship_via: "FE", total: "320" },
-                { id: "60",  invdate: "2015-09-06", name: "test6",  amount: "400", tax: "30", closed: false, ship_via: "FE", total: "430" },
-                { id: "70",  invdate: "2015-10-04", name: "test7",  amount: "200", tax: "10", closed: true,  ship_via: "TN", total: "210" },
-            ],
+            // data: [
+            //     { id: "10",  currentDate: "2020-02-10", uploadNum: "test",   amount: "" },
+            //     { id: "20",  currentDate: "2015-09-01", uploadNum: "test2",  amount: "300", tax: "20", closed: false, ship_via: "FE", remarks: "320" },
+            //     { id: "30",  currentDate: "2015-09-01", uploadNum: "test3",  amount: "400", tax: "30", closed: false, ship_via: "FE", remarks: "430" },
+            //     { id: "40",  currentDate: "2015-10-04", uploadNum: "test4",  amount: "200", tax: "10", closed: true,  ship_via: "TN", remarks: "210" },
+            //     { id: "50",  currentDate: "2015-10-31", uploadNum: "test5",  amount: "300", tax: "20", closed: false, ship_via: "FE", remarks: "320" },
+            // ],
             guiStyle: "bootstrap4",
             iconSet: "fontAwesome",
             idPrefix: "gb1_",
@@ -110,18 +118,10 @@ const Index = {
         jQuery("#list2").jqGrid('setGroupHeaders', {
             useColSpanStyle: true,
             groupHeaders:[
-                {startColumnName: 'amount', numberOfColumns: 2, titleText: '生产'},
-                {startColumnName: 'closed', numberOfColumns: 2, titleText: '分发'}
+                {startColumnName: 'videoProduce', numberOfColumns: 2, titleText: '生产成功'},
+                {startColumnName: 'videoDist', numberOfColumns: 2, titleText: '分发成功'}
             ]
         });
-
-        // Utils.doAjax(clipCloudUsageStatistic, '', function (res) {
-        //     let dataTemp = res.result;
-        //     console.log('----111---');
-        //     console.log(dataTemp);
-        //     console.log('----222---');
-        //
-        // });
     },
 };
 /* eslint-disable */

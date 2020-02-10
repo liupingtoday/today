@@ -190,7 +190,7 @@ if (process.env.NODE_ENV === 'prod') {
                     // pathRewrite: {"^/api": ""} // 将/api重写为""空字符串
                 },*/
                 '/admin': {
-                    target: 'http://localhost:1818',
+                    target: 'http://localhost:8088',
                     changeOrigin: true,
                     // localAddress: 'localhost:8081',
                     toProxy: true,

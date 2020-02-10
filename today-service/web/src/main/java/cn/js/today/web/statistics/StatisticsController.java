@@ -1,7 +1,7 @@
 package cn.js.today.web.statistics;
 
-import cn.hutool.core.date.DateUtil;
 import cn.hutool.http.HttpUtil;
+import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import cn.js.today.service.ConfigService;
@@ -58,23 +58,34 @@ public class StatisticsController {
 
         //获取最近七天的日期，包括当天的日期
         ArrayList<String> arrayList = getDays(7);
+        JSONArray newJSONArray = JSONUtil.createArray();
+
         for(String str : arrayList){
+            JSONObject newJsonObject = JSONUtil.createObj();
+            newJsonObject.put("currentDate",str);
+
             JSONObject jsonObjectTemp =(JSONObject)jsonObject1.get(str);
             JSONObject childJsonObject = (JSONObject)jsonObjectTemp.get("child");
-            JSONObject childJsonObject2 = (JSONObject)childJsonObject.get("2");
+            newJsonObject.put("uploadNum",jsonObjectTemp.get("uploadNum"));// 上传数量
+            JSONObject childJsonObject2 = (JSONObject)childJsonObject.get("2");//现场直播
+            newJsonObject.put("liveProduce",childJsonObject2.get("productSuccessNum"));
+            newJsonObject.put("liveDist",childJsonObject2.get("distSuccessNum"));
             childJsonObject2.remove("productSuccessRate");
             childJsonObject2.remove("distSuccessRate");
-            JSONObject childJsonObject3 = (JSONObject)childJsonObject.get("3");
+            JSONObject childJsonObject3 = (JSONObject)childJsonObject.get("3"); // 开路直播
             if(null != childJsonObject3){
                 childJsonObject3.remove("productSuccessRate");
                 childJsonObject3.remove("distSuccessRate");
             }
-            JSONObject childJsonObject4 = (JSONObject)childJsonObject.get("4");
+            JSONObject childJsonObject4 = (JSONObject)childJsonObject.get("4"); // 点播
+            newJsonObject.put("videoProduce",childJsonObject4.get("productSuccessNum"));
+            newJsonObject.put("videoDist",childJsonObject4.get("distSuccessNum"));
             childJsonObject4.remove("productSuccessRate");
             childJsonObject4.remove("distSuccessRate");
+            newJSONArray.add(newJsonObject);
         }
         log.info(jsonObject1.toString());
-        return jsonObject1.toString();
+        return newJSONArray.toString();
     }
 
 }
