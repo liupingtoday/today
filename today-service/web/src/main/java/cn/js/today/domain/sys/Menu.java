@@ -1,4 +1,4 @@
-package cn.js.today.sys.entity;
+package cn.js.today.domain.sys;
 
 import javax.persistence.*;
 

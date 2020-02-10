@@ -1,29 +1,19 @@
 package cn.js.today.web.sys;
 
-import cn.hutool.http.HttpUtil;
-import cn.js.today.common.CommonResponse;
 import cn.js.today.service.ConfigService;
 import cn.js.today.service.dto.ConfigDTO;
-import cn.js.today.service.mapper.ConfigMapper;
-import cn.js.today.sys.entity.Config;
+import cn.js.today.domain.sys.Config;
 import cn.js.today.web.errors.BadRequestAlertException;
 import io.github.jhipster.web.util.HeaderUtil;
-import io.github.jhipster.web.util.ResponseUtil;
-import org.bouncycastle.cert.ocsp.RespID;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.net.URISyntaxException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
 /**
  * Simple to Introduction

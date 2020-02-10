@@ -1,15 +1,13 @@
 package cn.js.today.service;
 
-import cn.js.today.repository.ArticleRepository;
 import cn.js.today.repository.sys.ConfigRepository;
 import cn.js.today.service.dto.ConfigDTO;
 import cn.js.today.service.mapper.ConfigMapper;
-import cn.js.today.sys.entity.Config;
+import cn.js.today.domain.sys.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;

@@ -2,7 +2,7 @@ package cn.js.today.service.mapper;
 
 import cn.hutool.core.date.DateTime;
 import cn.js.today.service.dto.ConfigDTO;
-import cn.js.today.sys.entity.Config;
+import cn.js.today.domain.sys.Config;
 import org.springframework.stereotype.Service;
 
 /**

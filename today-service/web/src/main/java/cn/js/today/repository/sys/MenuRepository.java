@@ -1,6 +1,6 @@
 package cn.js.today.repository.sys;
 
-import cn.js.today.sys.entity.Menu;
+import cn.js.today.domain.sys.Menu;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
