@@ -91,8 +91,8 @@ const Index = {
             //     repeatitems: false
             // },
             colModel: [
-                { name: "currentDate", label: "日期", width: 80 },
-                { name: "uploadNum", label: "上传", width: 75, align: "center"},
+                { name: "currentDate", label: "日期", width: 80,sortable: true },
+                { name: "uploadNum", label: "上传数量", width: 75, align: "center"},
                 { name: "videoProduce", label: "点播", width: 65 },
                 { name: "liveProduce", label: "现场直播", width: 80 },
                 { name: "videoDist", label: "点播", width: 59},
@@ -110,16 +110,18 @@ const Index = {
             iconSet: "fontAwesome",
             idPrefix: "gb1_",
             rownumbers: true,
-            sortname: "invdate",
-            sortorder: "desc",
-            caption: "The grid, which uses predefined formatters and templates"
+            loadonce:true, //一次加载全部数据到客户端，由客户端进行排序。
+            sortable: true,
+            sortname: "currentDate",
+            sortorder: "asc",
+            caption: "云剪平台业务使用量信息"
         });
 
         jQuery("#list2").jqGrid('setGroupHeaders', {
             useColSpanStyle: true,
             groupHeaders:[
-                {startColumnName: 'videoProduce', numberOfColumns: 2, titleText: '生产成功'},
-                {startColumnName: 'videoDist', numberOfColumns: 2, titleText: '分发成功'}
+                {startColumnName: 'videoProduce', numberOfColumns: 2, titleText: '生产成功数量'},
+                {startColumnName: 'videoDist', numberOfColumns: 2, titleText: '分发成功数量'}
             ]
         });
     },

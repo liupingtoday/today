@@ -1,10 +1,11 @@
-<#assign ctx=request.contextPath />
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 
 <head>
-    <base id="ctx" href="${ctx}">
+<!--    <base id="ctx" href="${ctx}">-->
     <meta charset="UTF-8">
+    <#assign ctx="${request.contextPath}" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--IE Compatibility modes-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +14,12 @@
     <meta id="description" name="Description" content="常州福伊特商贸有限公司" />
     <meta id="keywords" name="Keywords" content="常州福伊特商贸有限公司" />
     <meta id="author" name="Author" content="" />
-    <link href="${ctx}/static/swiper/css/swiper.min.css" rel="stylesheet">
-    <script src="${ctx}/static/swiper/js/swiper.min.js"></script>
-    <link href="${ctx}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="${ctx}/static/bootstrap/js/bootstrap.min.js"></script>
+    <link href= "${ctx}/common/css/common.css" rel="stylesheet">
+    <link href= "${ctx}/common/css/index.css" rel="stylesheet">
+    <link href= "${ctx}/swiper/css/swiper.min.css" rel="stylesheet">
+    <script src="${ctx}/swiper/js/swiper.min.js"></script>
+    <link href="${ctx}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="${ctx}/bootstrap/js/bootstrap.min.js"></script>
     <title id="czfyt_title">${ctx}</title>
     <div class="inner">
         <div id="siteLogo" class="top-logo inner"> <a href="/" title="czfyt" id="web_logo"> <img src="" alt="czfyt" title="czfyt" style="margin:15px 0px 0px 0px;" /> </a>
