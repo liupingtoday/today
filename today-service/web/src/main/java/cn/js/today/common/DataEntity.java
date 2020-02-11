@@ -13,7 +13,7 @@ import java.util.Date;
  * @UpdateRemark: 说明本次修改内容
  * @Version: v1.0
  */
-public class DataEntity<T extends DataEntity<?>> extends BaseEntity<T> {
+public abstract class DataEntity<T extends DataEntity<?>> extends BaseEntity<T> {
 
     /**
      * 创建时间

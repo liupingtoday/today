@@ -1,5 +1,7 @@
 package cn.js.today.domain.sys;
 
+import cn.js.today.common.DataEntity;
+
 import javax.persistence.*;
 
 /**
@@ -15,7 +17,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "sys_menu")
-public class Menu {
+public class Menu extends DataEntity<Menu> {
 
     /**
      *  菜单编码

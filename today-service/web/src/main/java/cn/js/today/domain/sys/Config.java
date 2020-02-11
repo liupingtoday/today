@@ -1,5 +1,7 @@
 package cn.js.today.domain.sys;
 
+import cn.js.today.common.DataEntity;
+
 import javax.persistence.*;
 
 /**
@@ -15,7 +17,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "sys_config")
-public class Config {
+public class Config extends DataEntity<Config> {
 
     /**
      * 编号
@@ -28,47 +30,56 @@ public class Config {
     /**
      * 参数名称
      */
+    @Column(name = "config_name")
     private String configName;
 
     /**
      * 参数键名
      */
+    @Column(name = "config_key")
     private String configKey;
 
     /**
      * 参数键值
      */
+    @Column(name = "config_value")
     private String configValue;
 
     /**
      * 系统内置    1是 0否
      */
+    @Column(name = "is_sys")
     private String isSys;
 
-    /**
-     * 创建者
-     */
-    private String createdBy;
-
-    /**
-     * 创建时间
-     */
-    private String createdTime;
-
-    /**
-     * 更新者
-     */
-    private String updatedBy;
-
-    /**
-     * 更新时间
-     */
-    private String updatedTime;
+//    /**
+//     * 创建者
+//     */
+//    @Column(name = "created_by")
+//    private String createdBy;
+//
+//    /**
+//     * 创建时间
+//     */
+//    @Column(name = "created_time")
+//    private String createdTime;
+//
+//    /**
+//     * 更新者
+//     */
+//    @Column(name = "updated_by")
+//    private String updatedBy;
+//
+//    /**
+//     * 更新时间
+//     */
+//    @Column(name = "updated_time")
+//    private String updatedTime;
 
     /**
      * 备注信息
      */
-    private String remarks;
+//    @Column(name = "remarks")
+//    private String remarks;
 
 
     public Long getId() {
@@ -109,46 +120,6 @@ public class Config {
 
     public void setIsSys(String isSys) {
         this.isSys = isSys;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public String getCreatedTime() {
-        return createdTime;
-    }
-
-    public void setCreatedTime(String createdTime) {
-        this.createdTime = createdTime;
-    }
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-
-    public void setUpdatedBy(String updatedBy) {
-        this.updatedBy = updatedBy;
-    }
-
-    public String getUpdatedTime() {
-        return updatedTime;
-    }
-
-    public void setUpdatedTime(String updatedTime) {
-        this.updatedTime = updatedTime;
-    }
-
-    public String getRemarks() {
-        return remarks;
-    }
-
-    public void setRemarks(String remarks) {
-        this.remarks = remarks;
     }
 
     @Override

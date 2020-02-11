@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fd8ede-9f21-4da5-b86b-2b44196f1cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/common/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/common/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/DictData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/DictType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/Module.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/sys/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/pages/index/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/common/DataEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/common/DataEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +79,11 @@
       <recent name="backup" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.js.today.domain.sys" />
+      <recent name="cn.js.today.web.sys" />
       <recent name="cn.js.today.web.front" />
       <recent name="cn.js.today.service.mapper" />
       <recent name="cn.js.today.service" />
-      <recent name="cn.js.today.service.dto" />
-      <recent name="cn.js.today.web.sys" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today\web" />
@@ -318,7 +321,7 @@
       <workItem from="1580440714342" duration="99473000" />
       <workItem from="1581342864772" duration="418000" />
       <workItem from="1581343733768" duration="6807000" />
-      <workItem from="1581389223029" duration="6241000" />
+      <workItem from="1581389223029" duration="11516000" />
     </task>
     <task id="LOCAL-00001" summary="成功自动生成表">
       <created>1577299430732</created>
@@ -404,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581350504389</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="统计的表格增加前端页面的排序功能">
+      <created>1581429064139</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581429064139</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,7 +449,8 @@
     <MESSAGE value="完成云剪统计的前后端开发工作" />
     <MESSAGE value="完成统计的前后端开发的流程工作" />
     <MESSAGE value="调试出freemarker的用法" />
-    <option name="LAST_COMMIT_MESSAGE" value="调试出freemarker的用法" />
+    <MESSAGE value="统计的表格增加前端页面的排序功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="统计的表格增加前端页面的排序功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="3433" y="363" key="#Project_Structure" timestamp="1581250066784">
@@ -455,11 +466,12 @@
     </state>
     <state x="3590" y="510" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578667914722" />
     <state x="515" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1580974233898" />
-    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1581258106889">
+    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1581433740943">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1579160927165" />
-    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581258106889" />
+    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581433740943" />
+    <state x="5372" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1581432597104" />
     <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1580798610949" />
     <state x="5240" y="426" width="518" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581349265195">
       <screen x="4480" y="0" width="2560" height="1400" />
@@ -467,13 +479,13 @@
     <state x="3320" y="426" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581250164701" />
     <state x="5240" y="426" width="518" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1581349265195" />
     <state x="380" y="207" width="518" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1580911481023" />
-    <state x="5326" y="295" key="CommitChangelistDialog2" timestamp="1581350502816">
+    <state x="5326" y="295" key="CommitChangelistDialog2" timestamp="1581429062945">
       <screen x="4480" y="0" width="2560" height="1400" />
     </state>
     <state x="3195" y="219" key="CommitChangelistDialog2/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1579071454049" />
     <state x="3406" y="295" key="CommitChangelistDialog2/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581271257713" />
     <state x="0" y="0" key="CommitChangelistDialog2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@0.0.1280.680" timestamp="1577814702111" />
-    <state x="5326" y="295" key="CommitChangelistDialog2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1581350502816" />
+    <state x="5326" y="295" key="CommitChangelistDialog2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1581429062945" />
     <state x="2755" y="260" width="1093" height="493" maximized="true" key="DiffContextDialog" timestamp="1578978981969">
       <screen x="2560" y="0" width="1920" height="1040" />
     </state>
@@ -625,13 +637,13 @@
     </state>
     <state x="3562" y="442" width="540" height="524" key="StructurePopup/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581267889439" />
     <state x="5482" y="442" width="555" height="524" key="StructurePopup/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1581346953109" />
-    <state x="5353" y="437" key="Vcs.Push.Dialog.v2" timestamp="1581350507025">
+    <state x="5353" y="437" key="Vcs.Push.Dialog.v2" timestamp="1581429079532">
       <screen x="4480" y="0" width="2560" height="1400" />
     </state>
     <state x="3216" y="237" key="Vcs.Push.Dialog.v2/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1579071457645" />
     <state x="3434" y="319" key="Vcs.Push.Dialog.v2/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581271302544" />
     <state x="437" y="155" key="Vcs.Push.Dialog.v2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@0.0.1280.680" timestamp="1577814705626" />
-    <state x="5353" y="437" key="Vcs.Push.Dialog.v2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1581350507025" />
+    <state x="5353" y="437" key="Vcs.Push.Dialog.v2/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1581429079532" />
     <state x="3547" y="438" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1577722972750">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
