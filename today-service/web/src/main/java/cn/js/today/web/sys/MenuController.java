@@ -32,71 +32,71 @@ public class MenuController {
 
     private final Logger log = LoggerFactory.getLogger(MenuController.class);
 
-    private ConfigService configService;
-
-    private static final String ENTITY_NAME = "config";
-
-    @Value("${spring.application.name}")
-    private String applicationName;
-
-    public MenuController(ConfigService configService) {
-        this.configService = configService;
-    }
-
-    /**
-     *
-     * @param id
-     * @return
-     */
-    @GetMapping("/menu/{id}")
-    public ResponseEntity<Config> getConfig(@PathVariable Long id) {
-        log.debug("REST request to get Config : {}", id);
-        Config config = configService.findById(id);
-        return ResponseEntity.ok().body(config);
-    }
-
-    /**
-     *
-     * @return
-     */
-    @GetMapping("/configs")
-    public List<Config> getAllConfigs() {
-        log.debug("REST request to get all Configs");
-        return configService.findAll();
-    }
-
-    /**
-     *
-     * @param configDTO
-     * @return
-     */
-    @PostMapping(value = "/config")
-    public ResponseEntity<Config> addConfig(ConfigDTO configDTO) {
-        Config config = configService.saveConfig(configDTO);
-        log.info(config.toString());
-        return ResponseEntity.ok().body(config);
-    }
-
-    @PutMapping("/config")
-    public ResponseEntity<Config> updateConfig(@Valid @RequestBody ConfigDTO configDTO) throws URISyntaxException {
-        log.debug("REST request to update Config : {}", configDTO);
-        if(configDTO.getId() == null){
-            throw new BadRequestAlertException("Invalid id", ENTITY_NAME, "id is null");
-        }
-
-        Config config = configService.saveConfig(configDTO);
-        return ResponseEntity.ok().headers(HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, config.getId().toString()))
-                .body(config);
-    }
-    /**
-     *
-     * @param id
-     * @return
-     */
-    @DeleteMapping("/config/{id}")
-    public ResponseEntity<Void> deleteConfig(@PathVariable Long id){
-        log.debug("REST request to delete Config : {}", id);
-        return ResponseEntity.noContent().headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, id.toString())).build();
-    }
+//    private ConfigService configService;
+//
+//    private static final String ENTITY_NAME = "config";
+//
+//    @Value("${spring.application.name}")
+//    private String applicationName;
+//
+//    public MenuController(ConfigService configService) {
+//        this.configService = configService;
+//    }
+//
+//    /**
+//     *
+//     * @param id
+//     * @return
+//     */
+//    @GetMapping("/menu/{id}")
+//    public ResponseEntity<Config> getConfig(@PathVariable Long id) {
+//        log.debug("REST request to get Config : {}", id);
+//        Config config = configService.findById(id);
+//        return ResponseEntity.ok().body(config);
+//    }
+//
+//    /**
+//     *
+//     * @return
+//     */
+//    @GetMapping("/configs")
+//    public List<Config> getAllConfigs() {
+//        log.debug("REST request to get all Configs");
+//        return configService.findAll();
+//    }
+//
+//    /**
+//     *
+//     * @param configDTO
+//     * @return
+//     */
+//    @PostMapping(value = "/config")
+//    public ResponseEntity<Config> addConfig(ConfigDTO configDTO) {
+//        Config config = configService.saveConfig(configDTO);
+//        log.info(config.toString());
+//        return ResponseEntity.ok().body(config);
+//    }
+//
+//    @PutMapping("/config")
+//    public ResponseEntity<Config> updateConfig(@Valid @RequestBody ConfigDTO configDTO) throws URISyntaxException {
+//        log.debug("REST request to update Config : {}", configDTO);
+//        if(configDTO.getId() == null){
+//            throw new BadRequestAlertException("Invalid id", ENTITY_NAME, "id is null");
+//        }
+//
+//        Config config = configService.saveConfig(configDTO);
+//        return ResponseEntity.ok().headers(HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, config.getId().toString()))
+//                .body(config);
+//    }
+//    /**
+//     *
+//     * @param id
+//     * @return
+//     */
+//    @DeleteMapping("/config/{id}")
+//    public ResponseEntity<Void> deleteConfig(@PathVariable Long id){
+//        log.debug("REST request to delete Config : {}", id);
+//        return ResponseEntity.noContent().headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, id.toString())).build();
+//    }
 
 }

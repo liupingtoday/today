@@ -36,9 +36,9 @@ public class ConfigMapper {
             config.setConfigName(configDTO.getConfigName());
             config.setIsSys(configDTO.getIsSys());
             config.setCreatedBy("");
-            config.setCreatedTime(DateTime.now() + "");
+            config.setCreatedTime(DateTime.now());
             config.setUpdatedBy("");
-            config.setUpdatedTime(DateTime.now() + "");
+            config.setUpdatedTime(DateTime.now());
             config.setRemarks(configDTO.getRemarks());
             return config;
         }

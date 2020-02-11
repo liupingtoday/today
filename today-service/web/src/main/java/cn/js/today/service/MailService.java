@@ -1,31 +1,20 @@
-//package cn.js.today.service;
-//
-//import io.github.jhipster.config.JHipsterProperties;
-//import io.github.jhipster.sample.domain.User;
-//import org.slf4j.Logger;
-//import org.slf4j.LoggerFactory;
-//import org.springframework.context.MessageSource;
-//import org.springframework.mail.javamail.JavaMailSender;
-//import org.springframework.mail.javamail.MimeMessageHelper;
-//import org.springframework.scheduling.annotation.Async;
-//import org.springframework.stereotype.Service;
-//import org.thymeleaf.context.Context;
-//import org.thymeleaf.spring5.SpringTemplateEngine;
-//
-//import javax.mail.internet.MimeMessage;
-//import java.nio.charset.StandardCharsets;
-//import java.util.Locale;
-//
-///**
-// * Service for sending emails.
-// * <p>
-// * We use the {@link Async} annotation to send emails asynchronously.
-// */
-//@Service
-//public class MailService {
-//
-//    private final Logger log = LoggerFactory.getLogger(MailService.class);
-//
+package cn.js.today.service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Service;
+
+/**
+ * Service for sending emails.
+ * <p>
+ * We use the {@link Async} annotation to send emails asynchronously.
+ */
+@Service
+public class MailService {
+
+    private final Logger log = LoggerFactory.getLogger(MailService.class);
+
 //    private static final String USER = "user";
 //
 //    private static final String BASE_URL = "baseUrl";
@@ -35,18 +24,20 @@
 //    private final JavaMailSender javaMailSender;
 //
 //    private final MessageSource messageSource;
+
+
+//    MailAccount account = new MailAccount();
+//account.setHost("smtp.yeah.net");
+//account.setPort("25");
+//account.setAuth(true);
+//account.setFrom("hutool@yeah.net");
+//account.setUser("hutool");
+//account.setPass("q1w2e3");
 //
-//    private final SpringTemplateEngine templateEngine;
-//
-//    public MailService(JHipsterProperties jHipsterProperties, JavaMailSender javaMailSender,
-//                       MessageSource messageSource, SpringTemplateEngine templateEngine) {
-//
-//        this.jHipsterProperties = jHipsterProperties;
-//        this.javaMailSender = javaMailSender;
-//        this.messageSource = messageSource;
-//        this.templateEngine = templateEngine;
-//    }
-//
+//MailUtil.send(account, CollUtil.newArrayList("hutool@foxmail.com"), "测试", "邮件来自Hutool测试", false);
+
+
+
 //    @Async
 //    public void sendEmail(String to, String subject, String content, boolean isMultipart, boolean isHtml) {
 //        log.debug("Send email[multipart '{}' and html '{}'] to '{}' with subject '{}' and content={}",
@@ -99,4 +90,4 @@
 //        log.debug("Sending password reset email to '{}'", user.getEmail());
 //        sendEmailFromTemplate(user, "mail/passwordResetEmail", "email.reset.title");
 //    }
-//}
+}
