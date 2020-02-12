@@ -5,6 +5,10 @@ import cn.js.today.service.dto.ConfigDTO;
 import cn.js.today.domain.sys.Config;
 import org.springframework.stereotype.Service;
 
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+
 /**
  * Simple to Introduction
  *
@@ -36,9 +40,9 @@ public class ConfigMapper {
             config.setConfigName(configDTO.getConfigName());
             config.setIsSys(configDTO.getIsSys());
             config.setCreatedBy("");
-            config.setCreatedTime(DateTime.now());
+            config.setCreatedTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
             config.setUpdatedBy("");
-            config.setUpdatedTime(DateTime.now());
+            config.setUpdatedTime(LocalDateTime.now(Clock.system(ZoneId.of("Asia/Shanghai"))));
             config.setRemarks(configDTO.getRemarks());
             return config;
         }

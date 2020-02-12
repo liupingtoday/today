@@ -41,43 +41,6 @@ const Index = {
         //
         // });
 
-        // jQuery("#list2").jqGrid({
-        //     url: clipCloudUsageStatistic,
-        //     datatype: "json",
-        //     colNames: ['日期', '上传', '点播', '现场直播', '点播', '现场直播', '备注'],
-        //     colModel: [
-        //         {name: 'invdate', index: 'invdate', width: 80, align: 'center', sorttype: 'date',
-        //             formatter: 'date', formatoptions: {newformat: 'd-M-Y'}, datefmt: 'd-M-Y'},
-        //         {name: 'name', index: 'name', width: 70 },
-        //         {name: 'amount', index: 'amount', width: 75, formatter: 'number', sorttype: 'number', align: 'right'},
-        //         {name: 'tax', index: 'tax', width: 75, formatter: 'number', sorttype: 'number', align: 'right'},
-        //         {name: 'closed', index: 'closed', width: 75, align: 'center', formatter: 'checkbox',
-        //             edittype: 'checkbox', editoptions: {value: 'Yes:No', defaultValue: 'Yes'}},
-        //         {name: 'ship_via', index: 'ship_via', width: 100, align: 'center', formatter: 'select',
-        //             edittype: 'select', editoptions: {value: 'FE:FedEx;TN:TNT;IN:Intim', defaultValue: 'Intime'}},
-        //         {name: 'note', index: 'note', width: 70, sortable: false}
-        //     ],
-        //     rowNum:10,
-        //     width:700,
-        //     rowList:[10,20,30],
-        //     pager: '#pager2',
-        //     sortname: 'invdate',
-        //     viewrecords: true,
-        //     sortorder: "desc",
-        //     jsonReader: {
-        //         repeatitems : false
-        //     },
-        //     caption: "Group Header",
-        //     height: '100%'
-        // });
-        // jQuery("#list2").jqGrid('setGroupHeaders', {
-        //     useColSpanStyle: true,
-        //     groupHeaders:[
-        //         {startColumnName: 'amount', numberOfColumns: 2, titleText: '生产'},
-        //         {startColumnName: 'closed', numberOfColumns: 2, titleText: '分发'}
-        //     ]
-        // });
-
         let today = Utils.getDay(0);
         $("#list2").jqGrid({
             url: '/' + SERVER_FLAG + '/api/statistics/clipcloud/usage',
@@ -91,13 +54,13 @@ const Index = {
             //     repeatitems: false
             // },
             colModel: [
-                { name: "currentDate", label: "日期", width: 80,sortable: true },
+                { name: "currentDate", label: "日期", width: 80,sortable: true, align: "center" },
                 { name: "uploadNum", label: "上传数量", width: 75, align: "center"},
-                { name: "videoProduce", label: "点播", width: 65 },
-                { name: "liveProduce", label: "现场直播", width: 80 },
-                { name: "videoDist", label: "点播", width: 59},
+                { name: "videoProduce", label: "点播", width: 65, align: "center" },
+                { name: "liveProduce", label: "现场直播", width: 80, align: "center" },
+                { name: "videoDist", label: "点播", width: 59, align: "center"},
                 { name: "liveDist", label: "现场直播", width: 87, align: "center"},
-                { name: "remarks", label: "备注", width: 100 },
+                { name: "remarks", label: "备注", width: 100, sortable: false, align: "center"},
             ],
             // data: [
             //     { id: "10",  currentDate: "2020-02-10", uploadNum: "test",   amount: "" },
@@ -109,11 +72,18 @@ const Index = {
             guiStyle: "bootstrap4",
             iconSet: "fontAwesome",
             idPrefix: "gb1_",
-            rownumbers: true,
+            // rownumbers: true,
+            rowNum:20,
+            width:700,
+            rowList:[10,20,30],
+            pager: '#pager2',
+            viewrecords: true,
+            multiselect: false,
+            multiboxonly: true,
             loadonce:true, //一次加载全部数据到客户端，由客户端进行排序。
             sortable: true,
             sortname: "currentDate",
-            sortorder: "asc",
+            sortorder: "desc",
             caption: "云剪平台业务使用量信息"
         });
 

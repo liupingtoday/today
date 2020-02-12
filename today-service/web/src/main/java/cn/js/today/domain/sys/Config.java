@@ -51,36 +51,6 @@ public class Config extends DataEntity<Config> {
     @Column(name = "is_sys")
     private String isSys;
 
-//    /**
-//     * 创建者
-//     */
-//    @Column(name = "created_by")
-//    private String createdBy;
-//
-//    /**
-//     * 创建时间
-//     */
-//    @Column(name = "created_time")
-//    private String createdTime;
-//
-//    /**
-//     * 更新者
-//     */
-//    @Column(name = "updated_by")
-//    private String updatedBy;
-//
-//    /**
-//     * 更新时间
-//     */
-//    @Column(name = "updated_time")
-//    private String updatedTime;
-
-    /**
-     * 备注信息
-     */
-//    @Column(name = "remarks")
-//    private String remarks;
-
 
     public Long getId() {
         return id;

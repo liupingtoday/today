@@ -1,19 +1,21 @@
 package cn.js.today.web.sys;
 
-import cn.js.today.domain.sys.Config;
+import cn.js.today.domain.sys.Menu;
+import cn.js.today.repository.sys.MenuRepository;
 import cn.js.today.service.ConfigService;
-import cn.js.today.service.dto.ConfigDTO;
+import cn.js.today.service.MenuService;
+import cn.js.today.service.dto.MenuDTO;
 import cn.js.today.web.errors.BadRequestAlertException;
 import io.github.jhipster.web.util.HeaderUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.net.URISyntaxException;
-import java.util.List;
 
 /**
  * Simple to Introduction
@@ -32,28 +34,32 @@ public class MenuController {
 
     private final Logger log = LoggerFactory.getLogger(MenuController.class);
 
-//    private ConfigService configService;
-//
-//    private static final String ENTITY_NAME = "config";
-//
-//    @Value("${spring.application.name}")
-//    private String applicationName;
+    private ConfigService configService;
+
+    @Autowired
+    private MenuService menuService;
+
+    private static final String ENTITY_NAME = "Menu";
+
+    @Value("${spring.application.name}")
+    private String applicationName;
 //
 //    public MenuController(ConfigService configService) {
 //        this.configService = configService;
 //    }
 //
-//    /**
-//     *
-//     * @param id
-//     * @return
-//     */
-//    @GetMapping("/menu/{id}")
-//    public ResponseEntity<Config> getConfig(@PathVariable Long id) {
-//        log.debug("REST request to get Config : {}", id);
-//        Config config = configService.findById(id);
-//        return ResponseEntity.ok().body(config);
-//    }
+    /**
+     *
+     * @param menuCode
+     * @return
+     */
+    @GetMapping("/menu/{menuCode}")
+    public ResponseEntity<Menu> getMenu(@PathVariable Long menuCode) {
+        log.debug("REST request to get Menu : {}", menuCode);
+        Menu menu = menuService.findByMenuCode(menuCode);
+        return ResponseEntity.ok().body(menu);
+    }
+
 //
 //    /**
 //     *
@@ -65,38 +71,40 @@ public class MenuController {
 //        return configService.findAll();
 //    }
 //
-//    /**
-//     *
-//     * @param configDTO
-//     * @return
-//     */
-//    @PostMapping(value = "/config")
-//    public ResponseEntity<Config> addConfig(ConfigDTO configDTO) {
-//        Config config = configService.saveConfig(configDTO);
-//        log.info(config.toString());
-//        return ResponseEntity.ok().body(config);
-//    }
-//
-//    @PutMapping("/config")
-//    public ResponseEntity<Config> updateConfig(@Valid @RequestBody ConfigDTO configDTO) throws URISyntaxException {
-//        log.debug("REST request to update Config : {}", configDTO);
-//        if(configDTO.getId() == null){
-//            throw new BadRequestAlertException("Invalid id", ENTITY_NAME, "id is null");
-//        }
-//
-//        Config config = configService.saveConfig(configDTO);
-//        return ResponseEntity.ok().headers(HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, config.getId().toString()))
-//                .body(config);
-//    }
-//    /**
-//     *
-//     * @param id
-//     * @return
-//     */
-//    @DeleteMapping("/config/{id}")
-//    public ResponseEntity<Void> deleteConfig(@PathVariable Long id){
-//        log.debug("REST request to delete Config : {}", id);
-//        return ResponseEntity.noContent().headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, id.toString())).build();
-//    }
+    /**
+     *
+     * @param menuDTO
+     * @return
+     */
+    @PostMapping(value = "/menu")
+    public ResponseEntity<Menu> addMenu(MenuDTO menuDTO) {
+        Menu menu = menuService.saveMenu(menuDTO);
+        log.info(menu.toString());
+        return ResponseEntity.ok().body(menu);
+    }
+
+    @PutMapping("/menu")
+    public ResponseEntity<Menu> updateMenu(@Valid @RequestBody MenuDTO menuDTO) throws URISyntaxException {
+        log.debug("REST request to update Menu : {}", menuDTO);
+        if(menuDTO.getMenuCode() == null){
+            throw new BadRequestAlertException("Invalid MenuCode", ENTITY_NAME, "id is null");
+        }
+
+        Menu config = menuService.saveMenu(menuDTO);
+        return ResponseEntity.ok().headers(HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, menuDTO.getMenuCode().toString()))
+                .body(config);
+    }
+
+    /**
+     *
+     * @param menuCode
+     * @return
+     */
+    @DeleteMapping("/menu/{menuCode}")
+    public ResponseEntity<Void> deleteMenu(@PathVariable Long menuCode){
+        log.debug("REST request to delete Menu : {}", menuCode);
+//        menuService
+        return ResponseEntity.noContent().headers(HeaderUtil.createEntityDeletionAlert(applicationName, true, ENTITY_NAME, menuCode.toString())).build();
+    }
 
 }

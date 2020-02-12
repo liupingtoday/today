@@ -23,8 +23,7 @@ public class Module extends DataEntity<Module> {
      * 模块编码
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "moduleSequenceGenerator")
-    @SequenceGenerator(name = "moduleSequenceGenerator")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long moduleCode;
 
     /**

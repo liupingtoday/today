@@ -5,6 +5,8 @@ import cn.js.today.service.dto.ConfigDTO;
 import cn.js.today.domain.sys.Config;
 import cn.js.today.web.errors.BadRequestAlertException;
 import io.github.jhipster.web.util.HeaderUtil;
+import io.micrometer.core.annotation.Timed;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -59,6 +61,8 @@ public class ConfigController {
      *
      * @return
      */
+    @Timed
+    @ApiOperation(value="栏目新增", notes="栏目新增")
     @GetMapping("/configs")
     public List<Config> getAllConfigs() {
         log.debug("REST request to get all Configs");

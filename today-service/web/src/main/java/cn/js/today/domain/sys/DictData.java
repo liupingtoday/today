@@ -23,8 +23,7 @@ public class DictData extends DataEntity<DictData> {
      * 字典编码
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "dictCodeSequenceGenerator")
-    @SequenceGenerator(name = "dictCodeSequenceGenerator")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long dictCode;
 
     /**

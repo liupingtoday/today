@@ -6,6 +6,7 @@ import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import cn.js.today.service.ConfigService;
 import cn.js.today.domain.sys.Config;
+import cn.js.today.utils.JSONUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -87,8 +88,9 @@ public class StatisticsController {
             childJsonObject4.remove("distSuccessRate");
             newJSONArray.add(newJsonObject);
         }
-        log.info(jsonObject1.toString());
-        return newJSONArray.toString();
+        String sortedJsonArray = JSONUtils.jsonArraySort(newJSONArray.toString(), "currentDate");
+        log.info(sortedJsonArray);
+        return sortedJsonArray;
     }
 
 }

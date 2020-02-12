@@ -23,8 +23,7 @@ public class DictType extends DataEntity<DictType> {
      * 编号
      */
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "dictTypeSequenceGenerator")
-    @SequenceGenerator(name = "dictTypeSequenceGenerator")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     /**

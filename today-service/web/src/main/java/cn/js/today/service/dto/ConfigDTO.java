@@ -52,30 +52,9 @@ public class ConfigDTO {
     private String isSys;
 
     /**
-     * 创建者
-     */
-    private String createdBy;
-
-    /**
-     * 创建时间
-     */
-    private String createdTime;
-
-    /**
-     * 更新者
-     */
-    private String updatedBy;
-
-    /**
-     * 更新时间
-     */
-    private String updatedTime;
-
-    /**
      * 备注信息
      */
     private String remarks;
-
 
     public Long getId() {
         return id;
@@ -115,38 +94,6 @@ public class ConfigDTO {
 
     public void setIsSys(String isSys) {
         this.isSys = isSys;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-    public String getCreatedTime() {
-        return createdTime;
-    }
-
-    public void setCreatedTime(String createdTime) {
-        this.createdTime = createdTime;
-    }
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-
-    public void setUpdatedBy(String updatedBy) {
-        this.updatedBy = updatedBy;
-    }
-
-    public String getUpdatedTime() {
-        return updatedTime;
-    }
-
-    public void setUpdatedTime(String updatedTime) {
-        this.updatedTime = updatedTime;
     }
 
     public String getRemarks() {
