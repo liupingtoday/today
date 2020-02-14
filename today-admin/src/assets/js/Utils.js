@@ -348,7 +348,7 @@ window.Utils = {
             },
             success: function (res) {
                 if (res && okCallBack) {
-                    okCallBack(res);
+                    okCallBack(rdoAjaxes);
                 }
             },
             error: function (error) {

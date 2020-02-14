@@ -54,9 +54,14 @@ public class MenuService {
         return menuRepository.save(menu);
     }
 
-    public Menu findByMenuCode(Long menuCode){
+    public Menu findByMenuCode(String menuCode){
 
         Optional<Menu> menu = menuRepository.findByMenuCode(menuCode);
+        return menu.orElse(null);
+    }
+
+    public Menu findById(Long id){
+        Optional<Menu> menu = menuRepository.findById(id);
         return menu.orElse(null);
     }
 
@@ -69,13 +74,13 @@ public class MenuService {
 //        return configRepository.findOneByConfigKey(configKey).orElse(null);
 //    }
 //
-//    /**
-//     *
-//     * @return
-//     */
-//    public List<Config> findAll(){
-//        return configRepository.findAll();
-//    }
+    /**
+     *
+     * @return
+     */
+    public List<Menu> findAll(){
+        return menuRepository.findAll();
+    }
 
 //    public void deleteMenu(Long menuCode){
 //        menuRepository.deleteByMenuCode(menuCode);

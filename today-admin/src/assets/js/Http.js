@@ -19,6 +19,7 @@ window.Http = function (opts) {
 
 function JqueryAjax(opts) {
     this.url = opts.url;
+    this.async = opts.async;
     this.type = opts.type || 'POST';
     this.data = opts.data || {};
     this.dataType = opts.dataType || 'json';
@@ -39,6 +40,7 @@ JqueryAjax.prototype = {
             url: this.url,
             data: this.data,
             dataType: this.dataType,
+            async: this.async,
             headers: this.headers,
             crossDomain: !(document.all),
             beforeSend: function (xhr) {

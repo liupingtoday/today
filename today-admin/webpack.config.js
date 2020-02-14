@@ -9,8 +9,6 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
-
-
 if (process.env.NODE_ENV === 'prod') {
     module.exports = merge(baseWebpackConfig, {
         mode: 'production',

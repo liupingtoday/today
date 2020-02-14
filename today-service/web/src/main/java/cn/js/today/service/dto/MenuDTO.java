@@ -18,9 +18,14 @@ import javax.persistence.*;
 public class MenuDTO extends DataEntity<MenuDTO> {
 
     /**
+     *  数据库生成的主键
+     */
+    private Long id;
+
+    /**
      *  菜单编码
      */
-    private Long menuCode;
+    private String menuCode;
 
     /**
      *  父级编号
@@ -122,11 +127,20 @@ public class MenuDTO extends DataEntity<MenuDTO> {
      */
     private String status;
 
-    public Long getMenuCode() {
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getMenuCode() {
         return menuCode;
     }
 
-    public void setMenuCode(Long menuCode) {
+    public void setMenuCode(String menuCode) {
         this.menuCode = menuCode;
     }
 

@@ -22,7 +22,7 @@ public interface MenuRepository extends JpaRepository<Menu,Long> {
 
     Optional<Menu> findOneByMenuName(String menuName);
 
-    Optional<Menu> findByMenuCode(Long menuName);
+    Optional<Menu> findByMenuCode(String menuName);
 
 
 }

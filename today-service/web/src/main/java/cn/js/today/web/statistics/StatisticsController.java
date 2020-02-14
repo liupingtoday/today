@@ -1,9 +1,13 @@
 package cn.js.today.web.statistics;
 
+import cn.hutool.http.Header;
+import cn.hutool.http.HttpRequest;
+import cn.hutool.http.HttpResponse;
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
+import cn.js.today.common.CommonResponse;
 import cn.js.today.service.ConfigService;
 import cn.js.today.domain.sys.Config;
 import cn.js.today.utils.JSONUtils;
@@ -17,6 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -44,7 +49,7 @@ public class StatisticsController {
 
     /**
      *
-     * @return
+     * @return CommonResponse方式返回
      */
     @GetMapping(value = "/statistics/clipcloud/usage")
     @ResponseBody
@@ -56,7 +61,22 @@ public class StatisticsController {
         HashMap<String, String> headers = new HashMap<>();//存放请求头，可以存放多个请求头
         headers.put("Cookie", cookieConfig.getConfigValue());
         //发送get请求并接收响应数据
-        String result= HttpUtil.createGet(urlConfig.getConfigValue()).addHeaders(headers).form(map).execute().body();
+//        String result= HttpUtil.createGet(urlConfig.getConfigValue()).addHeaders(headers).form(map).execute().body();
+        HttpResponse httpResponse = null;
+        try {
+            httpResponse = HttpRequest.get(urlConfig.getConfigValue()).header(Header.COOKIE, cookieConfig.getConfigValue()).form(map).timeout(2000).execute();
+        } catch (Exception e) {
+            log.info("error-----" + e.getMessage());
+            return "error";
+        }
+        //请求不成功的情况
+        if(!httpResponse.isOk()){
+            return "error";
+        }
+
+        String result = httpResponse.body();
+//        log.info(result);
+
         JSONObject jsonObject = JSONUtil.parseObj(result);
         JSONObject jsonObject1 = (JSONObject)jsonObject.get("result");
 

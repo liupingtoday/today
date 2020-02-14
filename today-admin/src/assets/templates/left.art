@@ -1,6 +1,6 @@
 {{each model}}
     <li class="nav-item nav-item-submenu">
-        <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts  {{$value.options[0].content}}</span></a>
+        <a href="#" class="nav-link"><i class="icon-copy"></i> <span>{{$value.menuName}}</span></a>
 
         <ul class="nav nav-group-sub" data-submenu-title="Layouts">
             <li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>

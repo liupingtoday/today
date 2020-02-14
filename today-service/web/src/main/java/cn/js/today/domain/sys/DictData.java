@@ -1,6 +1,9 @@
 package cn.js.today.domain.sys;
 
 import cn.js.today.common.DataEntity;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 import javax.persistence.*;
 
@@ -17,6 +20,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "sys_dict_data")
+@JsonInclude(value= JsonInclude.Include.NON_NULL)
 public class DictData extends DataEntity<DictData> {
 
     /**
@@ -24,6 +28,7 @@ public class DictData extends DataEntity<DictData> {
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long dictCode;
 
     /**

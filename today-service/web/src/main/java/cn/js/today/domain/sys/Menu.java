@@ -1,6 +1,9 @@
 package cn.js.today.domain.sys;
 
 import cn.js.today.common.DataEntity;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 import javax.persistence.*;
 
@@ -11,26 +14,34 @@ import javax.persistence.*;
  * @Author: liuping
  * @Since 2020-01-16
  * @UpdateUser: liuping
- * @UpdateDate: 2020-02-12
+ * @UpdateDate: 2020-02-13
  * @UpdateRemark: 说明本次修改内容
  * @Version: v1.0
  */
 @Entity
 @Table(name = "sys_menu")
+@JsonInclude(value= JsonInclude.Include.NON_NULL)
 @org.hibernate.annotations.Table(appliesTo = "sys_menu", comment = "菜单表")
 public class Menu extends DataEntity<Menu> {
 
     /**
-     *  菜单编码
+     *  主键
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long menuCode;
+    @JsonSerialize(using = ToStringSerializer.class)
+    private Long id;
+
+    /**
+     *  菜单编码，唯一性，为了便于修改，故未使用ID作为关联字段
+     */
+    @Column(name = "menu_code", length = 100)
+    private String menuCode;
 
     /**
      *  父级编号
      */
-    @Column(name = "parent_code", length = 100)
+    @Column(name = "parent_code", length = 30)
     private String parentCode;
 
     /**
@@ -147,11 +158,19 @@ public class Menu extends DataEntity<Menu> {
     @Column(name = "status")
     private String status;
 
-    public Long getMenuCode() {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getMenuCode() {
         return menuCode;
     }
 
-    public void setMenuCode(Long menuCode) {
+    public void setMenuCode(String menuCode) {
         this.menuCode = menuCode;
     }
 
@@ -315,10 +334,12 @@ public class Menu extends DataEntity<Menu> {
         this.status = status;
     }
 
+
     @Override
     public String toString() {
         return "Menu{" +
-                "menuCode=" + menuCode +
+                "id=" + id +
+                ", menuCode='" + menuCode + '\'' +
                 ", parentCode='" + parentCode + '\'' +
                 ", parentCodes='" + parentCodes + '\'' +
                 ", treeSort='" + treeSort + '\'' +

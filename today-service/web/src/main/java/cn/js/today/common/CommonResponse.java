@@ -17,7 +17,24 @@ import java.util.List;
  * @Version: v1.0
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class CommonResponse implements Serializable {
+public class CommonResponse<T> implements Serializable {
+
+    public static final String CODE_SUCCESS = "0000";//成功
+    public static final String CODE_PARAM_ERROR = "1000";//参数错误
+    public static final String CODE_INVALID = "1002";//校验错误
+    public static final String CODE_FAILURE = "3000";//失败
+    public static final String CODE_OTHER = "9999";//其他
+
+    public static final String MSG_SUCCESS="success";
+    public static final String MSG_FAILURE="failure";
+
+    //    private List<T> list;//每页显示的数据集合
+
+//    public static final long CODE_SUCCESS = 200;
+//    public static final long CODE_ERROR = 500;
+//    public static final long CODE_VALIDATE_FAILED = 404;
+//    public static final long CODE_UNAUTHORIZED = 401;
+//    public static final long CODE_FORBIDDEN = 403;
 
     /**
      *
@@ -27,17 +44,12 @@ public class CommonResponse implements Serializable {
     /**
      *
      */
-    private String message;
+    private String msg;
 
     /**
      *
      */
-    private Long total;
-
-    /**
-     *
-     */
-    private List<Object> data;
+    private List<T> data;
 //    private List<Object> table;
 //    private String requestid;
 
@@ -62,14 +74,36 @@ public class CommonResponse implements Serializable {
      */
     private int pageSize;
 
-//    private List<T> list;//每页显示的数据集合
+    public CommonResponse(String code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
 
-//    public static final long CODE_SUCCESS = 200;
-//    public static final long CODE_ERROR = 500;
-//    public static final long CODE_VALIDATE_FAILED = 404;
-//    public static final long CODE_UNAUTHORIZED = 401;
-//    public static final long CODE_FORBIDDEN = 403;
+    public CommonResponse(String code, String msg, List<T> data) {
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
+    }
 
+    public CommonResponse(String code, String msg, List<T> data, int totalCount, int totalPage) {
+        this.code = code;
+        this.msg = msg;
+        this.data = data;
+        this.totalCount = totalCount;
+        this.totalPage = totalPage;
+    }
+
+    public static CommonResponse ok(){
+        return new CommonResponse(CODE_SUCCESS, MSG_SUCCESS);
+    }
+
+    public static CommonResponse ok(List data){
+        return new CommonResponse(CODE_SUCCESS, MSG_SUCCESS, data);
+    }
+
+    public static CommonResponse error(String code, String message){
+        return new CommonResponse(code, message);
+    }
 
     public String getCode() {
         return code;
@@ -79,27 +113,19 @@ public class CommonResponse implements Serializable {
         this.code = code;
     }
 
-    public String getMessage() {
-        return message;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setMessage(String message) {
-        this.message = message;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
-    public Long getTotal() {
-        return total;
-    }
-
-    public void setTotal(Long total) {
-        this.total = total;
-    }
-
-    public List<Object> getData() {
+    public List<T> getData() {
         return data;
     }
 
-    public void setData(List<Object> data) {
+    public void setData(List<T> data) {
         this.data = data;
     }
 

@@ -11,9 +11,8 @@ import './index.scss';
 import './index.html';
 
 /* eslint-disable */
-let html = '';
+// let html = '';
 const url = '../../assets/json/init.json';
-let clipCloudUsageStatistic = '../../assets/json/FeHelper-20200207211426';
 const Index = {
     init () {
         this.initData();
@@ -21,19 +20,27 @@ const Index = {
     },
     // fetch init数据
     initData () {
-        // let me = this,
-        // let requestPara = '',
-        Utils.doAjax(url, '', function (res) {
-            let dataTemp = res.data;
-            const questions = dataTemp.question;
-            html = leftNavArt({ model: questions });
-            //初始化left
-            $('#leftNav').html(html);
-        });
+        Http({
+            // url: url,
+            url: '/' + SERVER_FLAG + '/api/menus',
+            // data: requestData,
+            isDefaultApiRequest: false,
+            async: false,
+            success: function (data, textStatus, jqXHR) {
+                // let responseData = eval(data);
+                // for(let i=0; i < responseData.length; i++){
+                //     let menuName = responseData[i].menuName;
+                //     console.log('----222---' + menuName);
+                // }
+                let html = leftNavArt({ model:  data.data});
+                // //初始化left
+                $('#leftNav').html(html);
+            },
+        }).get();
 
-        console.log('----111---');
-        console.log(Utils.getDay(0));
-        console.log('----222---');
+        // console.log('----111---');
+        // console.log(Utils.getDay(0));
+        // console.log('----222---');
 
         // Utils.doAjax(clipCloudUsageStatistic, '', function (res) {
         //     let dataTemp = res.result;
@@ -41,18 +48,10 @@ const Index = {
         //
         // });
 
-        let today = Utils.getDay(0);
+        // let today = Utils.getDay(0);
         $("#list2").jqGrid({
             url: '/' + SERVER_FLAG + '/api/statistics/clipcloud/usage',
             datatype: "json",
-            // jsonReader: {
-            //     root: function(obj) { alert(JSON.stringify(obj[Utils.getDay(0)]));
-            //     // if(obj){
-            //     // }
-            //          return obj[Utils.getDay(0)];
-            //     },
-            //     repeatitems: false
-            // },
             colModel: [
                 { name: "currentDate", label: "日期", width: 80,sortable: true, align: "center" },
                 { name: "uploadNum", label: "上传数量", width: 75, align: "center"},
@@ -62,13 +61,6 @@ const Index = {
                 { name: "liveDist", label: "现场直播", width: 87, align: "center"},
                 { name: "remarks", label: "备注", width: 100, sortable: false, align: "center"},
             ],
-            // data: [
-            //     { id: "10",  currentDate: "2020-02-10", uploadNum: "test",   amount: "" },
-            //     { id: "20",  currentDate: "2015-09-01", uploadNum: "test2",  amount: "300", tax: "20", closed: false, ship_via: "FE", remarks: "320" },
-            //     { id: "30",  currentDate: "2015-09-01", uploadNum: "test3",  amount: "400", tax: "30", closed: false, ship_via: "FE", remarks: "430" },
-            //     { id: "40",  currentDate: "2015-10-04", uploadNum: "test4",  amount: "200", tax: "10", closed: true,  ship_via: "TN", remarks: "210" },
-            //     { id: "50",  currentDate: "2015-10-31", uploadNum: "test5",  amount: "300", tax: "20", closed: false, ship_via: "FE", remarks: "320" },
-            // ],
             guiStyle: "bootstrap4",
             iconSet: "fontAwesome",
             idPrefix: "gb1_",

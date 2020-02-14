@@ -2,11 +2,13 @@ package cn.js.today.service.mapper;
 
 import cn.hutool.core.date.DateTime;
 import cn.hutool.core.date.DateUtil;
+import cn.js.today.common.idgen.IdGenerate;
 import cn.js.today.domain.sys.Config;
 import cn.js.today.domain.sys.Menu;
 import cn.js.today.service.dto.ConfigDTO;
 import cn.js.today.service.dto.MenuDTO;
 import org.springframework.stereotype.Service;
+import org.springframework.util.IdGenerator;
 
 import java.time.Clock;
 import java.time.LocalDateTime;
@@ -37,7 +39,8 @@ public class MenuMapper {
             return  null;
         } else {
             Menu menu = new Menu();
-            menu.setMenuCode(menuDTO.getMenuCode());
+            menu.setId(menuDTO.getId());
+            menu.setMenuCode(IdGenerate.nextId());
             menu.setMenuName(menuDTO.getMenuName());
             menu.setMenuTitle(menuDTO.getMenuTitle());
             menu.setMenuHref(menuDTO.getMenuHref());

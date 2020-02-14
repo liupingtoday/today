@@ -1,5 +1,6 @@
 package cn.js.today.web.sys;
 
+import cn.js.today.common.CommonResponse;
 import cn.js.today.domain.sys.Menu;
 import cn.js.today.repository.sys.MenuRepository;
 import cn.js.today.service.ConfigService;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.net.URISyntaxException;
+import java.util.List;
 
 /**
  * Simple to Introduction
@@ -50,27 +52,38 @@ public class MenuController {
 //
     /**
      *
+     * @param id
+     * @return
+     */
+    @GetMapping("/menu/id/{id}")
+    public ResponseEntity<Menu> getMenu(@PathVariable Long id) {
+        log.debug("REST request to get Menu : {}", id);
+        Menu menu = menuService.findById(id);
+        return ResponseEntity.ok().body(menu);
+    }
+
+    /**
+     *
      * @param menuCode
      * @return
      */
-    @GetMapping("/menu/{menuCode}")
-    public ResponseEntity<Menu> getMenu(@PathVariable Long menuCode) {
+    @GetMapping("/menu/menuCode/{menuCode}")
+    public ResponseEntity<Menu> getMenu(@PathVariable String menuCode) {
         log.debug("REST request to get Menu : {}", menuCode);
         Menu menu = menuService.findByMenuCode(menuCode);
         return ResponseEntity.ok().body(menu);
     }
 
-//
-//    /**
-//     *
-//     * @return
-//     */
-//    @GetMapping("/configs")
-//    public List<Config> getAllConfigs() {
-//        log.debug("REST request to get all Configs");
-//        return configService.findAll();
-//    }
-//
+    /**
+     *
+     * @return
+     */
+    @GetMapping("/menus")
+    public CommonResponse<Menu> getAllMenus() {
+        log.debug("REST request to get all Configs");
+        return CommonResponse.ok(menuService.findAll());
+    }
+
     /**
      *
      * @param menuDTO
