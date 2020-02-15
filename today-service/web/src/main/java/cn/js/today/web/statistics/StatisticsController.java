@@ -3,12 +3,10 @@ package cn.js.today.web.statistics;
 import cn.hutool.http.Header;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
-import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import cn.js.today.common.CommonResponse;
-import cn.js.today.service.ConfigService;
+import cn.js.today.service.sys.ConfigService;
 import cn.js.today.domain.sys.Config;
 import cn.js.today.utils.JSONUtils;
 import org.slf4j.Logger;
@@ -18,10 +16,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,7 +1,7 @@
 package cn.js.today.web.sys;
 
-import cn.js.today.service.ConfigService;
-import cn.js.today.service.dto.ConfigDTO;
+import cn.js.today.service.sys.ConfigService;
+import cn.js.today.service.dto.sys.ConfigDTO;
 import cn.js.today.domain.sys.Config;
 import cn.js.today.web.errors.BadRequestAlertException;
 import io.github.jhipster.web.util.HeaderUtil;

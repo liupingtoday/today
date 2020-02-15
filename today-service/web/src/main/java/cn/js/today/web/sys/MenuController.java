@@ -2,10 +2,9 @@ package cn.js.today.web.sys;
 
 import cn.js.today.common.CommonResponse;
 import cn.js.today.domain.sys.Menu;
-import cn.js.today.repository.sys.MenuRepository;
-import cn.js.today.service.ConfigService;
-import cn.js.today.service.MenuService;
-import cn.js.today.service.dto.MenuDTO;
+import cn.js.today.service.sys.ConfigService;
+import cn.js.today.service.sys.MenuService;
+import cn.js.today.service.dto.cms.MenuDTO;
 import cn.js.today.web.errors.BadRequestAlertException;
 import io.github.jhipster.web.util.HeaderUtil;
 import org.slf4j.Logger;
@@ -17,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.net.URISyntaxException;
-import java.util.List;
 
 /**
  * Simple to Introduction

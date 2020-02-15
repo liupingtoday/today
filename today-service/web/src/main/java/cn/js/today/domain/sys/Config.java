@@ -46,7 +46,7 @@ public class Config extends DataEntity<Config> {
     /**
      * 参数键值
      */
-    @Column(name = "config_value")
+    @Column(name = "config_value", length = 20000)
     private String configValue;
 
     /**

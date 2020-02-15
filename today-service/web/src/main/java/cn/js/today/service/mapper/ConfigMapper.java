@@ -1,7 +1,6 @@
 package cn.js.today.service.mapper;
 
-import cn.hutool.core.date.DateTime;
-import cn.js.today.service.dto.ConfigDTO;
+import cn.js.today.service.dto.sys.ConfigDTO;
 import cn.js.today.domain.sys.Config;
 import org.springframework.stereotype.Service;
 
@@ -34,7 +33,7 @@ public class ConfigMapper {
             return  null;
         } else {
             Config config = new Config();
-            config.setId(configDTO.getId());
+//            config.setId(configDTO.getId());
             config.setConfigKey(configDTO.getConfigKey());
             config.setConfigValue(configDTO.getConfigValue());
             config.setConfigName(configDTO.getConfigName());

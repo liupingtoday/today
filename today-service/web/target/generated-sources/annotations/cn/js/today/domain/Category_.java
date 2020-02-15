@@ -1,12 +1,15 @@
 package cn.js.today.domain;
 
+import cn.js.today.domain.cms.Category;
+import cn.js.today.domain.cms.Extend;
+
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
 @Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
 @StaticMetamodel(Category.class)
-public abstract class Category_ {
+public abstract class Category_ extends cn.js.today.common.DataEntity_ {
 
 	public static volatile SingularAttribute<Category, String> image;
 	public static volatile SingularAttribute<Category, String> moduleType;

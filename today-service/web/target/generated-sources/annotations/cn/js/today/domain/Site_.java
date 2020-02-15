@@ -1,12 +1,14 @@
 package cn.js.today.domain;
 
+import cn.js.today.domain.cms.Site;
+
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
 @Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
 @StaticMetamodel(Site.class)
-public abstract class Site_ {
+public abstract class Site_ extends cn.js.today.common.DataEntity_ {
 
 	public static volatile SingularAttribute<Site, String> copyright;
 	public static volatile SingularAttribute<Site, String> siteCode;

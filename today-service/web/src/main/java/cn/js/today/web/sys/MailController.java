@@ -3,22 +3,12 @@ package cn.js.today.web.sys;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.extra.mail.MailAccount;
 import cn.hutool.extra.mail.MailUtil;
-import cn.js.today.domain.sys.Config;
-import cn.js.today.service.ConfigService;
-import cn.js.today.service.dto.ConfigDTO;
-import cn.js.today.web.errors.BadRequestAlertException;
-import io.github.jhipster.web.util.HeaderUtil;
+import cn.js.today.service.sys.ConfigService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Simple to Introduction

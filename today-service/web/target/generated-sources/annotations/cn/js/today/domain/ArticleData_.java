@@ -1,5 +1,7 @@
 package cn.js.today.domain;
 
+import cn.js.today.domain.cms.ArticleData;
+
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
