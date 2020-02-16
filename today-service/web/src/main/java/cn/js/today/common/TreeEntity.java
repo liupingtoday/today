@@ -42,7 +42,7 @@ public abstract class TreeEntity<T extends TreeEntity<?>> extends DataEntity<T> 
     protected String treeSorts;
 
     /**
-     *  是否最末级
+     *  是否最末级   1：是  0：否
      */
     protected String treeLeaf;
 
@@ -139,4 +139,8 @@ public abstract class TreeEntity<T extends TreeEntity<?>> extends DataEntity<T> 
     public void setChildList(List<T> childList) {
         this.childList = childList;
     }
+
+//    public Boolean getIsTreeLeaf() {
+//        return "1".equals(this.treeLeaf);
+//    }
 }

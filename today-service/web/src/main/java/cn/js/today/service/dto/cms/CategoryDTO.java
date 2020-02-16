@@ -3,6 +3,7 @@ package cn.js.today.service.dto.cms;
 import cn.js.today.common.TreeEntity;
 import cn.js.today.domain.cms.Extend;
 import cn.js.today.domain.cms.Site;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 /**
  * Simple to Introduction
@@ -17,6 +18,7 @@ import cn.js.today.domain.cms.Site;
  */
 public class CategoryDTO extends TreeEntity<CategoryDTO> {
 
+    @JsonIgnore
     private Long id; 	// 栏目编码
 
     /**

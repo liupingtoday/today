@@ -31,13 +31,13 @@ Http({
  * 获取栏目信息
  */
 Http({
-    url: '/' + SERVER_FLAG + '/f/category/listData',
+    url: '/' + SERVER_FLAG + '/category/getAll',
     isDefaultApiRequest: false,
     success: function (data, textStatus, jqXHR) {
         $.each(data, function (index, value) {
-            // console.log(value);
+            console.log(value);
             // console.log(value.categoryName);
-            if (!value.isTreeLeaf) {
+            if (value.treeLeaf=== '0') {
                 if ( value.id === 'A1005') {
                     // 产品与应用
                     let html = '<li id="' + value.id + '"><a class="" href="/productsList.html?id=' + value.id + '" title="' + value.categoryName + '">' + value.categoryName + '</a></li>';

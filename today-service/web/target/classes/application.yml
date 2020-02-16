@@ -10,9 +10,16 @@ spring:
     active: #spring.profiles.active#
   devtools:
     restart:
-      enabled: false
+      enabled: true
+#      additional-paths:
+#      exclude: META-INF/maven/**,META-INF/resources/**,resources/**,static/**,public/**,templates/**,**/*Test.class,**/*Tests.class,git.properties,META-INF/build-info.properties
+#      log-condition-evaluation-delta: true
+#      poll-interval: 1s
+#      quiet-period: 400ms
+#      trigger-file:
     livereload:
-      enabled: false
+      enabled: true
+#      port: 35729
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://39.107.138.29:3306/today?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
