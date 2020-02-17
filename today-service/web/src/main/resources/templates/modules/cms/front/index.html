@@ -32,7 +32,20 @@
     </div>
     <div class="inner">
         <ul class="menu boxed clearfix" id="metismenu">
-            <li id="' + value.id + '"><a class="" href="/productsList.html?id=' + value.id + '" title="' + value.categoryName + '">' + value.categoryName + '</a></li>
+            <#list allCategory as item>
+                <li>
+                    <a href="" target="" title="${item.categoryName}">${item.categoryName}</a>
+                    <#if (item.treeLeaf == '0') >
+                        <ul>
+                            <#list item.childList as childItem>
+                                <li>
+                                    <a>${childItem.categoryName}</a>
+                                </li>
+                            </#list>
+                        </ul>
+                    </#if>
+                </li>
+            </#list>
         </ul>
     </div>
 </head>
@@ -41,6 +54,12 @@
 <!-- Swiper -->
 <div id="index-swiper" class="swiper-container index-swiper">
     <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="../common/img/1.jpg"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="../common/img/2.jpg"/>
+        </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -159,4 +178,42 @@
 <footer class="p-3 border-top text-md-center" style="background: #333333;color: #fff;font-size: 14px;line-height: 30px">
 </footer>
 </body>
+
+<script type="javascript">
+/*    new Swiper('.index-swiper', {
+        autoHeight: true, // enable auto height
+        slidesPerView: 1,
+        spaceBetween: 30,
+        observer: true, // 修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true, // 修改swiper的父元素时，自动初始化swiper
+        centeredSlides: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });*/
+
+    new Swiper('.index-product-swiper', {
+        slidesPerView: 2,
+        // parallax: true,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 </html>

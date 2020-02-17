@@ -1,5 +1,7 @@
 package cn.js.today.web.front;
 
+import cn.hutool.json.JSONArray;
+import cn.js.today.service.cms.CategoryService;
 import cn.js.today.service.sys.ConfigService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,8 +30,14 @@ public class IndexController {
     @Autowired
     private ConfigService  configService;
 
+    @Autowired
+    private CategoryService categoryService;
+
     @RequestMapping(value = "list")
     public String list(Model model) {
+        JSONArray allCategory = categoryService.getAllCategory();
+        model.addAttribute("allCategory",allCategory);
+        log.info("111111111"+"allCategory:"+allCategory);
         return "modules/cms/front/index";
     }
 
