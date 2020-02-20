@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/jQueryGantt-6.3/jQueryGantt-6.3.iml" filepath="$PROJECT_DIR$/jQueryGantt-6.3/jQueryGantt-6.3.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-admin/today-admin.iml" filepath="$PROJECT_DIR$/today-admin/today-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/today-service.iml" filepath="$PROJECT_DIR$/today-service/today-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/today-service/modules/cms/today-service-cms.iml" filepath="$PROJECT_DIR$/today-service/modules/cms/today-service-cms.iml" />
