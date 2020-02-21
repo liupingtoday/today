@@ -76,7 +76,15 @@ const Index = {
             sortable: true,
             sortname: "currentDate",
             sortorder: "desc",
-            caption: "云剪平台业务使用量信息"
+            caption: "云剪平台业务使用量信息",
+            //设置caption居中
+            gridComplete: function () {
+                // $("#list2").closest("div.ui-jqgrid-view")
+                //     .children("div.ui-jqgrid-titlebar")
+                //     .css("text-align", "center")
+                //     .children("span.ui-jqgrid-title")
+                //     .css("float", "none");
+            }
         });
 
         jQuery("#list2").jqGrid('setGroupHeaders', {

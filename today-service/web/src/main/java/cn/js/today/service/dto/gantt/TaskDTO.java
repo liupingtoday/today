@@ -21,7 +21,7 @@ import javax.validation.constraints.NotBlank;
  */
 public class TaskDTO {
 
-    @NotBlank
+//    @NotBlank
     private Long taskId;
 
     private String name;

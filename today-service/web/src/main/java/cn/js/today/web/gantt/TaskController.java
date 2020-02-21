@@ -49,7 +49,7 @@ public class TaskController {
      * @param taskId
      * @return
      */
-    @GetMapping("/gantt/{taskId}")
+    @GetMapping("/gantt/task/{taskId}")
     public ResponseEntity<Task> getTask(@PathVariable Long taskId) {
         log.debug("REST request to get ConTaskfig : {}", taskId);
         Task task = taskService.findByTaskId(taskId);
@@ -61,8 +61,8 @@ public class TaskController {
      * @return
      */
     @Timed
-    @ApiOperation(value="栏目新增", notes="栏目新增")
-    @GetMapping("/tasks")
+    @ApiOperation(value="获取所有的任务", notes="获取所有的任务")
+    @GetMapping("/gantt/tasks")
     public List<Task> getAllTasks() {
         log.debug("REST request to get all Tasks");
         return taskService.findAll();
@@ -73,14 +73,14 @@ public class TaskController {
      * @param taskDTO
      * @return
      */
-    @PostMapping(value = "/task")
+    @PostMapping(value = "/gantt/task")
     public ResponseEntity<Task> addTask(TaskDTO taskDTO) {
         Task task = taskService.saveTask(taskDTO);
         log.info(task.toString());
         return ResponseEntity.ok().body(task);
     }
 
-    @PutMapping("/task")
+    @PutMapping("/gantt/task")
     public ResponseEntity<Task> updateTask(@Valid @RequestBody TaskDTO taskDTO) throws URISyntaxException {
         log.debug("REST request to update Task : {}", taskDTO);
         if(taskDTO.getTaskId() == null){
@@ -96,7 +96,7 @@ public class TaskController {
      * @param taskId
      * @return
      */
-    @DeleteMapping("/task/{taskId}")
+    @DeleteMapping("/gantt/task/{taskId}")
     public ResponseEntity<Void> deleteTask(@PathVariable Long taskId){
         log.debug("REST request to delete Task : {}", taskId);
 //        taskService.
