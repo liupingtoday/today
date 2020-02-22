@@ -29,10 +29,24 @@ public class RoleMapper {
             return  null;
         } else {
             Role role = new Role();
-            role.setName(role.getName());
+            role.setName(roleDTO.getName());
             role.setCreatedBy("");
             role.setUpdatedBy("");
             return role;
+        }
+
+    }
+
+    public RoleDTO role2RoleDTO(Role role){
+
+        if(role == null){
+            return  null;
+        } else {
+            RoleDTO roleDTO = new RoleDTO();
+            roleDTO.setName(role.getName());
+            roleDTO.setCreatedBy("");
+            roleDTO.setUpdatedBy("");
+            return roleDTO;
         }
 
     }

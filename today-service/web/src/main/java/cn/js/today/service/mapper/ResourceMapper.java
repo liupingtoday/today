@@ -40,4 +40,20 @@ public class ResourceMapper {
         }
 
     }
+
+    public ResourceDTO resource2ResourceDTO(Resource resource){
+
+        if(resource == null){
+            return  null;
+        } else {
+            ResourceDTO resourceDTO = new ResourceDTO();
+//            task.setResourceId(resourceDTO.getResourceId());
+            resourceDTO.setName(resource.getName());
+            resourceDTO.setRoleId(resource.getRoleId());
+            resourceDTO.setCreatedBy("");
+            resourceDTO.setUpdatedBy("");
+            return resourceDTO;
+        }
+
+    }
 }

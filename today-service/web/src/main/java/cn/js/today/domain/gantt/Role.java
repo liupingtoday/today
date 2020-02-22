@@ -29,6 +29,7 @@ public class Role extends DataEntity<Role> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonSerialize(using = ToStringSerializer.class)
+    @Column(name = "role_id")
     private Long roleId;
 
     /**

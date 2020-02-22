@@ -43,6 +43,7 @@ public class TaskMapper {
             task.setDuration(taskDTO.getDuration());
             task.setStart(taskDTO.getStart());
             task.setEnd(taskDTO.getEnd());
+
             task.setStartIsMilestone(taskDTO.getStartIsMilestone());
             task.setEndIsMilestone(taskDTO.getEndIsMilestone());
             task.setLevel(taskDTO.getLevel());
@@ -50,6 +51,23 @@ public class TaskMapper {
             task.setCreatedBy("");
             task.setUpdatedBy("");
             return task;
+        }
+
+    }
+
+    public TaskDTO Task2taskDTO(Task task){
+        if(task == null){
+            return  null;
+        }else {
+            TaskDTO taskDTO = new TaskDTO();
+            taskDTO.setName(task.getName());
+            taskDTO.setResourceId(task.getResourceId());
+            taskDTO.setDescription(task.getDescription());
+            taskDTO.setDuration(task.getDuration());
+            taskDTO.setStart(task.getStart());
+            taskDTO.setEnd(task.getEnd());
+            taskDTO.setLevel(task.getLevel());
+            return taskDTO;
         }
 
     }

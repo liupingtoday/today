@@ -30,6 +30,7 @@ public class Task extends DataEntity<Task> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonSerialize(using = ToStringSerializer.class)
+    @Column(name = "task_id")
     private Long taskId;
 
     /**

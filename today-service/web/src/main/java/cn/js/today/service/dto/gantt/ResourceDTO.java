@@ -49,4 +49,13 @@ public class ResourceDTO extends DataEntity<ResourceDTO> {
     public void setRoleId(String roleId) {
         this.roleId = roleId;
     }
+
+    @Override
+    public String toString() {
+        return "ResourceDTO{" +
+                "resourceId=" + resourceId +
+                ", name='" + name + '\'' +
+                ", roleId='" + roleId + '\'' +
+                '}';
+    }
 }

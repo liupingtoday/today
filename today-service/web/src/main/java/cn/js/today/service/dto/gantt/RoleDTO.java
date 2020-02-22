@@ -39,4 +39,12 @@ public class RoleDTO extends DataEntity<RoleDTO> {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "RoleDTO{" +
+                "roleId=" + roleId +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

@@ -29,6 +29,7 @@ public class Resource extends DataEntity<Resource> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonSerialize(using = ToStringSerializer.class)
+    @Column(name = "resource_id")
     private Long resourceId;
 
     /**

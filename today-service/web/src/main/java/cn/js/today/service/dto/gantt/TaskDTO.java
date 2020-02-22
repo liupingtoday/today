@@ -201,4 +201,28 @@ public class TaskDTO {
     public void setResourceId(String resourceId) {
         this.resourceId = resourceId;
     }
+
+    @Override
+    public String toString() {
+        return "TaskDTO{" +
+                "taskId=" + taskId +
+                ", name='" + name + '\'' +
+                ", progress='" + progress + '\'' +
+                ", description='" + description + '\'' +
+                ", level='" + level + '\'' +
+                ", status='" + status + '\'' +
+                ", start='" + start + '\'' +
+                ", end='" + end + '\'' +
+                ", duration='" + duration + '\'' +
+                ", startIsMilestone='" + startIsMilestone + '\'' +
+                ", endIsMilestone='" + endIsMilestone + '\'' +
+                ", canWrite='" + canWrite + '\'' +
+                ", canAdd='" + canAdd + '\'' +
+                ", canDelete='" + canDelete + '\'' +
+                ", canAddIssue='" + canAddIssue + '\'' +
+                ", collapsed='" + collapsed + '\'' +
+                ", hasChild='" + hasChild + '\'' +
+                ", resourceId='" + resourceId + '\'' +
+                '}';
+    }
 }
