@@ -7,12 +7,9 @@ import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import cn.js.today.domain.cms.Site;
 import cn.js.today.domain.sys.Config;
-import cn.js.today.domain.sys.Menu;
 import cn.js.today.repository.cms.CategoryRepository;
 import cn.js.today.repository.sys.ConfigRepository;
-import cn.js.today.repository.sys.MenuRepository;
 import cn.js.today.service.dto.cms.CategoryDTO;
-import cn.js.today.service.dto.cms.MenuDTO;
 import cn.js.today.service.mapper.ConfigMapper;
 import cn.js.today.service.mapper.MenuMapper;
 import cn.js.today.service.sys.ConfigService;
@@ -25,23 +22,22 @@ import org.springframework.util.StringUtils;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Simple to Introduction
  *
  * @Description: 一句话描述该类的功能
  * @Author: liuping
- * @Since 2020-02-17
+ * @Since 2020-02-23
  * @UpdateUser: liuping
- * @UpdateDate: 2020-02-17
+ * @UpdateDate: 2020-02-23
  * @UpdateRemark: 说明本次修改内容
  * @Version: v1.0
  */
 @Service
-public class CategoryService {
+public class IndexService {
 
-    private final Logger log = LoggerFactory.getLogger(CategoryService.class);
+    private final Logger log = LoggerFactory.getLogger(IndexService.class);
 
     @Autowired
     private ConfigRepository configRepository;
@@ -58,70 +54,6 @@ public class CategoryService {
     @Autowired
     private MenuMapper menuMapper;
 
-    /**
-     * 获取菜单的数据
-     * @return
-     */
-    public JSONArray getMenu(){
-        return addParamCategory(getAllCategory());
-    }
-
-    public JSONArray addParamCategory(JSONArray allCategory){
-        Iterator iterator = allCategory.iterator();
-        //json串中新增的字段名称
-        String addedPathName = "urlPath";
-        while (iterator.hasNext()){
-            JSONObject jsonObject = (JSONObject)iterator.next();
-            log.info(jsonObject.toString());
-            String id = (String)jsonObject.get("categoryId");
-            String treeLeaf = (String)jsonObject.get("treeLeaf");
-            switch (id){
-                case "A1001":
-                    jsonObject.put(addedPathName,"/admin/front/index/list");  // 首页
-                    break;
-                case "A1015":
-                    jsonObject.put(addedPathName,"/admin/front/about/list");  // 关于福伊特
-                    break;
-                case "A1005":
-                    jsonObject.put(addedPathName,"/admin/front/about/list");  // 产品与应用
-//                   if(treeLeaf == "0"){
-//                       //有叶子节点
-//                       JSONArray childListJSONArray = (JSONArray)jsonObject.get("childList");
-//                       log.info("childListJSONArray: ---------:" + childListJSONArray);
-//                       Object[] childListObject = childListJSONArray.toArray();
-//                       for(int i = 0; i < childListObject.length; i++){
-//                           JSONObject childListJsonObject = (JSONObject)childListObject[i];
-//                           childListJsonObject.put("urlPath","/admin/front/about/list");
-//                       }
-//                   }
-                    break;
-                case "A1011":
-                    jsonObject.put(addedPathName,"/admin/front/download/list");  // 资料下载
-                    break;
-                case "A1013":
-                    jsonObject.put(addedPathName,"/admin/front/recruit/list");  // 招聘信息
-                    break;
-                case "A1008":
-                    jsonObject.put(addedPathName,"/admin/front/contract/list");  // 联系我们
-                    break;
-                case "A1014":
-                    jsonObject.put(addedPathName,"/admin/front/about/list");  // 产品规格表
-                    break;
-                case "A1012":
-                    jsonObject.put(addedPathName,"/admin/front/album/list");  // 公司相册
-                    break;
-                case "A1002":
-                    jsonObject.put(addedPathName,"/admin/front/news/list");  // 新闻中心
-                    break;
-                case "A1009":
-                    jsonObject.put(addedPathName,"/admin/front/support/list");  // 技术支持
-                    break;
-                default: jsonObject.put(addedPathName,"/admin/front/index/list");  // 默认首页
-
-            }
-        }
-        return allCategory;
-    }
 
     public JSONArray getAllCategory(){
 

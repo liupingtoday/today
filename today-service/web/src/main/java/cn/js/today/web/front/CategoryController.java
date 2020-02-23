@@ -35,7 +35,7 @@ import java.util.List;
  * @Version: v1.0
  */
 @Controller
-@RequestMapping("/category")
+@RequestMapping("/front/category")
 public class CategoryController {
 
     private final Logger log = LoggerFactory.getLogger(CategoryController.class);

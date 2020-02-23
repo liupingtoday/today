@@ -1,6 +1,7 @@
 package cn.js.today.web.front;
 
 import cn.hutool.json.JSONArray;
+import cn.hutool.json.JSONObject;
 import cn.js.today.service.cms.CategoryService;
 import cn.js.today.service.sys.ConfigService;
 import org.slf4j.Logger;
@@ -9,6 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.Iterator;
 
 /**
  * Simple to Introduction
@@ -22,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Version: v1.0
  */
 @Controller
-@RequestMapping("/index")
+@RequestMapping("/front/index")
 public class IndexController {
 
     private final Logger log = LoggerFactory.getLogger(IndexController.class);
@@ -36,6 +39,9 @@ public class IndexController {
     @RequestMapping(value = "list")
     public String list(Model model) {
         JSONArray allCategory = categoryService.getAllCategory();
+
+        allCategory = categoryService.addParamCategory(allCategory);
+
         model.addAttribute("allCategory",allCategory);
         log.info("111111111"+"allCategory:"+allCategory);
         return "modules/cms/front/index";

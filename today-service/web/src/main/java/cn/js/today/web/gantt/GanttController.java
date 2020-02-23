@@ -89,6 +89,7 @@ public class GanttController {
     @RequestMapping(value="/gantt/addGantt",method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     @ResponseBody
     public ResponseEntity<String> addGantt(@RequestBody String requestJson) {
+        log.info("-----------##############:" + requestJson);
         JSONObject jsonObject = JSONUtil.parseObj(requestJson);
         //获取tasks对象数组
         JSONArray taskJsonArray = jsonObject.getJSONArray("tasks");

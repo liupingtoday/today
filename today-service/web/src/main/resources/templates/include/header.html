@@ -1,0 +1,46 @@
+<!--    <base id="ctx" href="${ctx}">-->
+<meta charset="UTF-8">
+<#assign ctx="${request.contextPath}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--IE Compatibility modes-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--Mobile first-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta id="description" name="Description" content="常州福伊特商贸有限公司" />
+<meta id="keywords" name="Keywords" content="常州福伊特商贸有限公司" />
+<meta id="author" name="Author" content="" />
+<#include "/include/csslibs.html">
+<#include "/include/jslibs.html">
+<title id="czfyt_title">${ctx}</title>
+<div class="inner">
+    <div id="siteLogo" class="top-logo inner"> <a href="/" title="czfyt" id="web_logo"> <img src="../../common/img/czfyt-logo.png" alt="czfyt" title="czfyt" style="margin:15px 0px 0px 0px;" /> </a>
+        <ul id="hotline" class="top-nav list-none">
+            <li class="t">
+                <a href='#' onclick='SetHome(this,window.location,"非IE浏览器不支持此功能，请手动设置！");' style='cursor:pointer;' title='设为首页'  >设为首页</a>
+                <span>|</span><a href='#' onclick='addFavorite("非IE浏览器不支持此功能，请手动设置！");' style='cursor:pointer;' title='收藏本站'  >收藏本站</a>
+            </li>
+            <li class="b">
+                <p> <strong>客服热线：<span style="font-size:14px;"></span></strong></p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="inner">
+    <ul class="menu boxed clearfix" id="metismenu">
+        <#list allCategory as item>
+        <li>
+
+            <a href="${item.urlPath}" target="" title="${item.categoryName}">${item.categoryName}</a>
+            <#if (item.treeLeaf == '0') >
+            <ul>
+                <#list item.childList as childItem>
+                <li>
+                    <a href="${item.urlPath}">${childItem.categoryName}</a>
+                </li>
+            </#list>
+    </ul>
+</#if>
+</li>
+</#list>
+</ul>
+</div>
