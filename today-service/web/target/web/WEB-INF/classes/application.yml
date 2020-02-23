@@ -1,0 +1,127 @@
+logging:
+  config: classpath:logs/logback-spring.xml
+  level:
+    web: DEBUG
+
+spring:
+  application:
+    name: cms
+  profiles:
+    active: #spring.profiles.active#
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: false
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://39.107.138.29:3306/today?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: cde3CDE#bgt5BGT%
+    hikari:
+      poolName: Hikari
+      auto-commit: false
+      data-source-properties:
+        cachePrepStmts: true
+        prepStmtCacheSize: 250
+        prepStmtCacheSqlLimit: 2048
+        useServerPrepStmts: true
+#  jpa:
+#    database-platform: org.hibernate.dialect.MySQL8Dialect
+#    database: MYSQL
+#    show-sql: false
+#    properties:
+#      hibernate.id.new_generator_mappings: true
+#      hibernate.connection.provider_disables_autocommit: true
+#      hibernate.cache.use_second_level_cache: true
+#      hibernate.cache.use_query_cache: false
+#      hibernate.generate_statistics: false
+#      # modify batch size as necessary
+#      hibernate.jdbc.batch_size: 25
+#      hibernate.order_inserts: true
+#      hibernate.order_updates: true
+#      hibernate.query.fail_on_pagination_over_collection_fetch: true
+#      hibernate.query.in_clause_parameter_padding: true
+#      hibernate.jdbc.time_zone: UTC
+#    open-in-view: false
+#    hibernate:
+#      ddl-auto: none
+#      naming:
+#        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+#        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+
+#  jackson:
+#    time-zone: GMT+8
+#    date-format: yyyy-MM-dd HH:mm:ss
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: MYSQL
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate.id.new_generator_mappings: true
+      hibernate.connection.provider_disables_autocommit: true
+      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_query_cache: false
+      hibernate.generate_statistics: false
+  jmx:
+    enabled: false
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: deferred
+  messages:
+    basename: i18n/messages
+  main:
+    allow-bean-definition-overriding: true
+    bannerMode: "off"     # 打印横幅
+  mvc:
+    favicon:
+      enabled: false
+#  task:
+#    execution:
+#      thread-name-prefix: jhipster-sample-application-task-
+#      pool:
+#        core-size: 2
+#        max-size: 50
+#        queue-capacity: 10000
+#    scheduling:
+#      thread-name-prefix: jhipster-sample-application-scheduling-
+#      pool:
+#        size: 2
+#  thymeleaf:
+#    mode: HTML
+  output:
+    ansi:
+      console-available: true
+  freemarker:
+    request-context-attribute: request
+    allow-request-override: false
+    allow-session-override: false
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html;charset=UTF-8
+    default_encoding: UTF-8
+    enabled: true
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: true
+    prefer-file-system-access: true
+    suffix: .html
+    template-loader-path: classpath:/templates/
+    order: 1
+    settings:
+      template_update_delay: 0
+      default_encoding: UTF-8
+      classic_compatible: true
+
+server:
+  port: 8088
+  servlet:
+    session:
+      cookie:
+        http-only: true
+    context-path: /admin
+  tomcat:
+    uri-encoding: UTF-8
