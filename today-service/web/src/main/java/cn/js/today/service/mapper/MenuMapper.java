@@ -40,6 +40,7 @@ public class MenuMapper {
             menu.setMenuTitle(menuDTO.getMenuTitle());
             menu.setMenuHref(menuDTO.getMenuHref());
             menu.setMenuType(menuDTO.getMenuType());
+            menu.setMenuIcon(menuDTO.getMenuIcon());
             menu.setIsShow(menuDTO.getIsShow());
             menu.setMenuColor(menuDTO.getMenuColor());
             menu.setMenuTarget(menuDTO.getMenuTarget());

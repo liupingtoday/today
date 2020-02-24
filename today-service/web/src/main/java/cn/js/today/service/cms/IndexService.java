@@ -54,6 +54,108 @@ public class IndexService {
     @Autowired
     private MenuMapper menuMapper;
 
+    public JSONObject getIndexParam(){
+        JSONObject indexJSONObject = JSONUtil.createObj();
+        JSONObject indexCompanyInfoJSONObject = getCompanyInfo(indexJSONObject);
+        JSONObject indexFriendlyLinkJSONObject = getFriendlyLink(indexCompanyInfoJSONObject);
+
+
+        return indexJSONObject;
+    }
+
+    public JSONObject getFriendlyLink(JSONObject indexJSONObject) {
+
+        /***********************companyInfo********************************/
+        Config friendlyLinkConfig = configService.findByConfigKey("czfytFriendlyLinkURL");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
+        String friendlyLinkURL = friendlyLinkConfig.getConfigValue();
+
+        HttpResponse httpResponse = null;
+        try {
+            httpResponse = HttpRequest.get(friendlyLinkURL).timeout(2000).execute();
+        } catch (Exception e) {
+            log.info("error-----" + e.getMessage());
+            return JSONUtil.createObj();
+        }
+        //请求不成功的情况
+        if(!httpResponse.isOk()){
+            return JSONUtil.createObj();
+        }
+
+        String httpResponseStr = httpResponse.body();
+        log.info("httpResponseStr:" + httpResponseStr);
+        JSONObject jsonObject = JSONUtil.parseObj(httpResponseStr);
+        JSONArray jsonArray = (JSONArray)jsonObject.get("list");
+        JSONArray friendlyLinkJsonArray = JSONUtil.createArray();
+        Iterator iterator = jsonArray.iterator();
+        while (iterator.hasNext()){
+            JSONObject friendlyLinkJsonObject = JSONUtil.createObj();
+            JSONObject jsonObject1 = (JSONObject)iterator.next();
+            friendlyLinkJsonArray.add(jsonObject1);
+//            friendlyLinkJsonArray.put("friendlyLinkJsonArray",friendlyLinkJsonArray);
+//            String linkName = (String)jsonObject1.get("linkName");
+//            indexJSONObject.put("linkName",linkName);
+//            String linkUrl = (String)jsonObject1.get("linkUrl");
+//            indexJSONObject.put("linkUrl",linkUrl);
+        }
+        indexJSONObject.put("friendlyLinkJsonArray",friendlyLinkJsonArray);
+
+        return indexJSONObject;
+
+    }
+
+
+    public JSONObject getCompanyInfo(JSONObject indexJSONObject) {
+
+        /***********************companyInfo********************************/
+        Config companyInfoConfig = configService.findByConfigKey("czfytCompanyInfoURL");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
+        String companyInfoURL = companyInfoConfig.getConfigValue();
+
+        HttpResponse httpResponse = null;
+        try {
+            httpResponse = HttpRequest.get(companyInfoURL).timeout(2000).execute();
+        } catch (Exception e) {
+            log.info("error-----" + e.getMessage());
+            return JSONUtil.createObj();
+        }
+        //请求不成功的情况
+        if(!httpResponse.isOk()){
+            return JSONUtil.createObj();
+        }
+
+        String httpResponseStr = httpResponse.body();
+        log.info("httpResponseStr:" + httpResponseStr);
+//        JSONArray newJSONArray = JSONUtil.createArray();
+        JSONObject jsonObject = JSONUtil.parseObj(httpResponseStr);
+        JSONArray jsonArray = (JSONArray)jsonObject.get("list");
+        Iterator iterator = jsonArray.iterator();
+        while (iterator.hasNext()){
+            JSONObject jsonObject1 = (JSONObject)iterator.next();
+            String companyName = (String)jsonObject1.get("companyName");
+            indexJSONObject.put("companyName",companyName);
+            String mobilePhone = (String)jsonObject1.get("mobilePhone");
+            indexJSONObject.put("mobilePhone",mobilePhone);
+            String telPhone = (String)jsonObject1.get("telPhone");
+            indexJSONObject.put("telPhone",telPhone);
+            String companySite = (String)jsonObject1.get("companySite");
+            indexJSONObject.put("companySite",companySite);
+            String email = (String)jsonObject1.get("email");
+            indexJSONObject.put("email",email);
+            String website = (String)jsonObject1.get("website");
+            indexJSONObject.put("website",website);
+            //首页幻灯片的图片
+            String paths = (String)jsonObject1.get("path");
+            indexJSONObject.put("indexTopSlidePaths",paths);
+//            if(paths != null){
+//                String[] pathArr = paths.split("\\|",-1);
+//                for(int i = 0; i < pathArr.length; i++){
+//                    String path = pathArr[i];
+//                }
+//            }
+        }
+
+        return indexJSONObject;
+
+    }
 
     public JSONArray getAllCategory(){
 

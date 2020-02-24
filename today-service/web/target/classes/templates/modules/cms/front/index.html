@@ -12,10 +12,10 @@
 <div id="index-swiper" class="swiper-container index-swiper">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <img src="../common/img/1.jpg"/>
+            <img src="../../common/img/1.jpg"/>
         </div>
         <div class="swiper-slide">
-            <img src="../common/img/2.jpg"/>
+            <img src="../../common/img/2.jpg"/>
         </div>
     </div>
     <!-- Add Pagination -->
@@ -85,22 +85,22 @@
             <div class="swiper-container index-product-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="../common/img/1.jpg" width="150px" height="120px">
+                        <img src="../../common/img/1.jpg" width="150px" height="120px">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../common/img/2.jpg" width="150px" height="120px">
+                        <img src="../../common/img/2.jpg" width="150px" height="120px">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../common/img/1.jpg" width="150px" height="120px">
+                        <img src="../../common/img/1.jpg" width="150px" height="120px">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../common/img/2.jpg" width="150px" height="120px">
+                        <img src="../../common/img/2.jpg" width="150px" height="120px">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../commonimg/1.jpg" width="150px" height="120px">
+                        <img src="../../common/img/1.jpg" width="150px" height="120px">
                     </div>
                     <div class="swiper-slide">
-                        <img src="../common/img/2.jpg" width="150px" height="120px">
+                        <img src="../../common/img/2.jpg" width="150px" height="120px">
                     </div>
                 </div>
                 <!-- Add Pagination -->
@@ -121,6 +121,12 @@
     <div class="lk-contx">
         <div class="txtlk">
             <ul class='list-none'>
+
+                <#list indexJsonObject.friendlyLinkJsonArray as item>
+                    <li>
+                        <a href="${item.linkUrl}" target="" title="${item.linkName}">${item.linkName}</a>
+                    </li>
+                </#list>
             </ul>
             <div class="clear"></div>
         </div>
@@ -137,7 +143,7 @@
 </body>
 
 <script type="javascript">
-/*    new Swiper('.index-swiper', {
+    new Swiper('.index-swiper', {
         autoHeight: true, // enable auto height
         slidesPerView: 1,
         spaceBetween: 30,
@@ -152,7 +158,7 @@
             el: '.swiper-pagination',
             clickable: true,
         },
-    });*/
+    });
 
     new Swiper('.index-product-swiper', {
         slidesPerView: 2,
@@ -172,5 +178,43 @@
             prevEl: '.swiper-button-prev',
         },
     });
+
+    // 动态从后台获取首页的slides
+    Http({
+        url: '/' + SERVER_FLAG + '/f/company/companyInfo/listData',
+        data: {},
+        isDefaultApiRequest: false,
+        success: function (data, textStatus, jqXHR) {
+            $.each(data.list, function (index, value) {
+                // console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^1');
+                // console.log(value.path);
+                // console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^2');
+                let slidePathList = value.path.split('|');
+                for (let i in slidePathList) {
+                    if (slidePathList.hasOwnProperty(i)) {
+
+                        let imgSlideSrc = Utils.getRootPath() + SERVER_FLAG + slidePathList[i];
+                        console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^1');
+                        console.log(imgSlideSrc);
+                        console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^2');
+                        $('#index-swiper').find('.swiper-wrapper').append('<div class="swiper-slide"><img src="' + imgSlideSrc + '"/></div>');
+
+                    }
+                }
+            });
+        }
+    }).get();
+    /*
+    *  获取友情链接的信息
+    * */
+    Http({
+        url: '/' + SERVER_FLAG + '/f/links/listData',
+        isDefaultApiRequest: false,
+        success: function (data, textStatus, jqXHR) {
+            $.each(data.list, function (index, value) {
+                $('#fr-lk').find('ul').append('<li><a href="' + value.linkUrl + '" title="' + value.linkName + '" target="_blank">' + value.linkName + '</a></li>');
+            });
+        }
+    }).get();
 </script>
 </html>

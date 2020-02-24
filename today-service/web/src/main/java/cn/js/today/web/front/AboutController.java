@@ -1,7 +1,9 @@
 package cn.js.today.web.front;
 
 import cn.hutool.json.JSONArray;
+import cn.hutool.json.JSONObject;
 import cn.js.today.service.cms.CategoryService;
+import cn.js.today.service.cms.IndexService;
 import cn.js.today.service.sys.ConfigService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,10 +35,15 @@ public class AboutController {
     @Autowired
     private CategoryService categoryService;
 
+    @Autowired
+    private IndexService indexService;
+
     @RequestMapping(value = "list")
     public String list(Model model) {
         JSONArray allCategory = categoryService.getMenu();
+        JSONObject indexJsonObject = indexService.getIndexParam();
         model.addAttribute("allCategory",allCategory);
+        model.addAttribute("indexJsonObject",indexJsonObject);
         log.info("111111111"+"allCategory:"+allCategory);
         return "modules/cms/front/about";
     }

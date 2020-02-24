@@ -2,6 +2,7 @@ package cn.js.today.web.sys;
 
 import cn.js.today.common.CommonResponse;
 import cn.js.today.domain.sys.Menu;
+import cn.js.today.service.mapper.MenuMapper;
 import cn.js.today.service.sys.ConfigService;
 import cn.js.today.service.sys.MenuService;
 import cn.js.today.service.dto.cms.MenuDTO;
@@ -38,6 +39,9 @@ public class MenuController {
 
     @Autowired
     private MenuService menuService;
+
+    @Autowired
+    private MenuMapper menuMapper;
 
     private static final String ENTITY_NAME = "Menu";
 
