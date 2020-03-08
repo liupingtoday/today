@@ -11,12 +11,12 @@
 <!-- Swiper -->
 <div id="index-swiper" class="swiper-container index-swiper">
     <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="../../common/img/1.jpg"/>
-        </div>
-        <div class="swiper-slide">
-            <img src="../../common/img/2.jpg"/>
-        </div>
+        <#list indexJsonObject.indexTopSlidePaths?split("|") as item>
+                <div class="swiper-slide">
+                    <img src="${ctx + item}"/>
+                </div>
+        </#list>
+
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -141,10 +141,16 @@
 <footer class="p-3 border-top text-md-center" style="background: #333333;color: #fff;font-size: 14px;line-height: 30px">
 </footer>
 </body>
-
+<#include "/include/jslibs.html">
 <script type="javascript">
-    new Swiper('.index-swiper', {
-        autoHeight: true, // enable auto height
+
+    $(document).ready(function(){
+        // 初始化内容
+        indexTopSwiper;
+    });
+
+    var indexTopSwiper = new Swiper('.index-swiper', {
+        autoHeight: false, // enable auto height
         slidesPerView: 1,
         spaceBetween: 30,
         observer: true, // 修改swiper自己或子元素时，自动初始化swiper
@@ -159,6 +165,7 @@
             clickable: true,
         },
     });
+
 
     new Swiper('.index-product-swiper', {
         slidesPerView: 2,
@@ -180,41 +187,29 @@
     });
 
     // 动态从后台获取首页的slides
-    Http({
-        url: '/' + SERVER_FLAG + '/f/company/companyInfo/listData',
-        data: {},
-        isDefaultApiRequest: false,
-        success: function (data, textStatus, jqXHR) {
-            $.each(data.list, function (index, value) {
-                // console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^1');
-                // console.log(value.path);
-                // console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^2');
-                let slidePathList = value.path.split('|');
-                for (let i in slidePathList) {
-                    if (slidePathList.hasOwnProperty(i)) {
-
-                        let imgSlideSrc = Utils.getRootPath() + SERVER_FLAG + slidePathList[i];
-                        console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^1');
-                        console.log(imgSlideSrc);
-                        console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^2');
-                        $('#index-swiper').find('.swiper-wrapper').append('<div class="swiper-slide"><img src="' + imgSlideSrc + '"/></div>');
-
-                    }
-                }
-            });
-        }
-    }).get();
-    /*
-    *  获取友情链接的信息
-    * */
-    Http({
-        url: '/' + SERVER_FLAG + '/f/links/listData',
-        isDefaultApiRequest: false,
-        success: function (data, textStatus, jqXHR) {
-            $.each(data.list, function (index, value) {
-                $('#fr-lk').find('ul').append('<li><a href="' + value.linkUrl + '" title="' + value.linkName + '" target="_blank">' + value.linkName + '</a></li>');
-            });
-        }
-    }).get();
+    // Http({
+    //     url: '/' + SERVER_FLAG + '/f/company/companyInfo/listData',
+    //     data: {},
+    //     isDefaultApiRequest: false,
+    //     success: function (data, textStatus, jqXHR) {
+    //         $.each(data.list, function (index, value) {
+    //             // console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^1');
+    //             // console.log(value.path);
+    //             // console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^2');
+    //             let slidePathList = value.path.split('|');
+    //             for (let i in slidePathList) {
+    //                 if (slidePathList.hasOwnProperty(i)) {
+    //
+    //                     let imgSlideSrc = Utils.getRootPath() + SERVER_FLAG + slidePathList[i];
+    //                     console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^1');
+    //                     console.log(imgSlideSrc);
+    //                     console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^2');
+    //                     $('#index-swiper').find('.swiper-wrapper').append('<div class="swiper-slide"><img src="' + imgSlideSrc + '"/></div>');
+    //
+    //                 }
+    //             }
+    //         });
+    //     }
+    // }).get();
 </script>
 </html>

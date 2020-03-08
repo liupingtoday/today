@@ -1,10 +1,20 @@
 package cn.js.today.service.cms;
 
+import cn.hutool.http.HttpRequest;
+import cn.hutool.http.HttpResponse;
+import cn.hutool.json.JSONArray;
+import cn.hutool.json.JSONObject;
+import cn.hutool.json.JSONUtil;
+import cn.js.today.domain.sys.Config;
 import cn.js.today.repository.cms.ArticleRepository;
+import cn.js.today.service.sys.ConfigService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Iterator;
 
 /**
  * Simple to Introduction
@@ -23,10 +33,57 @@ public class ArticleService {
 
     private final Logger log = LoggerFactory.getLogger(ArticleService.class);
 
-    private final ArticleRepository articleRepository;
+    @Autowired
+    private ArticleRepository articleRepository;
 
-    public ArticleService(ArticleRepository articleRepository) {
-        this.articleRepository = articleRepository;
+    @Autowired
+    private ConfigService configService;
+
+
+//    public void getArticleById(String id){
+//
+//
+//    }
+
+    public JSONObject getArticleById(String articleId) {
+
+        /***********************companyInfo********************************/
+        Config articleConfig = configService.findByConfigKey("czfytArticleURL");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
+        String articleURL = articleConfig.getConfigValue();
+
+        HttpResponse httpResponse = null;
+        try {
+            httpResponse = HttpRequest.get(articleURL + "?id=" + articleId).timeout(2000).execute();
+        } catch (Exception e) {
+            log.info("error-----" + e.getMessage());
+            return JSONUtil.createObj();
+        }
+        //请求不成功的情况
+        if(!httpResponse.isOk()){
+            return JSONUtil.createObj();
+        }
+
+        String httpResponseStr = httpResponse.body();
+        log.info("httpResponseStr:" + httpResponseStr);
+        JSONObject jsonObject = JSONUtil.parseObj(httpResponseStr);
+        JSONArray jsonArray = (JSONArray)jsonObject.get("list");
+        JSONArray articlesJsonArray = JSONUtil.createArray();
+        Iterator iterator = jsonArray.iterator();
+        while (iterator.hasNext()){
+            JSONObject articlesJsonObject = JSONUtil.createObj();
+            JSONObject jsonObject1 = (JSONObject)iterator.next();
+            String content = (String)jsonObject1.get("content");
+            articlesJsonArray.add(jsonObject1);
+//            friendlyLinkJsonArray.put("friendlyLinkJsonArray",friendlyLinkJsonArray);
+//            String linkName = (String)jsonObject1.get("linkName");
+//            indexJSONObject.put("linkName",linkName);
+//            String linkUrl = (String)jsonObject1.get("linkUrl");
+//            indexJSONObject.put("linkUrl",linkUrl);
+        }
+//        articlesJsonObject.put("articlesJsonArray",articlesJsonArray);
+
+        return JSONUtil.createObj();
+
     }
 
 }

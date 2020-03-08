@@ -54,6 +54,10 @@ public class IndexService {
     @Autowired
     private MenuMapper menuMapper;
 
+    /**
+     * 获取首页的参数
+     * @return
+     */
     public JSONObject getIndexParam(){
         JSONObject indexJSONObject = JSONUtil.createObj();
         JSONObject indexCompanyInfoJSONObject = getCompanyInfo(indexJSONObject);
@@ -63,6 +67,11 @@ public class IndexService {
         return indexJSONObject;
     }
 
+    /**
+     * 获取友情链接的参数
+     * @param indexJSONObject
+     * @return
+     */
     public JSONObject getFriendlyLink(JSONObject indexJSONObject) {
 
         /***********************companyInfo********************************/
@@ -269,43 +278,7 @@ public class IndexService {
         return newJSONArray;
     }
 
-//    public Menu saveMenu(MenuDTO menuDTO){
-//
-//        Menu menu = menuMapper.menuDTO2Menu(menuDTO);
-//        return menuRepository.save(menu);
-//    }
-//
-//    public Menu findByMenuCode(String menuCode){
-//
-//        Optional<Menu> menu = menuRepository.findByMenuCode(menuCode);
-//        return menu.orElse(null);
-//    }
-//
-//    public Menu findById(Long id){
-//        Optional<Menu> menu = menuRepository.findById(id);
-//        return menu.orElse(null);
-//    }
+    /* about us*/
 
-//    /**
-//     *
-//     * @param configKey
-//     * @return
-//     */
-//    public Config findByConfigKey(String configKey){
-//        return configRepository.findOneByConfigKey(configKey).orElse(null);
-//    }
-//
-    /**
-     *
-     * @return
-     */
-//    public List<Menu> findAll(){
-//        return menuRepository.findAll();
-//    }
-
-//    public void deleteMenu(Long menuCode){
-//        menuRepository.deleteByMenuCode(menuCode);
-//        return;
-//    }
 
 }

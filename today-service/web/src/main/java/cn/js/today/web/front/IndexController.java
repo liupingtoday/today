@@ -55,37 +55,4 @@ public class IndexController {
         return "modules/cms/front/index";
     }
 
-    /**
-     * 获取首页的幻灯片地址
-     * @return
-     */
-    public String getSlides(){
-        //首页上部的幻灯片地址
-        Config topSlidesConfig = configService.findByConfigKey("");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
-        String topSlidesURL = topSlidesConfig.getConfigValue();
-
-
-        //首页中部的幻灯片访问地址
-        Config centerSlidesConfig = configService.findByConfigKey("");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
-        String centerSlidesURL = centerSlidesConfig.getConfigValue();
-
-        return "";
-    }
-
-    //获取公司的信息，包括logo、电话、联系人等
-    public String getCompanyInfo(){
-
-
-        return "";
-    }
-
-
-    //获取友情链接信息
-    public String getFriendlyLink(){
-        Config friendlyLinkConfig = configService.findByConfigKey("");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
-        String friendlyLinkURL = friendlyLinkConfig.getConfigValue();
-
-        return "";
-    }
-
 }

@@ -83,7 +83,7 @@ public class CategoryService {
                     jsonObject.put(addedPathName,"/admin/front/about/list");  // 关于福伊特
                     break;
                 case "A1005":
-                    jsonObject.put(addedPathName,"/admin/front/about/list");  // 产品与应用
+                    jsonObject.put(addedPathName,"/admin/front/productList/list");  // 产品与应用
 //                   if(treeLeaf == "0"){
 //                       //有叶子节点
 //                       JSONArray childListJSONArray = (JSONArray)jsonObject.get("childList");
@@ -96,22 +96,22 @@ public class CategoryService {
 //                   }
                     break;
                 case "A1011":
-                    jsonObject.put(addedPathName,"/admin/front/download/list");  // 资料下载
+                    jsonObject.put(addedPathName,"/admin/front/downloadList/list");  // 资料下载
                     break;
                 case "A1013":
                     jsonObject.put(addedPathName,"/admin/front/recruit/list");  // 招聘信息
                     break;
                 case "A1008":
-                    jsonObject.put(addedPathName,"/admin/front/contract/list");  // 联系我们
+                    jsonObject.put(addedPathName,"/admin/front/contact/list");  // 联系我们
                     break;
                 case "A1014":
-                    jsonObject.put(addedPathName,"/admin/front/about/list");  // 产品规格表
+                    jsonObject.put(addedPathName,"/admin/front/productRuleList/list");  // 产品规格表
                     break;
                 case "A1012":
                     jsonObject.put(addedPathName,"/admin/front/album/list");  // 公司相册
                     break;
                 case "A1002":
-                    jsonObject.put(addedPathName,"/admin/front/news/list");  // 新闻中心
+                    jsonObject.put(addedPathName,"/admin/front/newsList/list");  // 新闻中心
                     break;
                 case "A1009":
                     jsonObject.put(addedPathName,"/admin/front/support/list");  // 技术支持
