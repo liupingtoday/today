@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="today-service-core" />
-        <module name="today-service-framework" />
         <module name="today-service-common" />
+        <module name="today-service-framework" />
+        <module name="today-service-core" />
         <module name="today-service-cms" />
       </profile>
       <profile name="Annotation profile for Today" enabled="true">

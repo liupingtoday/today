@@ -36,12 +36,14 @@ public class UserMapper {
         } else {
             User user = new User();
             user.setUserId(userDTO.getUserId());
+            user.setLoginCode(userDTO.getLoginCode());
             user.setUserName(userDTO.getUserName());
             user.setAge(userDTO.getAge());
             user.setEmail(userDTO.getEmail());
-            user.setMobilePhone(userDTO.getMobilePhone());
-            user.setNickName(userDTO.getNickName());
+            user.setMobile(userDTO.getMobile());
+            user.setPhone(userDTO.getPhone());
             user.setPassword(userDTO.getPassword());
+            user.setBirthday(userDTO.getBirthday());
 
             return user;
         }

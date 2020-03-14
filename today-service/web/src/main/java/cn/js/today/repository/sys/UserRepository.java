@@ -23,7 +23,7 @@ public interface UserRepository extends JpaRepository<User,Long> {
 
     Optional<User> findOneByUserId(Long userId);
 
-    Optional<User> findOneByNickName(String nickName);
+    Optional<User> findOneByLoginCode(String loginCode);
 
     Optional<User> findOneByUserName(String userName);
 

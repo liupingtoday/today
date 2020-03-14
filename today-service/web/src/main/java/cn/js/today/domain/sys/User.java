@@ -34,16 +34,22 @@ public class User extends DataEntity<User> {
     private Long userId;
 
     /**
-     * 用户名称
+     * 登录账号
+     */
+    @Column(name = "login_code")
+    private String loginCode;
+
+    /**
+     * 用户昵称
      */
     @Column(name = "user_name")
     private String userName;
 
     /**
-     * 用户昵称
+     * 用户类型
      */
-    @Column(name = "nick_name")
-    private String nickName;
+    @Column(name = "user_type")
+    private String userType;
 
     /**
      * 用户密码
@@ -56,6 +62,12 @@ public class User extends DataEntity<User> {
      */
     @Column(name = "age")
     private String age;
+
+    /**
+     * 用户性别
+     */
+    @Column(name = "sex")
+    private String sex;
 
     /**
      * 生日
@@ -72,14 +84,74 @@ public class User extends DataEntity<User> {
     /**
      * 手机号码
      */
-    @Column(name = "mobile_phone")
-    private String mobilePhone;
+    @Column(name = "mobile")
+    private String mobile;
 
     /**
-     * 座机号码
+     * 办公电话
      */
-    @Column(name = "tel_phone")
-    private String telPhone;
+    @Column(name = "phone")
+    private String phone;
+
+    /**
+     * 头像路径
+     */
+    @Column(name = "avatar")
+    private String avatar;
+
+    /**
+     * 个性签名
+     */
+    @Column(name = "sign")
+    private String sign;
+
+    /**
+     * 绑定的微信号
+     */
+    @Column(name = "wx_openid")
+    private String wxOpenid;
+
+    /**
+     * 用户类型引用编号
+     */
+    @Column(name = "ref_code")
+    private String refCode;
+    /**
+     * 用户类型引用姓名
+     */
+    @Column(name = "ref_name")
+    private String refName;
+
+    /**
+     * 绑定的微信号
+     */
+    @Column(name = "mobile_imei")
+    private String mobileImei;
+
+    /**
+     * 最后登陆时间
+     */
+    @Column(name = "last_login_date")
+    private String lastLoginDate;
+
+    /**
+     * 冻结时间
+     */
+    @Column(name = "freeze_date")
+    private String freezeDate;
+
+    /**
+     * 冻结原因
+     */
+    @Column(name = "freeze_cause")
+    private String freezeCause;
+
+    /**
+     * 状态（0正常 1删除 2停用 3冻结）
+     */
+    @Column(name = "status")
+    private String status;
+
 
     public Long getUserId() {
         return userId;
@@ -87,6 +159,14 @@ public class User extends DataEntity<User> {
 
     public void setUserId(Long userId) {
         this.userId = userId;
+    }
+
+    public String getLoginCode() {
+        return loginCode;
+    }
+
+    public void setLoginCode(String loginCode) {
+        this.loginCode = loginCode;
     }
 
     public String getUserName() {
@@ -97,12 +177,12 @@ public class User extends DataEntity<User> {
         this.userName = userName;
     }
 
-    public String getNickName() {
-        return nickName;
+    public String getUserType() {
+        return userType;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setUserType(String userType) {
+        this.userType = userType;
     }
 
     public String getPassword() {
@@ -121,28 +201,12 @@ public class User extends DataEntity<User> {
         this.age = age;
     }
 
-    public String getEmail() {
-        return email;
+    public String getSex() {
+        return sex;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getMobilePhone() {
-        return mobilePhone;
-    }
-
-    public void setMobilePhone(String mobilePhone) {
-        this.mobilePhone = mobilePhone;
-    }
-
-    public String getTelPhone() {
-        return telPhone;
-    }
-
-    public void setTelPhone(String telPhone) {
-        this.telPhone = telPhone;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
     public String getBirthday() {
@@ -151,5 +215,109 @@ public class User extends DataEntity<User> {
 
     public void setBirthday(String birthday) {
         this.birthday = birthday;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public String getSign() {
+        return sign;
+    }
+
+    public void setSign(String sign) {
+        this.sign = sign;
+    }
+
+    public String getWxOpenid() {
+        return wxOpenid;
+    }
+
+    public void setWxOpenid(String wxOpenid) {
+        this.wxOpenid = wxOpenid;
+    }
+
+    public String getRefCode() {
+        return refCode;
+    }
+
+    public void setRefCode(String refCode) {
+        this.refCode = refCode;
+    }
+
+    public String getRefName() {
+        return refName;
+    }
+
+    public void setRefName(String refName) {
+        this.refName = refName;
+    }
+
+    public String getMobileImei() {
+        return mobileImei;
+    }
+
+    public void setMobileImei(String mobileImei) {
+        this.mobileImei = mobileImei;
+    }
+
+    public String getLastLoginDate() {
+        return lastLoginDate;
+    }
+
+    public void setLastLoginDate(String lastLoginDate) {
+        this.lastLoginDate = lastLoginDate;
+    }
+
+    public String getFreezeDate() {
+        return freezeDate;
+    }
+
+    public void setFreezeDate(String freezeDate) {
+        this.freezeDate = freezeDate;
+    }
+
+    public String getFreezeCause() {
+        return freezeCause;
+    }
+
+    public void setFreezeCause(String freezeCause) {
+        this.freezeCause = freezeCause;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

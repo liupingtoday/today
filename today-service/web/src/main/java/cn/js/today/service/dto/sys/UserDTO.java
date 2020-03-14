@@ -25,9 +25,11 @@ public class UserDTO {
     private String userName;
 
     /**
-     * 用户昵称
+     *
      */
-    private String nickName;
+    private String loginCode;
+
+    private String avatar;
 
     /**
      * 生日
@@ -54,12 +56,13 @@ public class UserDTO {
     /**
      * 手机号码
      */
-    private String mobilePhone;
+    private String mobile;
 
     /**
      * 座机号码
      */
-    private String telPhone;
+    private String phone;
+
 
     public Long getUserId() {
         return userId;
@@ -77,12 +80,28 @@ public class UserDTO {
         this.userName = userName;
     }
 
-    public String getNickName() {
-        return nickName;
+    public String getLoginCode() {
+        return loginCode;
     }
 
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
+    public void setLoginCode(String loginCode) {
+        this.loginCode = loginCode;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public String getPassword() {
@@ -109,27 +128,19 @@ public class UserDTO {
         this.email = email;
     }
 
-    public String getMobilePhone() {
-        return mobilePhone;
+    public String getMobile() {
+        return mobile;
     }
 
-    public void setMobilePhone(String mobilePhone) {
-        this.mobilePhone = mobilePhone;
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 
-    public String getTelPhone() {
-        return telPhone;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTelPhone(String telPhone) {
-        this.telPhone = telPhone;
-    }
-
-    public String getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }

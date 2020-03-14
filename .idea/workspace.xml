@@ -2,178 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1fd8ede-9f21-4da5-b86b-2b44196f1cf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/repository/sys/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/dto/sys/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/sys/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/front/DownloadListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/front/NewsListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/front/ProductListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/front/ProductRuleListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/sys/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185862655009017858.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185877425112141826.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185885844950929410.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185885916220542978.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185885941331841026.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185890546702798850.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185891700111233026.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185891771603144706.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185929063889817602.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1185931371172253698.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186090913218613250.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186099304821346306.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186103290773295106.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186105129359036418.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186108397552324610.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186110661008478210.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186117869645516802.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186118655058300930.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186121129299202050.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186122159038582786.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186123068053311490.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186123103629398018.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186123155923980290.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186124541537472514.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186124583027527682.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186130356482789378.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186191231898013698.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186195968349360130.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186225630815375362.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186225724151222274.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186225780770131970.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186226646847770626.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186228347231195138.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186232245983563778.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186234197500940290.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186235893820084226.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186236377201037314.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186238508498866178.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186238556028719106.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186240055911829506.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186274366568452098.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186275671856828418.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186276631014461442.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186277506239877122.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186278170936397826.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186281542242455554.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186285965916164098.tif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186288433249046530.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186288682004828162.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186289392608006146.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186296121269866498.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186298649084612610.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186444532568739842.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186444565435305986.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186445961031241730.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201910/1186446662771855362.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201911/1198608778070499330.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201911/1200109814965047298.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201911/1200109834615361538.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201911/1200777912638373890.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1201102214522163202.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1201438502890721282.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1201438566795137026.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1201442857152892930.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1201445194709815298.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1201446422651031553.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1201446788671164418.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1201495518241837058.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1210848283424079874.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/fileupload/201912/1210851207395033090.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/31XHS_Trojan_Data_Sheets_$1571572372043006690.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/J305G-AC参数_$1571583384826043355.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/T-105Plus参数_$1571580978538029827.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/T-105Plus参数_$1571581067180012315.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/T-125Plus参数_$1571582037493037862.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/T-1275Plus参数_$1571582996594043896.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/T-145Plus参数_$1571582703928092324.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/T105Plus_Trojan_Data_Sheets NEW_$1571580807118097773.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/usb_305_group_data_sheet_2017_$1571573677732007077.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191020/usb_305_group_data_sheet_2017_$1571573730648005286.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/31XHS_Trojan_Data_Sheets_$1571655202831012197.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/31XHS_Trojan_Data_Sheets_$1571655545428056508.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/DC105-12_$1571628522001003241.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/DC115-12A_$1571628216483097415.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/DC335-6_$1571627489618055373.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/DC400-6_$1571627786606066731.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/J305H-AC参数_$1571623051020061297.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/J305HG-AC参数_$1571623899433027114.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/J305P-AC参数_$1571620977868074201.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/L16G-AC参数_$1571624423886056256.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/L16H-AC参数_$1571625717921010530.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/L16P-AC参数_$1571625288491095010.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/usb_2000_data_sheet_117HR_$1571630604331085269.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/usb_305_group_data_sheet_2017_$1571653624018005005.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191021/usb_305_group_data_sheet_2017_$1571653878089031928.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191201/24GEL_Trojan_Data_Sheets_$1575200676864048798.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191201/J305GAC_Trojan_Data_Sheets_$1575199627306084713.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191201/T105Plus_Trojan_Data_Sheets NEW_$1575199064334037330.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191202/DC400-6_$1575280947178027622.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191202/J305PAC_Trojan_Data_Sheets_$1575280989558006629.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191202/L16G-AC参数_$1575280533055052645.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191202/L16P_Trojan_Data_Sheets_$1575281073515079370.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191202/T1275Plus_Trojan_Data_Sheets_$1575280722613018384.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/files/20191202/T145Plus_Trojan_Data_Sheets_$1575280843184012342.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/05-30-2014_IC650__页面_1_$1571670518209062833.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/05-30-2014_IC650__页面_1_$1571670557809095545.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/05-30-2014_IC650页面_2_$1571670536629015658.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/05-30-2014_IC650页面_2_$1571670571002090627.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/2V阳光电池标志_$1571667560575074633.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/2V阳光电池标志_$1571668982546064405.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/2V阳光电池标志_$1571669072607029077.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/2V阳光电池标志_$1571669102648043709.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/CLASSIC_$1571668162604035280.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/CLASSIC_$1571668834895044153.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/QQ截图20171223145401_$1571656410164095138.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/QQ截图20171223145401_$1571656607224046713.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/QQ截图20171223145401_$1571664806384036231.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/QQ截图20171223145401_$1571665109693008519.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/QQ截图20171223145401_$1571665331004046474.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/QQ截图20171223145401_$1571665551698011916.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191021/QQ截图20171223145401_$1571665706775018441.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/Fullriver电池规格表_页面_1_$1571711496478016836.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/Fullriver电池规格表_页面_1_$1571711553235055810.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/Fullriver电池规格表_页面_1_$1571711572294035888.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/Fullriver电池规格表_页面_2_$1571711536260002135.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/Fullriver电池规格表_页面_2_$1571711594368019698.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/Trojan电池规格表_页面_1_$1571711289891078402.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/Trojan电池规格表_页面_2_$1571711310526012767.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/US电池规格表_$1571711388757035664.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191022/trojan1_$1571711708783027393.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191228/201406141628571440_$1577524406954082380.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/static/userfiles/system/images/20191228/201406141632248541_$1577523652001067285.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/modules/JiraUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/dto/jira/JiraIssueDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/dto/jira/UserWorklog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/jira/JiraService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/utils/BasicAuthenticationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/utils/ExcelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/utils/JiraUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/jira/JiraController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/today-service/web/src/test/java/test/JiraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/today_service_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/today_service_web_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-admin/src/assets/html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-admin/src/assets/html/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/today-service/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/cms/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/cms/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/cms/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/cms/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/cms/IndexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/cms/IndexService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/dto/cms/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/front/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/web/front/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/include/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/album.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/download.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/download.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/productList.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/productList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/recruit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/resources/templates/modules/cms/front/support.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/service/cms/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/service/cms/ArticleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/service/cms/CategoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/service/cms/CategoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/service/cms/IndexService.class" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/service/cms/IndexService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/web/front/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/cn/js/today/web/front/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/include/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/include/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/album.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/album.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/download.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/download.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/productList.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/productList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/recruit.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/recruit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/target/classes/templates/modules/cms/front/support.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/domain/sys/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/repository/sys/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/repository/sys/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/dto/sys/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/dto/sys/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/service/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/today-service/web/today-service-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/today-service/web/today-service-web.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,6 +48,7 @@
       <list>
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -236,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/today-service/web/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/today-service/web/src/main/java/cn/js/today/utils" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -248,11 +95,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\data\code\today\today-service\modules" />
       <recent name="C:\data\code\today\today-service\web\src\main\resources\templates\include" />
       <recent name="C:\data\code\today\today-service\web\src\main\resources\static\common\css" />
       <recent name="C:\data\code\today\today-service\web\src\main\resources\static" />
       <recent name="C:\data\code\today\today-service\web\src\main\resources\static1" />
-      <recent name="C:\data\code\today\today-service\web\src\main\resources\templates" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="cn.js.today.domain" />
@@ -260,18 +107,18 @@
       <recent name="backup" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.js.today.service.dto.jira" />
+      <recent name="test" />
+      <recent name="cn.js.today.service.jira" />
+      <recent name="cn.js.today.web.jira" />
       <recent name="cn.js.today.web.sys" />
-      <recent name="cn.js.today.service.mapper" />
-      <recent name="cn.js.today.service.dto.sys" />
-      <recent name="cn.js.today.repository.sys" />
-      <recent name="cn.js.today.service.sys" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today\utils" />
       <recent name="C:\data\code\today\today-service\web\src\main\resources\static" />
       <recent name="C:\data\code\today\today-service\web\src\main\resources\templates\modules\cms\front" />
       <recent name="C:\data\code\today\today-service\web\src\main\resources\static\common\js" />
       <recent name="C:\data\code\today\today-service\web\src\main\resources\static\common\img" />
-      <recent name="C:\data\code\today\today-service\web\src\main\java\cn\js\today\common" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WebApplication">
@@ -329,23 +176,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpRequestTest.getHttpsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="today-service-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.HttpRequestTest" />
-      <option name="METHOD_NAME" value="getHttpsTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="HttpRequestTest.getHttpswwTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="today-service-web" />
       <extension name="coverage">
@@ -357,6 +187,23 @@
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.HttpRequestTest" />
       <option name="METHOD_NAME" value="getHttpswwTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JiraTest.getWorklogByUserNameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="today-service-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.JiraTest" />
+      <option name="METHOD_NAME" value="getWorklogByUserNameTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -445,17 +292,17 @@
       <item itemvalue="Application.JSONUtils" />
       <item itemvalue="Application.IdGenerate" />
       <item itemvalue="JAR Application.today-service" />
-      <item itemvalue="JUnit.HttpRequestTest.getHttpsTest" />
       <item itemvalue="JUnit.HttpRequestTest.getHttpswwTest" />
+      <item itemvalue="JUnit.JiraTest.getWorklogByUserNameTest" />
       <item itemvalue="Spring Boot.WebApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JiraTest.getWorklogByUserNameTest" />
         <item itemvalue="Application.IdGenerate" />
         <item itemvalue="Application.JSONUtils" />
         <item itemvalue="Application.DateUtils" />
         <item itemvalue="JUnit.HttpRequestTest.getHttpswwTest" />
-        <item itemvalue="JUnit.HttpRequestTest.getHttpsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -520,7 +367,8 @@
       <workItem from="1582507419541" duration="34926000" />
       <workItem from="1582722617926" duration="6951000" />
       <workItem from="1583249515374" duration="2269000" />
-      <workItem from="1583548929039" duration="17557000" />
+      <workItem from="1583548929039" duration="64239000" />
+      <workItem from="1583897421994" duration="55018000" />
     </task>
     <task id="LOCAL-00001" summary="成功自动生成表">
       <created>1577299430732</created>
@@ -745,12 +593,13 @@
     </state>
     <state x="3590" y="510" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578667914722" />
     <state x="515" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1580974233898" />
-    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1583685326737">
+    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1584166062903">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1579160927165" />
+    <state x="3229" y="52" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583907513773" />
     <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1582371019524" />
-    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685326737" />
+    <state x="3452" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166062903" />
     <state x="5372" y="70" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1582343782761" />
     <state x="446" y="34" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1582356651387" />
     <state x="5240" y="426" width="518" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581349265195">
@@ -781,124 +630,124 @@
     <state x="322" y="69" key="FileChooserDialogImpl/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1582133337880" />
     <state x="3204" y="155" key="FileChooserDialogImpl/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1578413248970" />
     <state x="322" y="75" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1580951092031" />
-    <state width="2517" height="180" key="GridCell.Tab.0.bottom" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.0.bottom" timestamp="1584166425303">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618898" />
     <state width="1238" height="177" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537228" />
-    <state width="1877" height="537" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249740019" />
-    <state width="1238" height="365" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162940030" />
-    <state width="2517" height="180" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200385" />
+    <state width="2517" height="557" key="GridCell.Tab.0.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425303" />
     <state width="2518" height="355" key="GridCell.Tab.0.bottom/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575529052" />
     <state width="1238" height="219" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582351878965" />
-    <state width="2517" height="180" key="GridCell.Tab.0.center" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.0.center" timestamp="1584166425303">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618898" />
     <state width="1238" height="177" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537228" />
-    <state width="1877" height="537" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249740019" />
-    <state width="1238" height="365" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162940030" />
-    <state width="2517" height="180" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200385" />
+    <state width="2517" height="557" key="GridCell.Tab.0.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425303" />
     <state width="2518" height="355" key="GridCell.Tab.0.center/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575529052" />
     <state width="1238" height="219" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582351878965" />
-    <state width="2517" height="180" key="GridCell.Tab.0.left" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.0.left" timestamp="1584166425303">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618898" />
     <state width="1238" height="177" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537228" />
-    <state width="1877" height="537" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249740019" />
-    <state width="1238" height="365" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162940030" />
-    <state width="2517" height="180" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363550" />
+    <state width="1878" height="443" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200385" />
+    <state width="2517" height="557" key="GridCell.Tab.0.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425303" />
     <state width="2518" height="355" key="GridCell.Tab.0.left/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575529052" />
     <state width="1238" height="219" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582351878964" />
-    <state width="2517" height="180" key="GridCell.Tab.0.right" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.0.right" timestamp="1584166425303">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618898" />
     <state width="1238" height="177" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537228" />
-    <state width="1877" height="537" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249740019" />
-    <state width="1238" height="365" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162940030" />
-    <state width="2517" height="180" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200385" />
+    <state width="2517" height="557" key="GridCell.Tab.0.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425303" />
     <state width="2518" height="355" key="GridCell.Tab.0.right/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575529052" />
     <state width="1238" height="219" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582351878965" />
-    <state width="2517" height="180" key="GridCell.Tab.1.bottom" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.1.bottom" timestamp="1584166425010">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618681" />
     <state width="1238" height="177" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537230" />
-    <state width="1877" height="537" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249739673" />
-    <state width="1238" height="365" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162936143" />
-    <state width="2517" height="180" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200385" />
+    <state width="2517" height="557" key="GridCell.Tab.1.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425010" />
     <state width="2518" height="355" key="GridCell.Tab.1.bottom/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575528830" />
     <state width="1238" height="219" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582351878966" />
-    <state width="2517" height="180" key="GridCell.Tab.1.center" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.1.center" timestamp="1584166425010">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618680" />
     <state width="1238" height="177" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537229" />
-    <state width="1877" height="537" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249739673" />
-    <state width="1238" height="365" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162936142" />
-    <state width="2517" height="180" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200385" />
+    <state width="2517" height="557" key="GridCell.Tab.1.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425010" />
     <state width="2518" height="355" key="GridCell.Tab.1.center/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575528829" />
     <state width="1238" height="219" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1582351878965" />
-    <state width="2517" height="180" key="GridCell.Tab.1.left" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.1.left" timestamp="1584166425009">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618680" />
     <state width="1238" height="177" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537229" />
-    <state width="1877" height="537" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249739673" />
-    <state width="1238" height="365" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162936142" />
-    <state width="2517" height="180" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200385" />
+    <state width="2517" height="557" key="GridCell.Tab.1.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425009" />
     <state width="2518" height="355" key="GridCell.Tab.1.left/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575528829" />
     <state width="1238" height="219" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1582351878965" />
-    <state width="2517" height="180" key="GridCell.Tab.1.right" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.1.right" timestamp="1584166425010">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618680" />
     <state width="1238" height="177" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537230" />
-    <state width="1877" height="537" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249739673" />
-    <state width="1238" height="365" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162936142" />
-    <state width="2517" height="180" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200385" />
+    <state width="2517" height="557" key="GridCell.Tab.1.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425010" />
     <state width="2518" height="355" key="GridCell.Tab.1.right/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575528829" />
     <state width="1238" height="219" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1582351878966" />
-    <state width="2517" height="180" key="GridCell.Tab.2.bottom" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.2.bottom" timestamp="1584166425010">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618681" />
     <state width="1238" height="177" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537230" />
-    <state width="1877" height="537" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249739673" />
-    <state width="1238" height="365" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162936143" />
-    <state width="2517" height="180" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306310" />
+    <state width="1238" height="258" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200386" />
+    <state width="2517" height="557" key="GridCell.Tab.2.bottom/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425010" />
     <state width="2518" height="355" key="GridCell.Tab.2.bottom/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575528830" />
     <state width="1238" height="219" key="GridCell.Tab.2.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582351878967" />
-    <state width="2517" height="180" key="GridCell.Tab.2.center" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.2.center" timestamp="1584166425010">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618681" />
     <state width="1238" height="177" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537230" />
-    <state width="1877" height="537" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249739673" />
-    <state width="1238" height="365" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162936143" />
-    <state width="2517" height="180" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200386" />
+    <state width="2517" height="557" key="GridCell.Tab.2.center/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425010" />
     <state width="2518" height="355" key="GridCell.Tab.2.center/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575528830" />
     <state width="1238" height="219" key="GridCell.Tab.2.center/0.0.1280.680@0.0.1280.680" timestamp="1582351878966" />
-    <state width="2517" height="180" key="GridCell.Tab.2.left" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.2.left" timestamp="1584166425010">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618681" />
     <state width="1238" height="177" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537230" />
-    <state width="1877" height="537" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249739673" />
-    <state width="1238" height="365" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162936143" />
-    <state width="2517" height="180" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306309" />
+    <state width="1238" height="258" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200386" />
+    <state width="2517" height="557" key="GridCell.Tab.2.left/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425010" />
     <state width="2518" height="355" key="GridCell.Tab.2.left/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575528830" />
     <state width="1238" height="219" key="GridCell.Tab.2.left/0.0.1280.680@0.0.1280.680" timestamp="1582351878966" />
-    <state width="2517" height="180" key="GridCell.Tab.2.right" timestamp="1583685363551">
+    <state width="2517" height="557" key="GridCell.Tab.2.right" timestamp="1584166425010">
       <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="355" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583631618681" />
     <state width="1238" height="177" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1583231537230" />
-    <state width="1877" height="537" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1583249739673" />
-    <state width="1238" height="365" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1583162936143" />
-    <state width="2517" height="180" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583685363551" />
+    <state width="1878" height="443" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1584012306310" />
+    <state width="1238" height="258" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1584032200386" />
+    <state width="2517" height="557" key="GridCell.Tab.2.right/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1584166425010" />
     <state width="2518" height="355" key="GridCell.Tab.2.right/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1583575528830" />
     <state width="1238" height="219" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1582351878966" />
     <state width="1238" height="19" key="GridCell.Tab.3.bottom" timestamp="1578402413980">
@@ -948,12 +797,12 @@
     <state x="122" y="0" key="SettingsEditor/0.0.1280.680/2560.0.2560.1400@0.0.1280.680" timestamp="1582133348252" />
     <state x="2804" y="0" key="SettingsEditor/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1581867087516" />
     <state x="122" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581002356615" />
-    <state x="5482" y="442" width="555" height="524" key="StructurePopup" timestamp="1583632494579">
-      <screen x="4480" y="0" width="2560" height="1400" />
+    <state x="3562" y="442" width="555" height="524" key="StructurePopup" timestamp="1583763167823">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state x="5482" y="442" width="555" height="524" key="StructurePopup/0.0.1280.680/2560.0.1920.1040/4480.0.2560.1400@4480.0.2560.1400" timestamp="1583632494579" />
     <state x="3312" y="328" width="555" height="390" key="StructurePopup/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1582187849023" />
-    <state x="3562" y="442" width="555" height="524" key="StructurePopup/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1582378702496" />
+    <state x="3562" y="442" width="555" height="524" key="StructurePopup/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583763167823" />
     <state x="5482" y="442" width="555" height="524" key="StructurePopup/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1582442556660" />
     <state x="3434" y="319" key="Vcs.Push.Dialog.v2" timestamp="1582379923912">
       <screen x="2560" y="0" width="2560" height="1400" />
@@ -979,12 +828,12 @@
       <screen x="4480" y="0" width="2560" height="1400" />
     </state>
     <state x="5418" y="331" key="run.anything.popup/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1577888797044" />
-    <state x="3015" y="3" width="1008" height="1037" key="search.everywhere.popup" timestamp="1582518167651">
-      <screen x="2560" y="0" width="1920" height="1040" />
+    <state x="3167" y="4" width="1344" height="1396" key="search.everywhere.popup" timestamp="1583757795405">
+      <screen x="2560" y="0" width="2560" height="1400" />
     </state>
     <state x="304" y="3" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/2560.0.1920.1040@0.0.1280.680" timestamp="1579152741496" />
     <state x="3015" y="3" width="1008" height="1037" key="search.everywhere.popup/0.0.1280.680/2560.0.1920.1040@2560.0.1920.1040" timestamp="1582518167651" />
-    <state x="3167" y="4" width="1344" height="1396" key="search.everywhere.popup/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1582420324275" />
+    <state x="3167" y="4" width="1344" height="1396" key="search.everywhere.popup/0.0.1280.680/2560.0.2560.1400@2560.0.2560.1400" timestamp="1583757795405" />
     <state x="5087" y="4" width="1344" height="1396" key="search.everywhere.popup/0.0.1280.680/4480.0.2560.1400/2560.0.1920.1040@4480.0.2560.1400" timestamp="1582456447207" />
     <state x="305" y="4" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1579934273444" />
   </component>
