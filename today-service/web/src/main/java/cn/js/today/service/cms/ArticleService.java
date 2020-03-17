@@ -53,7 +53,7 @@ public class ArticleService {
 
         HttpResponse httpResponse = null;
         try {
-            httpResponse = HttpRequest.get(articleURL + "?id=" + articleId).timeout(2000).execute();
+            httpResponse = HttpRequest.get(articleURL + "?id=" + articleId).timeout(20*1000).execute();
         } catch (Exception e) {
             log.info("error-----" + e.getMessage());
             return JSONUtil.createObj();

@@ -1,6 +1,7 @@
 package cn.js.today.web.jira;
 
 import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.map.MapUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
@@ -126,6 +127,7 @@ public class JiraController {
 
     @GetMapping("/jira/worklog/user")
     public ResponseEntity<JSONObject> getJiraAllWorklog(String username, String beginDate, String endDate){
+
 
         JSONObject jsonArray = jiraService.getWorklogByUserName("http://jira.cmvideo.cn", "liuping","123456", username,beginDate,endDate);
         return ResponseEntity.ok().body(jsonArray);

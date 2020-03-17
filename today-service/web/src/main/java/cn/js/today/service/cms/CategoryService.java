@@ -80,7 +80,7 @@ public class CategoryService {
                     jsonObject.put(addedPathName,"/admin/front/index/list");  // 首页
                     break;
                 case "A1015":
-                    jsonObject.put(addedPathName,"/admin/front/about/list");  // 关于福伊特
+                    jsonObject.put(addedPathName,"/admin/front/about/list?id=A1015");  // 关于福伊特
                     break;
                 case "A1005":
                     jsonObject.put(addedPathName,"/admin/front/productList/list");  // 产品与应用
