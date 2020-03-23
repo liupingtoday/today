@@ -40,15 +40,10 @@ public class ArticleService {
     private ConfigService configService;
 
 
-//    public void getArticleById(String id){
-//
-//
-//    }
-
     public JSONObject getArticleById(String articleId) {
 
         /***********************companyInfo********************************/
-        Config articleConfig = configService.findByConfigKey("czfytArticleURL");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
+        Config articleConfig = configService.findByConfigKey("czfytArticleDataURL");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
         String articleURL = articleConfig.getConfigValue();
 
         HttpResponse httpResponse = null;
@@ -73,12 +68,9 @@ public class ArticleService {
             JSONObject articlesJsonObject = JSONUtil.createObj();
             JSONObject jsonObject1 = (JSONObject)iterator.next();
             String content = (String)jsonObject1.get("content");
+//            articlesJsonObject.put();
             articlesJsonArray.add(jsonObject1);
-//            friendlyLinkJsonArray.put("friendlyLinkJsonArray",friendlyLinkJsonArray);
-//            String linkName = (String)jsonObject1.get("linkName");
-//            indexJSONObject.put("linkName",linkName);
-//            String linkUrl = (String)jsonObject1.get("linkUrl");
-//            indexJSONObject.put("linkUrl",linkUrl);
+
         }
 //        articlesJsonObject.put("articlesJsonArray",articlesJsonArray);
 

@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -57,4 +58,10 @@ public class CategoryController {
         return categoryService.getAllCategory().toString();
     }
 
+    @RequestMapping(value = "getArticleListByCategoryId", method = RequestMethod.GET)
+    @ResponseBody
+    public String getArticleListByCategoryId(String categoryCode, String pageNo, String pageSize){
+        String result = categoryService.getArticleListByCategoryId(categoryCode, pageNo, pageSize);
+        return result;
+    }
 }

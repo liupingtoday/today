@@ -1,47 +1,7 @@
-// 返回顶部按钮
-// Helper.backTop();
+// 初始化内容
+let categoryId = window.Utils.getQueryString("id");
+console.log("--+++categoryId:" + categoryId);
 
-// 监听滚动事件，更改navbar背景色透明度
-// $(window).scroll(function () {
-//     let s = $(window).scrollTop();
-//     $('.navbar-warp').css('background-color', `rgba(255, 255, 255, ${s / 120})`);
-// });
-
-    new Swiper('.index-swiper', {
-        autoHeight: true, // enable auto height
-        slidesPerView: 1,
-        spaceBetween: 30,
-        observer: true, // 修改swiper自己或子元素时，自动初始化swiper
-        observeParents: true, // 修改swiper的父元素时，自动初始化swiper
-        centeredSlides: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-
-    new Swiper('.index-product-swiper', {
-        slidesPerView: 2,
-        // parallax: true,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
 
 // 动态从后台获取首页的slides
 // Http({
@@ -65,18 +25,6 @@
 //
 //                 }
 //             }
-//         });
-//     }
-// }).get();
-/*
-*  获取友情链接的信息
-* */
-// Http({
-//     url: '/' + SERVER_FLAG + '/f/links/listData',
-//     isDefaultApiRequest: false,
-//     success: function (data, textStatus, jqXHR) {
-//         $.each(data.list, function (index, value) {
-//             $('#fr-lk').find('ul').append('<li><a href="' + value.linkUrl + '" title="' + value.linkName + '" target="_blank">' + value.linkName + '</a></li>');
 //         });
 //     }
 // }).get();

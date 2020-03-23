@@ -25,13 +25,13 @@ import javax.validation.constraints.Pattern;
 public class User extends DataEntity<User> {
 
     /**
-     * 用户ID
+     * 用户编码
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JsonSerialize(using = ToStringSerializer.class)
-    @Column(name = "user_id")
-    private Long userId;
+    @Column(name = "user_code")
+    private Long userCode;
 
     /**
      * 登录账号
@@ -153,12 +153,12 @@ public class User extends DataEntity<User> {
     private String status;
 
 
-    public Long getUserId() {
-        return userId;
+    public Long getUserCode() {
+        return userCode;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setUserCode(Long userCode) {
+        this.userCode = userCode;
     }
 
     public String getLoginCode() {

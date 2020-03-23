@@ -7,7 +7,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 
 @Generated(value = "org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor")
 @StaticMetamodel(DataEntity.class)
-public abstract class DataEntity_ {
+public abstract class DataEntity_ extends cn.js.today.common.BaseEntity_ {
 
 	public static volatile SingularAttribute<DataEntity, LocalDateTime> updatedTime;
 	public static volatile SingularAttribute<DataEntity, String> updatedBy;

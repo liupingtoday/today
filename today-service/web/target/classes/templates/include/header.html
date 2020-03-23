@@ -6,13 +6,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <!--Mobile first-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta id="description" name="Description" content="常州福伊特商贸有限公司" />
-<meta id="keywords" name="Keywords" content="常州福伊特商贸有限公司" />
+<meta id="description" name="Description" content="${indexJsonObject.siteKeywords}" />
+<meta id="keywords" name="Keywords" content="${indexJsonObject.siteKeywords}" />
 <meta id="author" name="Author" content="" />
 <#include "/include/csslibs.html">
 <title id="czfyt_title">${ctx}</title>
 <div class="inner">
-    <div id="siteLogo" class="top-logo inner"> <a href="/" title="czfyt" id="web_logo"> <img src="../../common/img/czfyt-logo.png" alt="czfyt" title="czfyt" style="margin:15px 0px 0px 0px;" /> </a>
+    <div id="siteLogo" class="top-logo inner"> <a href="/" title="czfyt" id="web_logo"> <img src="${indexJsonObject.siteLogo}" alt="czfyt" title="czfyt" style="margin:15px 0px 0px 0px;" /> </a>
         <ul id="hotline" class="top-nav list-none">
             <li class="t">
                 <a href='#' onclick='SetHome(this,window.location,"非IE浏览器不支持此功能，请手动设置！");' style='cursor:pointer;' title='设为首页'  >设为首页</a>
@@ -29,12 +29,12 @@
         <#list allCategory as item>
         <li>
 
-            <a href="${item.urlPath}" target="" title="${item.categoryName}">${item.categoryName}</a>
+            <a id="${item.categoryId}" href="${item.urlPath}" target="" title="${item.categoryName}">${item.categoryName}</a>
             <#if (item.treeLeaf == '0') >
             <ul>
                 <#list item.childList as childItem>
                 <li>
-                    <a href="${item.urlPath}">${childItem.categoryName}</a>
+                    <a id="${childItem.categoryId}" href="${item.urlPath}" title="${childItem.categoryName}">${childItem.categoryName}</a>
                 </li>
             </#list>
     </ul>

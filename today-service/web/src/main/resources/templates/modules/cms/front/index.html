@@ -83,31 +83,16 @@
         <div class="pro-list br-bg">
             <!-- Swiper -->
             <div class="swiper-container index-product-swiper">
+
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../../common/img/1.jpg" width="150px" height="120px">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../../common/img/2.jpg" width="150px" height="120px">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../../common/img/1.jpg" width="150px" height="120px">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../../common/img/2.jpg" width="150px" height="120px">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../../common/img/1.jpg" width="150px" height="120px">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../../common/img/2.jpg" width="150px" height="120px">
-                    </div>
+                    <#list indexJsonObject.indexTopSlidePaths?split("|") as item>
+                        <div class="swiper-slide">
+                            <img src="${ctx + item}"/>
+                        </div>
+                     </#list>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
-                <!-- Add Pagination -->
-                <!--                    <div class="swiper-button-next"></div>-->
-                <!--                    <div class="swiper-button-prev"></div>-->
             </div>
 
             <div class="clear"></div>
@@ -138,78 +123,7 @@
     </div>
     <div class="clear"></div>
 </div>
-<footer class="p-3 border-top text-md-center" style="background: #333333;color: #fff;font-size: 14px;line-height: 30px">
-</footer>
+<#include "/include/footer.html">
 </body>
 <#include "/include/jslibs.html">
-<script type="javascript">
-
-    $(document).ready(function(){
-        // 初始化内容
-        indexTopSwiper;
-    });
-
-    var indexTopSwiper = new Swiper('.index-swiper', {
-        autoHeight: false, // enable auto height
-        slidesPerView: 1,
-        spaceBetween: 30,
-        observer: true, // 修改swiper自己或子元素时，自动初始化swiper
-        observeParents: true, // 修改swiper的父元素时，自动初始化swiper
-        centeredSlides: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-
-
-    new Swiper('.index-product-swiper', {
-        slidesPerView: 2,
-        // parallax: true,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-
-    // 动态从后台获取首页的slides
-    // Http({
-    //     url: '/' + SERVER_FLAG + '/f/company/companyInfo/listData',
-    //     data: {},
-    //     isDefaultApiRequest: false,
-    //     success: function (data, textStatus, jqXHR) {
-    //         $.each(data.list, function (index, value) {
-    //             // console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^1');
-    //             // console.log(value.path);
-    //             // console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^2');
-    //             let slidePathList = value.path.split('|');
-    //             for (let i in slidePathList) {
-    //                 if (slidePathList.hasOwnProperty(i)) {
-    //
-    //                     let imgSlideSrc = Utils.getRootPath() + SERVER_FLAG + slidePathList[i];
-    //                     console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^1');
-    //                     console.log(imgSlideSrc);
-    //                     console.log('&&&&&&&&&&&&&^^^^^^1^^^^^^^^^^2');
-    //                     $('#index-swiper').find('.swiper-wrapper').append('<div class="swiper-slide"><img src="' + imgSlideSrc + '"/></div>');
-    //
-    //                 }
-    //             }
-    //         });
-    //     }
-    // }).get();
-</script>
 </html>

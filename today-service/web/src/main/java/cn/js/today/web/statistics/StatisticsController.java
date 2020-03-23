@@ -50,9 +50,11 @@ public class StatisticsController {
     /**
      *
      * @return CommonResponse方式返回
+     *
      */
     @GetMapping(value = "/statistics/clipcloud/usage")
     @ResponseBody
+    @Deprecated
     public String getClipCloudUsage() {
         Config urlConfig = configService.findByConfigKey("clipCloudStatisticsURL");
         Map<String, Object> map = new HashMap<>();//存放参数

@@ -1,5 +1,6 @@
 package cn.js.today.service.cms;
 
+import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;
 import cn.hutool.json.JSONArray;
@@ -62,7 +63,7 @@ public class IndexService {
         JSONObject indexJSONObject = JSONUtil.createObj();
         JSONObject indexCompanyInfoJSONObject = getCompanyInfo(indexJSONObject);
         JSONObject indexFriendlyLinkJSONObject = getFriendlyLink(indexCompanyInfoJSONObject);
-
+        JSONObject siteJSONObject = getSiteInfo(indexFriendlyLinkJSONObject);
 
         return indexJSONObject;
     }
@@ -160,6 +161,58 @@ public class IndexService {
 //                    String path = pathArr[i];
 //                }
 //            }
+        }
+
+        return indexJSONObject;
+
+    }
+
+    public JSONObject getSiteInfo(JSONObject indexJSONObject) {
+
+        /***********************companyInfo********************************/
+        Config siteInfoConfig = configService.findByConfigKey("czfytSiteInfoURL");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
+        String siteInfoURL = siteInfoConfig.getConfigValue();
+
+        HttpResponse httpResponse = null;
+        try {
+            httpResponse = HttpRequest.get(siteInfoURL).timeout(2000).execute();
+        } catch (Exception e) {
+            log.info("error-----" + e.getMessage());
+            return JSONUtil.createObj();
+        }
+        //请求不成功的情况
+        if(!httpResponse.isOk()){
+            return JSONUtil.createObj();
+        }
+
+        String httpResponseStr = httpResponse.body();
+        log.info("httpResponseStr:" + httpResponseStr);
+//        JSONArray newJSONArray = JSONUtil.createArray();
+        JSONObject jsonObject = JSONUtil.parseObj(httpResponseStr);
+        JSONArray jsonArray = (JSONArray)jsonObject.get("list");
+        Iterator iterator = jsonArray.iterator();
+        while (iterator.hasNext()){
+            JSONObject jsonObject1 = (JSONObject)iterator.next();
+            String companyId = (String)jsonObject1.get("id");
+            if(ObjectUtil.isNotNull(companyId) && "main".equals(companyId)){
+                String siteTitle = (String)jsonObject1.get("title");
+                indexJSONObject.put("siteTitle",siteTitle);
+                String siteRemarks = (String)jsonObject1.get("remarks");
+                indexJSONObject.put("siteRemarks",siteRemarks);
+                String siteCode = (String)jsonObject1.get("siteCode");
+                indexJSONObject.put("siteCode",siteCode);
+                String siteName = (String)jsonObject1.get("siteName");
+                indexJSONObject.put("siteName",siteName);
+                String siteLogo = (String)jsonObject1.get("logo");
+                indexJSONObject.put("siteLogo",siteLogo);
+                String siteDomain = (String)jsonObject1.get("domain");
+                indexJSONObject.put("siteDomain",siteDomain);
+                String siteKeywords = (String)jsonObject1.get("keywords");
+                indexJSONObject.put("siteKeywords",siteKeywords);
+                String siteCopyright = (String)jsonObject1.get("copyright");
+                indexJSONObject.put("siteCopyright",siteCopyright);
+            }
+
         }
 
         return indexJSONObject;

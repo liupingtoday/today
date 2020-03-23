@@ -70,6 +70,7 @@ public class CategoryService {
         Iterator iterator = allCategory.iterator();
         //json串中新增的字段名称
         String addedPathName = "urlPath";
+        String categoryId = "categoryId";
         while (iterator.hasNext()){
             JSONObject jsonObject = (JSONObject)iterator.next();
             log.info(jsonObject.toString());
@@ -78,12 +79,15 @@ public class CategoryService {
             switch (id){
                 case "A1001":
                     jsonObject.put(addedPathName,"/admin/front/index/list");  // 首页
+                    jsonObject.put(categoryId,id);  // 首页
                     break;
                 case "A1015":
                     jsonObject.put(addedPathName,"/admin/front/about/list?id=A1015");  // 关于福伊特
+                    jsonObject.put(categoryId,id);
                     break;
                 case "A1005":
                     jsonObject.put(addedPathName,"/admin/front/productList/list");  // 产品与应用
+                    jsonObject.put(categoryId,id);
 //                   if(treeLeaf == "0"){
 //                       //有叶子节点
 //                       JSONArray childListJSONArray = (JSONArray)jsonObject.get("childList");
@@ -97,24 +101,31 @@ public class CategoryService {
                     break;
                 case "A1011":
                     jsonObject.put(addedPathName,"/admin/front/downloadList/list");  // 资料下载
+                    jsonObject.put(categoryId,id);
                     break;
                 case "A1013":
                     jsonObject.put(addedPathName,"/admin/front/recruit/list");  // 招聘信息
+                    jsonObject.put(categoryId,id);
                     break;
                 case "A1008":
                     jsonObject.put(addedPathName,"/admin/front/contact/list");  // 联系我们
+                    jsonObject.put(categoryId,id);
                     break;
                 case "A1014":
                     jsonObject.put(addedPathName,"/admin/front/productRuleList/list");  // 产品规格表
+                    jsonObject.put(categoryId,id);
                     break;
                 case "A1012":
                     jsonObject.put(addedPathName,"/admin/front/album/list");  // 公司相册
+                    jsonObject.put(categoryId,id);
                     break;
                 case "A1002":
                     jsonObject.put(addedPathName,"/admin/front/newsList/list");  // 新闻中心
+                    jsonObject.put(categoryId,id);
                     break;
                 case "A1009":
                     jsonObject.put(addedPathName,"/admin/front/support/list");  // 技术支持
+                    jsonObject.put(categoryId,id);
                     break;
                 default: jsonObject.put(addedPathName,"/admin/front/index/list");  // 默认首页
 
@@ -235,6 +246,43 @@ public class CategoryService {
         return newJSONArray;
     }
 
+    public String getArticleListByCategoryId(String categoryCode, String queryPageNo, String pageSize){
+
+        Config czfytArticleListURL = configService.findByConfigKey("czfytArticleListURL");
+
+        HttpResponse httpResponse = null;
+        try {
+            httpResponse = HttpRequest.get(czfytArticleListURL.getConfigValue() + "?" + "categoryCode=" + categoryCode + "&" + "pageNo=" + queryPageNo + "&" + "pageSize=" + pageSize).timeout(2000).execute();
+        } catch (Exception e) {
+            log.info("error-----" + e.getMessage());
+            return "error-----";
+        }
+        //请求不成功的情况
+        if(!httpResponse.isOk()){
+            return "error2-----";
+        }
+        String httpResponseStr = httpResponse.body();
+        log.info("httpResponseStr:" + httpResponseStr);
+//        JSONArray newJSONArray = JSONUtil.createArray();
+//        JSONObject jsonObject1 = JSONUtil.parseObj(httpResponseStr);
+//        Integer totalRowNum = (Integer) jsonObject1.get("totalRowNum");
+//        Integer totalPageNum = (Integer) jsonObject1.get("totalPageNum");
+//        Integer pageNo = (Integer) jsonObject1.get("pageNo");
+//        Integer pageRowNum = (Integer) jsonObject1.get("pageRowNum");
+//        JSONArray resultJSONArray = JSONUtil.parseArray(jsonObject1.get("result"));
+//
+//        Iterator iterator = resultJSONArray.iterator();
+//        while (iterator.hasNext()){
+//            CategoryDTO categoryDTO = new CategoryDTO();
+//            JSONObject jsonObject = (JSONObject)iterator.next();
+//            String id = (String)jsonObject.get("id");
+//            categoryDTO.setCategoryId(id);//特殊处理，模型不匹配
+//            String categoryCode = (String)jsonObject.get("categoryCode");
+//            categoryDTO.setCategoryCode(categoryCode);
+//            String categoryName = (String)jsonObject.get("categoryName");
+//        }
+        return httpResponseStr;
+    }
 //    public Menu saveMenu(MenuDTO menuDTO){
 //
 //        Menu menu = menuMapper.menuDTO2Menu(menuDTO);

@@ -1,5 +1,5 @@
 // 返回顶部按钮
-Helper.backTop();
+// Helper.backTop();
 
 // 监听滚动事件，更改navbar背景色透明度
 // $(window).scroll(function () {
@@ -21,6 +21,25 @@ Helper.backTop();
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+    });
+
+    new Swiper('.index-product-swiper', {
+        slidesPerView: 2,
+        // parallax: true,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     });
 
@@ -62,10 +81,10 @@ Helper.backTop();
 //     }
 // }).get();
 
-let categoryCode = 'A1002';
-let currPageData = '1';
-let pageSizeData = '10';
-let requestData = { categoryCode: categoryCode, pageNo: currPageData, pageSize: pageSizeData };
+// let categoryCode = 'A1002';
+// let currPageData = '1';
+// let pageSizeData = '10';
+// let requestData = { categoryCode: categoryCode, pageNo: currPageData, pageSize: pageSizeData };
 /**
  * 获取首页的新闻中心的数据
  */

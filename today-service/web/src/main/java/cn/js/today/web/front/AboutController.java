@@ -42,6 +42,9 @@ public class AboutController {
     public String list(Model model) {
         JSONArray allCategory = categoryService.getMenu();
         JSONObject indexJsonObject = indexService.getIndexParam();
+
+//        String result = categoryService.getArticleListByCategoryId(categoryCode, pageNo, pageSize);
+
         model.addAttribute("allCategory",allCategory);
         model.addAttribute("indexJsonObject",indexJsonObject);
         log.info("111111111"+"allCategory:"+allCategory);

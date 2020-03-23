@@ -296,6 +296,7 @@ window.Utils = {
             return ++sequence;
         };
     })(),
+
     /**
      * 把url中的双斜杠替换为单斜杠
      * 如:http://localhost:8080//api//demo.替换后http://localhost:8080/api/demo
@@ -312,6 +313,7 @@ window.Utils = {
     isIE: function () {
         return !!window.ActiveXObject || 'ActiveXObject' in window;
     },
+
     /**
      * 采用正则表达式获取浏览器的地址栏参数
      * @param name
@@ -324,6 +326,7 @@ window.Utils = {
         var r = window.location.search.substr(1).match(reg);
         if(r!=null)return  unescape(r[2]); return null;
     },
+
     /**
      *
      * @returns {string}

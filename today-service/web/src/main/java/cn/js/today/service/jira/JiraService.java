@@ -93,7 +93,7 @@ public class JiraService {
         try {
             String plainCredentials = loginUserName + ":" + loginPassword;
             String base64Credentials = new String(Base64.encodeBase64(plainCredentials.getBytes()));
-            httpResponse = HttpRequest.get(jiraURL3).header("Authorization","Basic " + base64Credentials).timeout(20*1000).execute();
+            httpResponse = HttpRequest.get(jiraURL3).header("Authorization","Basic " + base64Credentials).timeout(30*1000).execute();
         } catch (Exception e) {
             log.info("error-----" + e.getMessage());
             return JSONUtil.createArray();
@@ -433,7 +433,7 @@ public class JiraService {
     }
 
     public User findByUserId(Long userId){
-        Optional<User> user = userRepository.findOneByUserId(userId);
+        Optional<User> user = userRepository.findOneByUserCode(userId);
         return user.orElse(null);
     }
 
