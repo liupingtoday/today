@@ -139,6 +139,15 @@ public class JiraService {
                     worklogStartDateListStr = StrUtil.removePrefix(worklogStartDateListStr,"[");
                     worklogStartDateListStr = StrUtil.removeSuffix(worklogStartDateListStr,"]");
                     jiraIssueDTO.setWorklogStartDate(worklogStartDateListStr);
+                    //根据登录的工时转化为任务的开始时间和结束时间
+                    String[] worklogStartDateArr = StringUtils.split(worklogStartDateListStr,",");
+                    if(worklogStartDateArr.length == 0){
+                        jiraIssueDTO.setWorkStartDate(worklogStartDateArr[0]);
+                        jiraIssueDTO.setWorkEndDate(worklogStartDateArr[0]);
+                    }else {
+                        jiraIssueDTO.setWorkStartDate(worklogStartDateArr[0]);
+                        jiraIssueDTO.setWorkEndDate(worklogStartDateArr[worklogStartDateArr.length-1]);
+                    }
 
                 } catch (URISyntaxException e) {
                     e.printStackTrace();
@@ -151,6 +160,9 @@ public class JiraService {
                 if(ObjectUtil.isNotNull(fieldsJsonObject.get("description"))){
                     String issueDescription = (String)fieldsJsonObject.get("description");
                     jiraIssueDTO.setDescription(issueDescription);
+                }else {
+                    //如果描述为空，则将概要赋值于描述
+                    jiraIssueDTO.setDescription(issueSummary);
                 }
 
                 String issueTimespent = (Integer)fieldsJsonObject.get("timespent") + "";
@@ -158,7 +170,7 @@ public class JiraService {
                 jiraIssueDTO.setTimespent(issueTimespent);
                 String issueAggregatetimespent = (Integer)fieldsJsonObject.get("aggregatetimespent") + "";
                 issueAggregatetimespent = Integer.valueOf(issueAggregatetimespent)/60/60 + "";
-                jiraIssueDTO.setAggregatetimespent(issueAggregatetimespent);
+                jiraIssueDTO.setAggregatetimespent(issueAggregatetimespent);     //
                 String issueCreated = (String)fieldsJsonObject.get("created");
                 jiraIssueDTO.setIssueCreated(issueCreated);
                 JSONObject issuetypeJSONObject = (JSONObject)fieldsJsonObject.get("issuetype");
@@ -192,16 +204,19 @@ public class JiraService {
                 }
 
                 JSONArray fixVersionsJSONArray = (JSONArray)fieldsJsonObject.get("fixVersions");//修复的版本
-                List fixVersionNameList = new ArrayList();
-                for(int j = 0; j < fixVersionsJSONArray.size(); j++){
-                    JSONObject fixVersionsJSONObject = (JSONObject)fixVersionsJSONArray.get(j);
-                    String fixVersionName = (String)fixVersionsJSONObject.get("name");//
 
-                    //TODO
-                    String releaseDate = (String) fixVersionsJSONObject.get("releaseDate");  // "2020-03-26"
-                    fixVersionNameList.add(fixVersionName);
+                if(ObjectUtil.isNotNull(fixVersionsJSONArray)){
+                    List fixVersionNameList = new ArrayList();
+                    for(int j = 0; j < fixVersionsJSONArray.size(); j++){
+                        JSONObject fixVersionsJSONObject = (JSONObject)fixVersionsJSONArray.get(j);
+                        String fixVersionName = (String)fixVersionsJSONObject.get("name");//
+
+                        //TODO
+                        String releaseDate = (String) fixVersionsJSONObject.get("releaseDate");  // "2020-03-26"
+                        fixVersionNameList.add(fixVersionName);
+                    }
+                    jiraIssueDTO.setFixVersionName(fixVersionNameList);
                 }
-                jiraIssueDTO.setFixVersionName(fixVersionNameList);
 
 //                jiraIssueDTO.setReleaseDate(releaseDate);
                 issueJsonArray.add(jiraIssueDTO);
@@ -247,7 +262,7 @@ public class JiraService {
         try {
             String plainCredentials = loginUserName + ":" + loginPassword;
             String base64Credentials = new String(Base64.encodeBase64(plainCredentials.getBytes()));
-            httpResponse = HttpRequest.get(jiraURL3).header("Authorization","Basic " + base64Credentials).timeout(20*1000).execute();
+            httpResponse = HttpRequest.get(jiraURL3).header("Authorization","Basic " + base64Credentials).timeout(30*1000).execute();
         } catch (Exception e) {
             log.info("error-----" + e.getMessage());
             return JSONUtil.createObj();

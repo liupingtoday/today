@@ -83,6 +83,18 @@ public class JiraIssueDTO extends DataEntity<JiraIssueDTO> {
      */
     private String worklogStartDate;
 
+    /**
+     *  工作任务的开始日期时间
+     */
+    private String workStartDate;
+
+    /**
+     * 工作任务的结束日期时间
+     */
+    private String workEndDate;
+
+
+
     public String getKey() {
         return key;
     }
@@ -186,5 +198,21 @@ public class JiraIssueDTO extends DataEntity<JiraIssueDTO> {
 
     public void setIssuetypeName(String issuetypeName) {
         this.issuetypeName = issuetypeName;
+    }
+
+    public String getWorkStartDate() {
+        return workStartDate;
+    }
+
+    public void setWorkStartDate(String workStartDate) {
+        this.workStartDate = workStartDate;
+    }
+
+    public String getWorkEndDate() {
+        return workEndDate;
+    }
+
+    public void setWorkEndDate(String workEndDate) {
+        this.workEndDate = workEndDate;
     }
 }

@@ -116,11 +116,15 @@ public class JiraController {
         writer.addHeaderAlias("componentName", "模块");
         writer.addHeaderAlias("summary", "概要");
         writer.addHeaderAlias("description", "描述");
-        writer.addHeaderAlias("worklogStartDate", "登陆工时开始日期");
+//        writer.addHeaderAlias("worklogStartDate", "登陆工时开始日期");
+        writer.addHeaderAlias("workStartDate", "开始时间");
+        writer.addHeaderAlias("workEndDate", "结束时间");
         writer.addHeaderAlias("timespent", "工时耗时");
         writer.addHeaderAlias("issuetypeName", "问题类型");
         writer.addHeaderAlias("assigneeDisplayName", "经办人");
         writer.addHeaderAlias("aggregatetimespent", "总耗时");
+        writer.addHeaderAlias("emailAddress", "邮箱地址");
+        writer.addHeaderAlias("issueCreated", "创建时间");
 
         // 一次性写出内容，使用默认样式
         writer.write(jiraIssueDTOAllList);
