@@ -108,7 +108,6 @@ public class JiraController {
         }
 
 
-
         //通过工具类创建writer
         ExcelWriter writer = ExcelUtil.getWriter("C:/data/writeTest12.xlsx");
         //自定义标题别名
