@@ -74,6 +74,9 @@ public class CommonResponse<T> implements Serializable {
      */
     private int pageSize;
 
+    public CommonResponse() {
+    }
+
     public CommonResponse(String code, String msg) {
         this.code = code;
         this.msg = msg;
@@ -159,5 +162,18 @@ public class CommonResponse<T> implements Serializable {
 
     public void setPageSize(int pageSize) {
         this.pageSize = pageSize;
+    }
+
+    @Override
+    public String toString() {
+        return "CommonResponse{" +
+                "code='" + code + '\'' +
+                ", msg='" + msg + '\'' +
+                ", data=" + data +
+                ", totalCount=" + totalCount +
+                ", totalPage=" + totalPage +
+                ", currentPage=" + currentPage +
+                ", pageSize=" + pageSize +
+                '}';
     }
 }

@@ -12,7 +12,7 @@ public abstract class Category_ extends cn.js.today.common.DataEntity_ {
 	public static volatile SingularAttribute<Category, String> siteCode;
 	public static volatile SingularAttribute<Category, String> moduleType;
 	public static volatile SingularAttribute<Category, String> keywords;
-	public static volatile SingularAttribute<Category, String> isCanComment;
+	public static volatile SingularAttribute<Category, Integer> isCanComment;
 	public static volatile SingularAttribute<Category, String> description;
 	public static volatile SingularAttribute<Category, String> categoryCode;
 	public static volatile SingularAttribute<Category, String> categoryName;
@@ -20,11 +20,11 @@ public abstract class Category_ extends cn.js.today.common.DataEntity_ {
 	public static volatile SingularAttribute<Category, Extend> extend;
 	public static volatile SingularAttribute<Category, Long> id;
 	public static volatile SingularAttribute<Category, String> href;
-	public static volatile SingularAttribute<Category, String> inMenu;
-	public static volatile SingularAttribute<Category, String> isNeedAudit;
-	public static volatile SingularAttribute<Category, String> inList;
+	public static volatile SingularAttribute<Category, Integer> inMenu;
+	public static volatile SingularAttribute<Category, Integer> isNeedAudit;
+	public static volatile SingularAttribute<Category, Integer> inList;
 	public static volatile SingularAttribute<Category, String> categoryId;
-	public static volatile SingularAttribute<Category, String> showModes;
+	public static volatile SingularAttribute<Category, Integer> showModes;
 
 	public static final String IMAGE = "image";
 	public static final String SITE_CODE = "siteCode";

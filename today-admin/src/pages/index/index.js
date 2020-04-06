@@ -50,7 +50,7 @@ const Index = {
 
         // let today = Utils.getDay(0);
         $("#list2").jqGrid({
-            url: '/' + SERVER_FLAG + '/api/statistics/clipcloud/usage',
+            url: '/' + SERVER_FLAG + '/api/statistics/clipcloud/latest7days/usage',
             datatype: "json",
             colModel: [
                 { name: "currentDate", label: "日期", width: 80,sortable: true, align: "center" },
@@ -76,7 +76,7 @@ const Index = {
             sortable: true,
             sortname: "currentDate",
             sortorder: "desc",
-            caption: "云剪平台业务使用量信息",
+            caption: "云剪平台最近一周的业务使用量统计信息",
             //设置caption居中
             gridComplete: function () {
                 // $("#list2").closest("div.ui-jqgrid-view")

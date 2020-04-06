@@ -42,15 +42,15 @@ public class CategoryDTO extends TreeEntity<CategoryDTO> {
 
     private String description; 	// 描述
 
-    private String inMenu; 			// 是否在导航中显示
+    private Integer inMenu; 			// 是否在导航中显示
 
-    private String inList; 			// 是否在分类页中显示列表
+    private Integer inList; 			// 是否在分类页中显示列表
 
-    private String showModes; 		// 展现模式
+    private Integer showModes; 		// 展现模式
 
-    private String isNeedAudit; 	// 是否需要审核
+    private Integer isNeedAudit; 	// 是否需要审核
 
-    private String isCanComment; 	// 是否允许评论
+    private Integer isCanComment; 	// 是否允许评论
 
     private Site site; 			// 扩展字段
 
@@ -134,43 +134,44 @@ public class CategoryDTO extends TreeEntity<CategoryDTO> {
         this.description = description;
     }
 
-    public String getInMenu() {
+
+    public Integer getInMenu() {
         return inMenu;
     }
 
-    public void setInMenu(String inMenu) {
+    public void setInMenu(Integer inMenu) {
         this.inMenu = inMenu;
     }
 
-    public String getInList() {
+    public Integer getInList() {
         return inList;
     }
 
-    public void setInList(String inList) {
+    public void setInList(Integer inList) {
         this.inList = inList;
     }
 
-    public String getShowModes() {
+    public Integer getShowModes() {
         return showModes;
     }
 
-    public void setShowModes(String showModes) {
+    public void setShowModes(Integer showModes) {
         this.showModes = showModes;
     }
 
-    public String getIsNeedAudit() {
+    public Integer getIsNeedAudit() {
         return isNeedAudit;
     }
 
-    public void setIsNeedAudit(String isNeedAudit) {
+    public void setIsNeedAudit(Integer isNeedAudit) {
         this.isNeedAudit = isNeedAudit;
     }
 
-    public String getIsCanComment() {
+    public Integer getIsCanComment() {
         return isCanComment;
     }
 
-    public void setIsCanComment(String isCanComment) {
+    public void setIsCanComment(Integer isCanComment) {
         this.isCanComment = isCanComment;
     }
 

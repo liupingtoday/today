@@ -57,20 +57,35 @@ public class Category extends TreeEntity<Category> {
     @Column(name = "description")
     private String description; 	// 描述
 
+    /**
+     *  是否在导航中显示, 1:显示 ， 0 隐藏
+     */
     @Column(name = "in_menu")
-    private String inMenu; 			// 是否在导航中显示
+    private Integer inMenu;
 
+    /**
+     *  是否在分类页中显示列表, 1:显示 ， 0 隐藏
+     */
     @Column(name = "in_list")
-    private String inList; 			// 是否在分类页中显示列表
+    private Integer inList;
 
+    /**
+     *  展现模式
+     */
     @Column(name = "show_modes")
-    private String showModes; 		// 展现模式
+    private Integer showModes;
 
+    /**
+     *  是否需要审核
+     */
     @Column(name = "is_need_audit")
-    private String isNeedAudit; 	// 是否需要审核
+    private Integer isNeedAudit;
 
+    /**
+     * 是否允许评论
+     */
     @Column(name = "is_can_comment")
-    private String isCanComment; 	// 是否允许评论
+    private Integer isCanComment;
 
     private Extend extend; 			// 扩展字段
 
@@ -162,43 +177,43 @@ public class Category extends TreeEntity<Category> {
         this.description = description;
     }
 
-    public String getInMenu() {
+    public Integer getInMenu() {
         return inMenu;
     }
 
-    public void setInMenu(String inMenu) {
+    public void setInMenu(Integer inMenu) {
         this.inMenu = inMenu;
     }
 
-    public String getInList() {
+    public Integer getInList() {
         return inList;
     }
 
-    public void setInList(String inList) {
+    public void setInList(Integer inList) {
         this.inList = inList;
     }
 
-    public String getShowModes() {
+    public Integer getShowModes() {
         return showModes;
     }
 
-    public void setShowModes(String showModes) {
+    public void setShowModes(Integer showModes) {
         this.showModes = showModes;
     }
 
-    public String getIsNeedAudit() {
+    public Integer getIsNeedAudit() {
         return isNeedAudit;
     }
 
-    public void setIsNeedAudit(String isNeedAudit) {
+    public void setIsNeedAudit(Integer isNeedAudit) {
         this.isNeedAudit = isNeedAudit;
     }
 
-    public String getIsCanComment() {
+    public Integer getIsCanComment() {
         return isCanComment;
     }
 
-    public void setIsCanComment(String isCanComment) {
+    public void setIsCanComment(Integer isCanComment) {
         this.isCanComment = isCanComment;
     }
 

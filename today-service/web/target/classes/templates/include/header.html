@@ -27,19 +27,24 @@
 <div class="inner">
     <ul class="menu boxed clearfix" id="metismenu">
         <#list allCategory as item>
-        <li>
-
-            <a id="${item.categoryId}" href="${item.urlPath}" target="" title="${item.categoryName}">${item.categoryName}</a>
-            <#if (item.treeLeaf == '0') >
-            <ul>
-                <#list item.childList as childItem>
+            <#if (item.inMenu == 1) >
                 <li>
-                    <a id="${childItem.categoryId}" href="${item.urlPath}" title="${childItem.categoryName}">${childItem.categoryName}</a>
+                <a id="${item.categoryId}" href="${item.urlPath}" target="" title="${item.categoryName}">
+                    ${item.categoryName}
+                </a>
+                <#if (item.treeLeaf == '0') >
+                <ul>
+                    <#list item.childList as childItem>
+                    <li>
+                        <a id="${childItem.categoryId}" href="${item.urlPath}" title="${childItem.categoryName}">${childItem.categoryName}</a>
+                    </li>
+                </#list>
+                </ul>
+                </#if>
                 </li>
-            </#list>
+
+            </#if>
+
+        </#list>
     </ul>
-</#if>
-</li>
-</#list>
-</ul>
 </div>

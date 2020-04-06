@@ -177,8 +177,10 @@ public class CategoryService {
             categoryDTO.setDescription(description);
 //            String isTreeLeaf = (String)jsonObject.get("isTreeLeaf");
 //            String isRoot = (String)jsonObject.get("isRoot");
-//            String inMenu = (String)jsonObject.get("inMenu");
-//            String inList = (String)jsonObject.get("inList");
+            Integer inMenu = Integer.valueOf(jsonObject.get("inMenu") + "");
+            categoryDTO.setInMenu(inMenu);
+            Integer inList = Integer.valueOf(jsonObject.get("inList") + "");
+            categoryDTO.setInList(inList);
 //            String url = (String)jsonObject.get("url");
 //            String image = (String)jsonObject.get("image");
 //            String href = (String)jsonObject.get("href");
