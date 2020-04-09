@@ -86,7 +86,7 @@ public class CategoryService {
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1005":
-                    jsonObject.put(addedPathName,"/admin/front/productList/list");  // 产品与应用
+                    jsonObject.put(addedPathName,"/admin/front/productList/list?id=A1005");  // 产品与应用
                     jsonObject.put(categoryId,id);
 //                   if(treeLeaf == "0"){
 //                       //有叶子节点
@@ -100,11 +100,11 @@ public class CategoryService {
 //                   }
                     break;
                 case "A1011":
-                    jsonObject.put(addedPathName,"/admin/front/downloadList/list");  // 资料下载
+                    jsonObject.put(addedPathName,"/admin/front/downloadList/list?id=A1011");  // 资料下载
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1013":
-                    jsonObject.put(addedPathName,"/admin/front/recruit/list");  // 招聘信息
+                    jsonObject.put(addedPathName,"/admin/front/recruit/list?id=A1013");  // 招聘信息
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1008":
@@ -112,7 +112,7 @@ public class CategoryService {
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1014":
-                    jsonObject.put(addedPathName,"/admin/front/productRuleList/list");  // 产品规格表
+                    jsonObject.put(addedPathName,"/admin/front/productRuleList/list?id=A1014");  // 产品规格表
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1012":
@@ -285,43 +285,5 @@ public class CategoryService {
 //        }
         return httpResponseStr;
     }
-//    public Menu saveMenu(MenuDTO menuDTO){
-//
-//        Menu menu = menuMapper.menuDTO2Menu(menuDTO);
-//        return menuRepository.save(menu);
-//    }
-//
-//    public Menu findByMenuCode(String menuCode){
-//
-//        Optional<Menu> menu = menuRepository.findByMenuCode(menuCode);
-//        return menu.orElse(null);
-//    }
-//
-//    public Menu findById(Long id){
-//        Optional<Menu> menu = menuRepository.findById(id);
-//        return menu.orElse(null);
-//    }
-
-//    /**
-//     *
-//     * @param configKey
-//     * @return
-//     */
-//    public Config findByConfigKey(String configKey){
-//        return configRepository.findOneByConfigKey(configKey).orElse(null);
-//    }
-//
-    /**
-     *
-     * @return
-     */
-//    public List<Menu> findAll(){
-//        return menuRepository.findAll();
-//    }
-
-//    public void deleteMenu(Long menuCode){
-//        menuRepository.deleteByMenuCode(menuCode);
-//        return;
-//    }
 
 }

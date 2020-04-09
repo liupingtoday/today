@@ -29,25 +29,26 @@ console.log("--+++categoryId:" + categoryId);
 //     }
 // }).get();
 
-// let categoryCode = 'A1002';
-// let currPageData = '1';
-// let pageSizeData = '10';
-// let requestData = { categoryCode: categoryCode, pageNo: currPageData, pageSize: pageSizeData };
+let categoryCode = 'A1005';
+let currPageData = '1';
+let pageSizeData = '12';
+let requestData = { categoryCode: categoryCode, pageNo: currPageData, pageSize: pageSizeData };
 /**
  * 获取首页的新闻中心的数据
  */
-// Http({
-//     url: '/' + SERVER_FLAG + '/f/articleList/listDataDetail',
-//     data: requestData,
-//     isDefaultApiRequest: false,
-//     success: function (data, textStatus, jqXHR) {
-//         $.each(data.result, function (index, value) {
-//             console.log(value.id);
-//             // 控制首页的新闻中心的数量在10条内；
-//             if (index < 10) {
-//                 $('#index-news').find('ol').append('<li class="list top"><span class="time">' + value.updateDate + '</span><a href="news.html?id=' + value.id + '" title="" target="_self">' + value.title + '</a></li>');
-//             }
-//         });
-//     }
-// }).get();
+Http({
+    url: '/' + SERVER_FLAG + '/front/about/queryArticleByCategoryCode',
+    data: requestData,
+    isDefaultApiRequest: false,
+    success: function (data, textStatus, jqXHR) {
+        console.log('111---=+++');
+        // $.each(data.result, function (index, value) {
+        //     console.log(value.id);
+        //     // 控制首页的新闻中心的数量在10条内；
+        //     // if (index < 10) {
+        //     //     $('#index-news').find('ol').append('<li class="list top"><span class="time">' + value.updateDate + '</span><a href="news.html?id=' + value.id + '" title="" target="_self">' + value.title + '</a></li>');
+        //     // }
+        // });
+    }
+}).get();
 

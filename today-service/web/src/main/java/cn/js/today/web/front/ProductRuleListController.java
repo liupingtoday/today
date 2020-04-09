@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Version: v1.0
  */
 @Controller
-@RequestMapping("/front/productRule")
+@RequestMapping("/front/productRuleList")
 public class ProductRuleListController {
 
     private final Logger log = LoggerFactory.getLogger(ProductRuleListController.class);
@@ -49,7 +49,7 @@ public class ProductRuleListController {
         model.addAttribute("allCategory",allCategory);
         model.addAttribute("indexJsonObject",indexJsonObject);
         log.info("111111111"+"allCategory:"+allCategory);
-        return "modules/cms/front/index";
+        return "modules/cms/front/productRuleList";
     }
 
 }

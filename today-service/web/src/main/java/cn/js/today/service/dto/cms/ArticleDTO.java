@@ -25,6 +25,8 @@ public class ArticleDTO extends DataEntity<ArticleDTO> {
 
     private String categoryCode; 	// 文章所属栏目的ID
 
+    private String categoryName; 	// 文章所属栏目的名称
+
     private String title; 		// 内容标题
 
     private String href; 		// 外部链接
@@ -83,6 +85,14 @@ public class ArticleDTO extends DataEntity<ArticleDTO> {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
     }
 
     public String getHref() {

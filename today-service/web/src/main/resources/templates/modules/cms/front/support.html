@@ -15,10 +15,10 @@
             <span>技术支持</span> </h3>
         <div class="clear"></div>
         <div class="active" id="shownews">
-            <h1 class="title"></h1>
+            <h1 class="title">${articleTitle}</h1>
             <div class="editor">
                 <div>
-                    <div id="metinfo_additional"></div>
+                    <div id="metinfo_additional">${articleData.content}</div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -29,6 +29,7 @@
     </div>
     <div class="clear"></div>
 </div>
-#include("../../assets/html/footer.html")
+<#include "/include/footer.html">
 </body>
+<#include "/include/jslibs.html">
 </html>
