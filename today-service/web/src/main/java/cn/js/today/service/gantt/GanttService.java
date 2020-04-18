@@ -1,7 +1,7 @@
 package cn.js.today.service.gantt;
 
 import cn.js.today.common.ResultBean;
-import cn.js.today.domain.gantt.Resource;
+import cn.js.today.domain.gantt.Assignee;
 import cn.js.today.domain.gantt.Role;
 import cn.js.today.domain.gantt.Task;
 import cn.js.today.repository.gantt.ResourceRepository;
@@ -17,12 +17,10 @@ import cn.js.today.service.mapper.TaskMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.support.BeanDefinitionDsl;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 /**
  * Simple to Introduction
@@ -75,9 +73,9 @@ public class GanttService {
         List<ResourceDTO> resourceDTOList = ganttDTO.getResourceDTO();
 
         for(ResourceDTO resourceDTO : resourceDTOList){
-            Resource resource = resourceMapper.resourceDTO2Resource(resourceDTO);
-            Resource savedResource = resourceRepository.save(resource);
-            savedResourceDTOList.add(resourceMapper.resource2ResourceDTO(savedResource));
+            Assignee assignee = resourceMapper.resourceDTO2Resource(resourceDTO);
+            Assignee savedAssignee = resourceRepository.save(assignee);
+            savedResourceDTOList.add(resourceMapper.resource2ResourceDTO(savedAssignee));
         }
 
         List<RoleDTO> roleDTOList = ganttDTO.getRoleDTO();

@@ -56,8 +56,9 @@ public class ArticleService {
      * @return
      */
     public CommonResponse<ArticleDTO> getArticleListByCategoryCode(String categoryCode, Integer pageNo, Integer pageSize) {
-        CommonResponse<ArticleDTO> articleDTOCommonResponse = new CommonResponse<>();
+        CommonResponse<ArticleDTO> articleDTOCommonResponse = new CommonResponse<>(CommonResponse.CODE_SUCCESS,CommonResponse.MSG_SUCCESS);
 
+//        CommonResponse<ArticleDTO> commonResponse = null;
         /***********************companyInfo********************************/
         Config articleConfig = configService.findByConfigKey("czfytArticleListURL");   // '/' + SERVER_FLAG + '/f/company/companyInfo/listData'
         String articleURL = articleConfig.getConfigValue();
@@ -69,11 +70,11 @@ public class ArticleService {
             httpResponse = HttpRequest.get(url).timeout(30*1000).execute();
         } catch (Exception e) {
             log.info("error-----" + e.getMessage());
-            return new CommonResponse<ArticleDTO>();
+            return CommonResponse.ok();
         }
         //请求不成功的情况
         if(!httpResponse.isOk()){
-            return new CommonResponse<ArticleDTO>();
+            return CommonResponse.ok();
         }
 
         String httpResponseStr = httpResponse.body();
@@ -137,7 +138,7 @@ public class ArticleService {
             articleDataList.add(articleDTO);
 
         }
-
+//        CommonResponse<ArticleDTO> commonResponse = CommonResponse.ok(articleDataList);
         articleDTOCommonResponse.setData(articleDataList);
         return articleDTOCommonResponse;
 

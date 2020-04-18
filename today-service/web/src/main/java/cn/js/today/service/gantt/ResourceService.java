@@ -1,6 +1,6 @@
 package cn.js.today.service.gantt;
 
-import cn.js.today.domain.gantt.Resource;
+import cn.js.today.domain.gantt.Assignee;
 import cn.js.today.repository.gantt.ResourceRepository;
 import cn.js.today.service.dto.gantt.ResourceDTO;
 import cn.js.today.service.mapper.ResourceMapper;
@@ -34,13 +34,13 @@ public class ResourceService {
     @Autowired
     private ResourceMapper resourceMapper;
 
-    public Resource saveResource(ResourceDTO resourceDTO){
-        Resource resource = resourceMapper.resourceDTO2Resource(resourceDTO);
-        return resourceRepository.save(resource);
+    public Assignee saveResource(ResourceDTO resourceDTO){
+        Assignee assignee = resourceMapper.resourceDTO2Resource(resourceDTO);
+        return resourceRepository.save(assignee);
     }
 
-    public Resource findByResourceId(Long resourceId){
-        Optional<Resource> resource = resourceRepository.findOneByResourceId(resourceId);
+    public Assignee findByResourceId(Long resourceId){
+        Optional<Assignee> resource = resourceRepository.findOneByResourceId(resourceId);
         return resource.orElse(null);
     }
 
@@ -48,7 +48,7 @@ public class ResourceService {
      *
      * @return
      */
-    public List<Resource> findAll(){
+    public List<Assignee> findAll(){
         return resourceRepository.findAll();
     }
 

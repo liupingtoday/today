@@ -25,7 +25,7 @@ import java.util.List;
 public class Task extends DataEntity<Task> {
 
     /**
-     * 编号
+     * 编号,项目ID和任务ID联合主键
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,16 +34,28 @@ public class Task extends DataEntity<Task> {
     private Long taskId;
 
     /**
+     * 项目id,对应project表的id
+     */
+    @Column(name = "project_id")
+    private Long projectId;
+
+    /**
      * 任务名称
      */
     @Column(name = "name")
     private String name;
 
     /**
-     * 进度
+     * 任务完成度
      */
     @Column(name = "progress")
     private String progress;
+
+    /**
+     *
+     */
+    @Column(name = "progress_by_worklog")
+    private String progressByWorklog;
 
     /**
      * 描述
@@ -52,7 +64,7 @@ public class Task extends DataEntity<Task> {
     private String description;
 
     /**
-     * 等级
+     * 任务等级(树的深度)
      */
     @Column(name = "level")
     private String level;
@@ -62,6 +74,12 @@ public class Task extends DataEntity<Task> {
      */
     @Column(name = "status")
     private String status;
+
+    /**
+     * 前置条件
+     */
+    @Column(name = "depends")
+    private String depends;
 
     /**
      * 任务开始时间
@@ -76,25 +94,43 @@ public class Task extends DataEntity<Task> {
     private String end;
 
     /**
+     * 任务实际开始时间
+     */
+    @Column(name = "start_real")
+    private String startReal;
+
+    /**
+     * 任务实际结束时间
+     */
+    @Column(name = "end_real")
+    private String endReal;
+
+    /**
+     * 超期时间
+     */
+    @Column(name = "over_time")
+    private String overTime;
+
+    /**
      * 任务耗时，单位：天
      */
     @Column(name = "duration")
     private String duration;
 
     /**
-     *
+     * 开始是否为里程碑
      */
     @Column(name = "start_is_milestone")
     private String startIsMilestone;
 
     /**
-     *
+     * 结束是否为里程碑
      */
     @Column(name = "end_is_milestone")
     private String endIsMilestone;
 
     /**
-     *
+     * 可写
      */
     @Column(name = "can_write")
     private String canWrite;
@@ -124,7 +160,7 @@ public class Task extends DataEntity<Task> {
     private String collapsed;
 
     /**
-     *
+     * 是否有子节点
      */
     @Column(name = "has_child")
     private String hasChild;

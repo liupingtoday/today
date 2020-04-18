@@ -275,18 +275,18 @@
 		
 		<!-- 资源文件配置 -->
 		<resources>
-			<resource>
+			<assignee>
 				<directory>src/main/java</directory>
 				<excludes>
 					<exclude>**/*.java</exclude>
 				</excludes>
-			</resource>
-			<resource>
+			</assignee>
+			<assignee>
 				<directory>src/main/resources</directory>
 				<excludes>
 					<exclude>rebel.xml</exclude>
 				</excludes>
-			</resource>
+			</assignee>
 		</resources>
 		
 	</build>

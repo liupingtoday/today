@@ -77,6 +77,18 @@ public class MenuController {
     }
 
     /**
+     * 根据menuType获得菜单
+     * @param menuType
+     * @return
+     */
+    @GetMapping("/menu/menuType")
+    public ResponseEntity<Menu> getMenuType(String menuType) {
+        log.debug("REST request to get menuType : {}", menuType);
+        Menu menu = menuService.findByMenuType(menuType);
+        return ResponseEntity.ok().body(menu);
+    }
+
+    /**
      *
      * @return
      */

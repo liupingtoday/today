@@ -1,12 +1,8 @@
 package cn.js.today.web.gantt;
 
-import cn.js.today.domain.gantt.Resource;
 import cn.js.today.domain.gantt.Role;
-import cn.js.today.domain.gantt.Task;
 import cn.js.today.service.dto.gantt.RoleDTO;
-import cn.js.today.service.dto.gantt.TaskDTO;
 import cn.js.today.service.gantt.RoleService;
-import cn.js.today.service.gantt.TaskService;
 import cn.js.today.web.errors.BadRequestAlertException;
 import io.github.jhipster.web.util.HeaderUtil;
 import io.micrometer.core.annotation.Timed;

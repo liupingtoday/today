@@ -1,9 +1,7 @@
 package cn.js.today.service.mapper;
 
-import cn.js.today.domain.gantt.Resource;
-import cn.js.today.domain.gantt.Task;
+import cn.js.today.domain.gantt.Assignee;
 import cn.js.today.service.dto.gantt.ResourceDTO;
-import cn.js.today.service.dto.gantt.TaskDTO;
 import org.springframework.stereotype.Service;
 
 /**
@@ -25,31 +23,31 @@ public class ResourceMapper {
      * @param resourceDTO
      * @return
      */
-    public Resource resourceDTO2Resource(ResourceDTO resourceDTO){
+    public Assignee resourceDTO2Resource(ResourceDTO resourceDTO){
 
         if(resourceDTO == null){
             return  null;
         } else {
-            Resource resource = new Resource();
+            Assignee assignee = new Assignee();
 //            task.setResourceId(resourceDTO.getResourceId());
-            resource.setName(resourceDTO.getName());
-            resource.setRoleId(resourceDTO.getRoleId());
-            resource.setCreatedBy("");
-            resource.setUpdatedBy("");
-            return resource;
+            assignee.setName(resourceDTO.getName());
+            assignee.setRoleId(resourceDTO.getRoleId());
+            assignee.setCreatedBy("");
+            assignee.setUpdatedBy("");
+            return assignee;
         }
 
     }
 
-    public ResourceDTO resource2ResourceDTO(Resource resource){
+    public ResourceDTO resource2ResourceDTO(Assignee assignee){
 
-        if(resource == null){
+        if(assignee == null){
             return  null;
         } else {
             ResourceDTO resourceDTO = new ResourceDTO();
 //            task.setResourceId(resourceDTO.getResourceId());
-            resourceDTO.setName(resource.getName());
-            resourceDTO.setRoleId(resource.getRoleId());
+            resourceDTO.setName(assignee.getName());
+            resourceDTO.setRoleId(assignee.getRoleId());
             resourceDTO.setCreatedBy("");
             resourceDTO.setUpdatedBy("");
             return resourceDTO;

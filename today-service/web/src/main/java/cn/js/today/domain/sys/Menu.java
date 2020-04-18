@@ -87,7 +87,7 @@ public class Menu extends DataEntity<Menu> {
     private String menuName;
 
     /**
-     *  菜单类型（1菜单 2权限）
+     *  菜单类型（1、横向菜单， 2、纵向菜单， 3、权限）
      */
     @Column(name = "menu_type")
     private String menuType;

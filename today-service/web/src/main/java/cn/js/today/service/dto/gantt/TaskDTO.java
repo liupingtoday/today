@@ -1,6 +1,7 @@
 package cn.js.today.service.dto.gantt;
 
 import cn.js.today.common.DataEntity;
+import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
@@ -22,6 +23,7 @@ import javax.validation.constraints.NotBlank;
 public class TaskDTO {
 
 //    @NotBlank
+    @JSONField(name ="id")
     private Long taskId;
 
     private String name;

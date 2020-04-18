@@ -1,11 +1,8 @@
 package cn.js.today.web.gantt;
 
-import cn.js.today.domain.gantt.Resource;
-import cn.js.today.domain.gantt.Task;
+import cn.js.today.domain.gantt.Assignee;
 import cn.js.today.service.dto.gantt.ResourceDTO;
-import cn.js.today.service.dto.gantt.TaskDTO;
 import cn.js.today.service.gantt.ResourceService;
-import cn.js.today.service.gantt.TaskService;
 import cn.js.today.web.errors.BadRequestAlertException;
 import io.github.jhipster.web.util.HeaderUtil;
 import io.micrometer.core.annotation.Timed;
@@ -53,10 +50,10 @@ public class ResourceController {
      * @return
      */
     @GetMapping("/gantt/resource/{resourceId}")
-    public ResponseEntity<Resource> getResource(@PathVariable Long resourceId) {
+    public ResponseEntity<Assignee> getResource(@PathVariable Long resourceId) {
         log.debug("REST request to get Resource : {}", resourceId);
-        Resource resource = resourceService.findByResourceId(resourceId);
-        return ResponseEntity.ok().body(resource);
+        Assignee assignee = resourceService.findByResourceId(resourceId);
+        return ResponseEntity.ok().body(assignee);
     }
 
     /**
@@ -66,7 +63,7 @@ public class ResourceController {
     @Timed
     @ApiOperation(value="栏目新增", notes="栏目新增")
     @GetMapping("/gantt/resources")
-    public List<Resource> getAllResources() {
+    public List<Assignee> getAllResources() {
         log.debug("REST request to get all Resources");
         return resourceService.findAll();
     }
@@ -77,22 +74,22 @@ public class ResourceController {
      * @return
      */
     @PostMapping(value = "/gantt/resource")
-    public ResponseEntity<Resource> addResource(ResourceDTO resourceDTO) {
-        Resource resource = resourceService.saveResource(resourceDTO);
-        log.info(resource.toString());
-        return ResponseEntity.ok().body(resource);
+    public ResponseEntity<Assignee> addResource(ResourceDTO resourceDTO) {
+        Assignee assignee = resourceService.saveResource(resourceDTO);
+        log.info(assignee.toString());
+        return ResponseEntity.ok().body(assignee);
     }
 
     @PutMapping("/gantt/resource")
-    public ResponseEntity<Resource> updateResource(@Valid @RequestBody ResourceDTO resourceDTO) throws URISyntaxException {
+    public ResponseEntity<Assignee> updateResource(@Valid @RequestBody ResourceDTO resourceDTO) throws URISyntaxException {
         log.debug("REST request to update Resource : {}", resourceDTO);
         if(resourceDTO.getResourceId() == null){
             throw new BadRequestAlertException("Invalid ResourceId", ENTITY_NAME, "id is null");
         }
 
-        Resource resource = resourceService.saveResource(resourceDTO);
-        return ResponseEntity.ok().headers(HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, resource.getResourceId().toString()))
-                .body(resource);
+        Assignee assignee = resourceService.saveResource(resourceDTO);
+        return ResponseEntity.ok().headers(HeaderUtil.createEntityUpdateAlert(applicationName, true, ENTITY_NAME, assignee.getResourceId().toString()))
+                .body(assignee);
     }
     /**
      *

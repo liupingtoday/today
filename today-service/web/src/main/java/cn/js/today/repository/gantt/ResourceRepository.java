@@ -1,6 +1,6 @@
 package cn.js.today.repository.gantt;
 
-import cn.js.today.domain.gantt.Resource;
+import cn.js.today.domain.gantt.Assignee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -18,12 +18,12 @@ import java.util.Optional;
  * @Version: v1.0
  */
 @Repository
-public interface ResourceRepository extends JpaRepository<Resource,Long> {
+public interface ResourceRepository extends JpaRepository<Assignee,Long> {
 
 
-    Optional<Resource> findOneByResourceId(Long resourceId);
+    Optional<Assignee> findOneByResourceId(Long resourceId);
 
-    Optional<Resource> findOneByName(String name);
+    Optional<Assignee> findOneByName(String name);
 
 
 

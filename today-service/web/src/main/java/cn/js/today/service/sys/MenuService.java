@@ -58,6 +58,11 @@ public class MenuService {
         return menu.orElse(null);
     }
 
+    public Menu findByMenuType(String menuType){
+        Optional<Menu> menu = menuRepository.findByMenuType(menuType);
+        return menu.orElse(null);
+    }
+
     public Menu findById(Long id){
         Optional<Menu> menu = menuRepository.findById(id);
         return menu.orElse(null);

@@ -16,21 +16,21 @@
         <div class="clear"></div>
         <div class="active" id="productlist">
             <ul class='list-none metlist'>
-                <#list allCategory as item>
-                <li class="list" style="width:152px; margin-left:14px; margin-right:14px;">
-                    <a href="/product.html?id=' + value.id + '" title="' + value.title + '" target="_self" class="img">
-                        <img src="' + rootPath + value.image + '" alt="" title="" width="150" height="120"/>
-                    </a>
-                    <h3>
-                        <a href="/product.html?id=' + value.id + '" title="' + value.title + '" target="_self">' + value.title + '</a>
-                    </h3>
-                </li>
+                <#list articleDTOList as articleListItem>
+                    <li class="list" style="width:152px; margin-left:14px; margin-right:14px;">
+                        <a href="/product.html?id=${articleListItem.id?c}" title="${articleListItem.title}" target="_self" class="img">
+                            <img src="${articleListItem.image}" alt="${articleListItem.keywords}" title="${articleListItem.title}" width="150" height="120"/>
+                        </a>
+                        <h3>
+                            <a href="/product.html?id=${articleListItem.id?c}" title="${articleListItem.title}" target="_self">${articleListItem.title}</a>
+                        </h3>
+                    </li>
                 </#list>
 
             </ul>
             <div id="flip">
                 <div class='digg4 metpager_8'>
-                    <div id="pagination_8">
+                    <div id="pagination_productList">
 
                     </div>
                 </div>
