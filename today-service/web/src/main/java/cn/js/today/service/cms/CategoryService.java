@@ -82,29 +82,35 @@ public class CategoryService {
                     jsonObject.put(categoryId,id);  // 首页
                     break;
                 case "A1015":
-                    jsonObject.put(addedPathName,"/admin/front/about/list?id=A1015");  // 关于福伊特
+                    jsonObject.put(addedPathName,"/admin/front/about/list");  // 关于福伊特
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1005":
-                    jsonObject.put(addedPathName,"/admin/front/productList/list?id=A1005");  // 产品与应用
+//                    jsonObject.put(addedPathName,"/admin/front/productList/" + id); // 产品与应用
                     jsonObject.put(categoryId,id);
-//                   if(treeLeaf == "0"){
-//                       //有叶子节点
-//                       JSONArray childListJSONArray = (JSONArray)jsonObject.get("childList");
-//                       log.info("childListJSONArray: ---------:" + childListJSONArray);
-//                       Object[] childListObject = childListJSONArray.toArray();
-//                       for(int i = 0; i < childListObject.length; i++){
-//                           JSONObject childListJsonObject = (JSONObject)childListObject[i];
-//                           childListJsonObject.put("urlPath","/admin/front/about/list");
-//                       }
-//                   }
+                   if("0".equals(treeLeaf)){
+                       //有叶子节点
+                       jsonObject.put(addedPathName,"/admin/front/productList/" + id);
+                       JSONArray childListJSONArray = (JSONArray)jsonObject.get("childList");
+                       log.info("childListJSONArray: ---------:" + childListJSONArray);
+                       Object[] childListObject = childListJSONArray.toArray();
+                       for(int i = 0; i < childListObject.length; i++){
+                           JSONObject childListJsonObject = (JSONObject)childListObject[i];
+                           String childCategoryCode = (String)childListJsonObject.get("categoryCode");
+                           log.info("+++++++++++childCategoryCode: " + childCategoryCode);
+                           childListJsonObject.put(addedPathName + childCategoryCode,"/admin/front/productList/" + childCategoryCode);
+//                           jsonObject.put(addedPathName + childCategoryCode ,"/admin/front/productList/" + childCategoryCode);
+                       }
+                   }else {
+                       jsonObject.put(addedPathName,"/admin/front/productList/" + id);
+                   }
                     break;
                 case "A1011":
-                    jsonObject.put(addedPathName,"/admin/front/downloadList/list?id=A1011");  // 资料下载
+                    jsonObject.put(addedPathName,"/admin/front/downloadList/list");  // 资料下载
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1013":
-                    jsonObject.put(addedPathName,"/admin/front/recruit/list?id=A1013");  // 招聘信息
+                    jsonObject.put(addedPathName,"/admin/front/recruit/list");  // 招聘信息
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1008":
@@ -112,7 +118,7 @@ public class CategoryService {
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1014":
-                    jsonObject.put(addedPathName,"/admin/front/productRuleList/list?id=A1014");  // 产品规格表
+                    jsonObject.put(addedPathName,"/admin/front/productRuleList/list");  // 产品规格表
                     jsonObject.put(categoryId,id);
                     break;
                 case "A1012":
@@ -131,6 +137,7 @@ public class CategoryService {
 
             }
         }
+        log.info("&&&&&&&&&&&&&&&&&&&& allCategory:" + allCategory);
         return allCategory;
     }
 

@@ -21,6 +21,8 @@ npm install webpack webpack-cli --save-dev
 
 npm install --save metismenu
 
+npm i @babel/runtime --save-dev
+
 常用命令汇总：
 npm install swiper --registry=https://registry.npm.taobao.org
 npm install --registry=https://registry.npm.taobao.org

@@ -44,11 +44,8 @@ public class IndexController {
     @RequestMapping(value = "list")
     public String list(Model model) {
         JSONArray allCategory = categoryService.getAllCategory();
-
         allCategory = categoryService.addParamCategory(allCategory);
-
         JSONObject indexJsonObject = indexService.getIndexParam();
-
         model.addAttribute("allCategory",allCategory);
         model.addAttribute("indexJsonObject",indexJsonObject);
         log.info("111111111"+"allCategory:"+allCategory);

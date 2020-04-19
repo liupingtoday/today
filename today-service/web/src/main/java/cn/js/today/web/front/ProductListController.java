@@ -1,5 +1,6 @@
 package cn.js.today.web.front;
 
+import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
@@ -16,6 +17,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -51,34 +53,40 @@ public class ProductListController {
     private ArticleService articleService;
 
 
-    @RequestMapping(value = "list")
-    public String list(Model model)  {
+    @RequestMapping(value = "/{categoryCode}")
+    public String list(@PathVariable String categoryCode, Integer pageNo, Integer pageSize, Model model)  {
+        log.info("----------------categoryCode:"+ categoryCode + "pageNo:"+ pageNo + "pageSize:" + pageSize);
+
+        if(ObjectUtil.isNull(pageNo)){
+            pageNo = 1;
+        }
+        if(ObjectUtil.isNull(pageSize)){
+            pageSize = 12;
+        }
         JSONArray allCategory = categoryService.getMenu();
         JSONObject indexJsonObject = indexService.getIndexParam();
 
-        CommonResponse<ArticleDTO> articleDTOCommonResponse = articleService.getArticleListByCategoryCode("A1005", 1, 12);
+        CommonResponse<ArticleDTO> articleDTOCommonResponse = articleService.getArticleListByCategoryCode(categoryCode, pageNo, pageSize);
+
         List<ArticleDTO>   articleDTOList = articleDTOCommonResponse.getData();
         JSONArray jsonArray = JSONUtil.parseArray(articleDTOList);
         //根据articleId查询文章详情
         model.addAttribute("allCategory",allCategory);
         model.addAttribute("indexJsonObject",indexJsonObject);
         //文章详情内容
-//        model.addAttribute("articleData",articleDataDTO);
         model.addAttribute("articleDTOList", jsonArray);
+        model.addAttribute("currentPage", articleDTOCommonResponse.getCurrentPage());
+        model.addAttribute("totalPage", articleDTOCommonResponse.getTotalPage());
+        model.addAttribute("totalCount", articleDTOCommonResponse.getTotalCount());
         log.info("111111111"+"articleDTOList:"+ jsonArray);
-//        log.info("111111111"+"articleData:"+articleDataDTO.toString());
         return "modules/cms/front/productList";
     }
 
     @RequestMapping(value = "getProductListPagable")
     @ResponseBody
-    public String getProductListPagable(Integer pageNo, Integer pageSize)  {
-        JSONArray allCategory = categoryService.getMenu();
-        JSONObject indexJsonObject = indexService.getIndexParam();
-
-        CommonResponse<ArticleDTO> articleDTOCommonResponse = articleService.getArticleListByCategoryCode("A1005", pageNo, pageSize);
-//        List<ArticleDTO>   articleDTOList = articleDTOCommonResponse.getData();
-//        JSONArray jsonArray = JSONUtil.parseArray(articleDTOList);
+    public String getProductListPagable(String categoryCode, Integer pageNo, Integer pageSize)  {
+        log.info("1222222222222222222"+"categoryCode:"+ categoryCode);
+        CommonResponse<ArticleDTO> articleDTOCommonResponse = articleService.getArticleListByCategoryCode(categoryCode, pageNo, pageSize);
         //根据articleId查询文章详情
         String returnResult = JSONUtil.toJsonPrettyStr(articleDTOCommonResponse);
         log.info("111111111"+"returnResult:"+ returnResult);

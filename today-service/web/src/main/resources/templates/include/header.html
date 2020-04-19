@@ -29,16 +29,18 @@
         <#list allCategory as item>
             <#if (item.inMenu == 1) >
                 <li>
-                <a id="${item.categoryId}" href="${item.urlPath}" target="" title="${item.categoryName}">
+                <a id="${item.categoryId}" href="${item.urlPath}?id=${item.categoryId}" target="" title="${item.categoryName}">
                     ${item.categoryName}
                 </a>
                 <#if (item.treeLeaf == '0') >
                 <ul>
                     <#list item.childList as childItem>
-                    <li>
-                        <a id="${childItem.categoryId}" href="${item.urlPath}" title="${childItem.categoryName}">${childItem.categoryName}</a>
-                    </li>
-                </#list>
+                        <li>
+                            <#assign categoryId=(childItem.categoryId)>
+                            <#assign childItemUrlPath="urlPath"+categoryId>
+                            <a id="${childItem.categoryId}" href="${childItem[childItemUrlPath]}?id=${categoryId}" title="${childItem.categoryName}">${childItem.categoryName}</a>
+                        </li>
+                    </#list>
                 </ul>
                 </#if>
                 </li>

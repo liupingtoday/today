@@ -272,7 +272,7 @@ function saveInLocalStorage() {
 //-------------------------------------------  Open a black popup for managing resources. This is only an axample of implementation (usually resources come from server) ------------------------------------------------------
 function editResources(){
 
-  //make resource editor
+  //make assignee editor
   var resourceEditor = $.JST.createFromTemplate({}, "RESOURCE_EDITOR");
   var resTbl=resourceEditor.find("#resourcesTable");
 
@@ -282,9 +282,9 @@ function editResources(){
   }
 
 
-  //bind add resource
+  //bind add assignee
   resourceEditor.find("#addResource").click(function(){
-    resTbl.append($.JST.createFromTemplate({id:"new",name:"resource"}, "RESOURCE_ROW"))
+    resTbl.append($.JST.createFromTemplate({id:"new",name:"assignee"}, "RESOURCE_ROW"))
   });
 
   //bind save event
@@ -775,7 +775,7 @@ function showBaselineInfo (event,element){
   function createNewResource(el) {
     var row = el.closest("tr[taskid]");
     var name = row.find("[name=resourceId_txt]").val();
-    var url = contextPath + "/applications/teamwork/resource/resourceNew.jsp?CM=ADD&name=" + encodeURI(name);
+    var url = contextPath + "/applications/teamwork/assignee/resourceNew.jsp?CM=ADD&name=" + encodeURI(name);
 
     openBlackPopup(url, 700, 320, function (response) {
       //fillare lo smart combo

@@ -6,6 +6,15 @@
         "url": "index"
     },
     {
+        "url": "gantt"
+    },
+    {
+        "url": "api"
+    },
+    {
+        "url": "statistics"
+    },
+    {
         "url": "tools"
     }
 ]
