@@ -18,11 +18,11 @@
             <ul class='list-none metlist'>
                 <#list articleDTOList as articleListItem>
                     <li class="list" style="width:152px; margin-left:14px; margin-right:14px;">
-                        <a href="/product.html?id=${articleListItem.id?c}" title="${articleListItem.title}" target="_self" class="img">
+                        <a href="/admin/front/product/${articleListItem.id}" title="${articleListItem.title}" target="_self" class="img">
                             <img src="${articleListItem.image}" alt="${articleListItem.keywords}" title="${articleListItem.title}" width="150" height="120"/>
                         </a>
                         <h3>
-                            <a href="/product.html?id=${articleListItem.id?c}" title="${articleListItem.title}" target="_self">${articleListItem.title}</a>
+                            <a href="/admin/front/product/${articleListItem.id}" title="${articleListItem.title}" target="_self">${articleListItem.title}</a>
                         </h3>
                     </li>
                 </#list>

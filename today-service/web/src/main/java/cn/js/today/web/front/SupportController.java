@@ -56,12 +56,12 @@ public class SupportController {
         CommonResponse<ArticleDTO> articleDTOCommonResponse = articleService.getArticleListByCategoryCode("A1009", 1, 12);
         List<ArticleDTO> articleDTOList = articleDTOCommonResponse.getData();
         ArticleDTO articleDTO = articleDTOList.get(0);
-        Long articleId = articleDTO.getId();
+        String articleId = articleDTO.getId();
         String articleTitle = articleDTO.getTitle();
         log.info("111111111"+"articleId:"+ articleId);
         log.info("111111111"+"articleTitle:"+ articleTitle);
         //根据articleId查询文章详情
-        ArticleDataDTO articleDataDTO = articleService.getArticleDataByArticleId(articleId + "");
+        ArticleDataDTO articleDataDTO = articleService.getArticleDataByArticleId(articleId);
         model.addAttribute("allCategory",allCategory);
         model.addAttribute("indexJsonObject",indexJsonObject);
         //文章详情内容

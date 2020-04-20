@@ -17,7 +17,7 @@ import javax.persistence.*;
  */
 public class ArticleDataDTO extends DataEntity<ArticleDataDTO> {
 
-    private Long id; 	// 栏目编码
+    private String id; 	// 栏目编码
 
     private String content; 		// 文章内容
 
@@ -25,11 +25,12 @@ public class ArticleDataDTO extends DataEntity<ArticleDataDTO> {
 
     private String isCanComment; 	// 是否允许评论
 
-    public Long getId() {
+
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

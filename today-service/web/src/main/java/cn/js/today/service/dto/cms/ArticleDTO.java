@@ -1,6 +1,8 @@
 package cn.js.today.service.dto.cms;
 
 import cn.js.today.common.DataEntity;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -19,7 +21,8 @@ import java.util.Objects;
  */
 public class ArticleDTO extends DataEntity<ArticleDTO> {
 
-    private Long id; 	// 栏目编码
+//    @JsonSerialize(using = ToStringSerializer.class)
+    private String id; 	// 栏目编码
 
     private String moduleType; 	// 模块类型
 
@@ -63,11 +66,12 @@ public class ArticleDTO extends DataEntity<ArticleDTO> {
 
 //    private Boolean isQueryArticleData; // 是否查询文章内容
 
-    public Long getId() {
+
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

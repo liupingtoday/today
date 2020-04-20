@@ -97,7 +97,7 @@ public class ArticleService {
             ArticleDTO articleDTO = new ArticleDTO();
             JSONObject articleJsonObject = (JSONObject)iterator.next();
             String articleId = (String)articleJsonObject.get("id");
-            articleDTO.setId(Long.valueOf(articleId));
+            articleDTO.setId(articleId);
             String articleStatus = (String)articleJsonObject.get("status");
             String articleCreateDate = (String)articleJsonObject.get("createDate");
             DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
@@ -183,7 +183,7 @@ public class ArticleService {
             ArticleDataDTO articleDataDTO = new ArticleDataDTO();
             JSONObject articleDataJsonObject = (JSONObject)iterator.next();
             String articleDataId = (String)articleDataJsonObject.get("id");
-            articleDataDTO.setId(Long.valueOf(articleDataId));
+            articleDataDTO.setId(articleDataId);
             String articleDataContent = (String)articleDataJsonObject.get("content");
             articleDataDTO.setContent(articleDataContent);
             articleDataList.add(articleDataDTO);
@@ -232,7 +232,7 @@ public class ArticleService {
             ArticleDTO articleDTO = new ArticleDTO();
             JSONObject articleJsonObject = (JSONObject)iterator.next();
             String articleId = (String)articleJsonObject.get("id");
-            articleDTO.setId(Long.valueOf(articleId));
+            articleDTO.setId(articleId);
             String articleStatus = (String)articleJsonObject.get("status");
             String articleCreateDate = (String)articleJsonObject.get("createDate");
             DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");

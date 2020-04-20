@@ -55,14 +55,14 @@ public class ContactController {
         CommonResponse<ArticleDTO> articleDTOCommonResponse = articleService.getArticleListByCategoryCode2("A1008");
         List<ArticleDTO> articleDTOList = articleDTOCommonResponse.getData();
         ArticleDTO articleDTO = articleDTOList.get(0);
-        Long articleId = articleDTO.getId();
+        String articleId = articleDTO.getId();
         String articleTitle = articleDTO.getTitle();
         String categoryName = articleDTO.getCategoryName();
         log.info("111111111"+"articleId:"+ articleId);
         log.info("111111111"+"articleTitle:"+ articleTitle);
         log.info("111111111"+"categoryName:"+ categoryName);
         //根据articleId查询文章详情
-        ArticleDataDTO articleDataDTO = articleService.getArticleDataByArticleId(articleId + "");
+        ArticleDataDTO articleDataDTO = articleService.getArticleDataByArticleId(articleId);
         model.addAttribute("allCategory", allCategory);
         model.addAttribute("indexJsonObject", indexJsonObject);
         //文章详情内容
