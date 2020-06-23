@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <#include "/include/header.html">
+</head>
+<body>
+<div class="inner met_flash">
+    <div class="flash"> <img src='../../common/img/banner1.jpg' width='990' alt='' height='200'></div>
+</div>
+<div class="sidebar inner">
+    <#include "/include/leftMenu.html">
+    <div class="sb_box br-bg">
+        <h3 id="productRuleListTitle" class="title">
+            <div class="position">当前位置：<a href="/" title="首页">首页</a> &gt; 产品规格表</div>
+            <span></span>
+        </h3>
+        <div class="clear"></div>
+        <div class="active" id="imglist">
+            <ul class='list-none metlist'>
+            </ul>
+            <div id="flip">
+                <div class='digg4 metpager_8'> <div id="pagination_9"></div></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<#include "/include/footer.html">
+</body>
+<#include "/include/jslibs.html">
+<script src="${ctx}/common/js/productRuleList.js"></script>
+</html>
