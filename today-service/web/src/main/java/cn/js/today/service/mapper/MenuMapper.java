@@ -1,6 +1,5 @@
 package cn.js.today.service.mapper;
 
-import cn.js.today.common.idgen.IdGenerate;
 import cn.js.today.domain.sys.Menu;
 import cn.js.today.service.dto.cms.MenuDTO;
 import org.springframework.stereotype.Service;
@@ -8,6 +7,7 @@ import org.springframework.stereotype.Service;
 import java.time.Clock;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.UUID;
 
 /**
  * Simple to Introduction
@@ -35,7 +35,7 @@ public class MenuMapper {
         } else {
             Menu menu = new Menu();
             menu.setId(menuDTO.getId());
-            menu.setMenuCode(IdGenerate.nextId());
+            menu.setMenuCode(UUID.randomUUID().toString());
             menu.setMenuName(menuDTO.getMenuName());
             menu.setMenuTitle(menuDTO.getMenuTitle());
             menu.setMenuHref(menuDTO.getMenuHref());

@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 
 import javax.xml.bind.annotation.*;
 
+//import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
+
 /**
  * @Description TODO
  * @Author zhengheqi

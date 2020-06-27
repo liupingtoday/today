@@ -1,7 +1,8 @@
 package cn.js.today.utils;
 
-import cn.js.today.common.lang.StringUtils;
-import org.jsoup.helper.StringUtil;
+//import cn.js.today.common.lang.StringUtils;
+//import org.jsoup.helper.StringUtil;
+import org.apache.commons.lang3.StringUtils;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
@@ -112,7 +113,7 @@ public class BasicAuthenticationUtils {
      */
     @SuppressWarnings("restriction")
     public static String base64Decode(String str) {
-        if (StringUtil.isBlank(str)) {
+        if (StringUtils.isBlank(str)) {
             return null;
         }
         String s = null;

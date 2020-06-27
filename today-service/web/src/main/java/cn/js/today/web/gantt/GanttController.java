@@ -4,7 +4,6 @@ import cn.hutool.json.JSONArray;
 import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
 import cn.js.today.common.ResultBean;
-import cn.js.today.domain.gantt.Task;
 import cn.js.today.service.dto.gantt.GanttDTO;
 import cn.js.today.service.dto.gantt.ResourceDTO;
 import cn.js.today.service.dto.gantt.RoleDTO;
@@ -12,10 +11,6 @@ import cn.js.today.service.dto.gantt.TaskDTO;
 import cn.js.today.service.gantt.GanttService;
 import cn.js.today.service.gantt.TaskService;
 import cn.js.today.utils.FastJsonUtils;
-import cn.js.today.web.errors.BadRequestAlertException;
-import io.github.jhipster.web.util.HeaderUtil;
-import io.micrometer.core.annotation.Timed;
-import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +18,9 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
-import java.net.URISyntaxException;
 import java.util.List;
+
+//import cn.js.today.utils.FastJsonUtils;
 
 /**
  * Simple to Introduction
